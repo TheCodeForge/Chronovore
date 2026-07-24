@@ -137,7 +137,7 @@ class Unit(Base):
                 strategic *= 1.1
             
         print(self.name, int(defensive), int(offensive), int(strategic))
-        ppm = int((defensive * offensive * strategic)**(1/3) * 0.68)
+        ppm = int((defensive * offensive * strategic)**(1/3) * 0.35)
         print(ppm)
 
         return ppm
