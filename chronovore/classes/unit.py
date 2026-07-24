@@ -82,7 +82,7 @@ class Unit(Base):
 
         #count highest melee, then add extra attacks
         melee_offensive = max([weapon.weapon_points_raw for weapon in self.melee_weapons if "Extra Attacks" not in weapon.keywords])
-        for weapon in self.melee_weapons if "Extra Attacks" in weapon.keywords:
+        for weapon in [x for x in self.melee_weapons if "Extra Attacks" in x.keywords]:
             melee_offensive += weapon.weapon_points_raw
 
         offensive = melee_offensive + ranged_offensive
