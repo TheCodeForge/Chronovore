@@ -74,7 +74,7 @@ class Unit(Base):
         melee_offensive = 0
 
         #monsters and vehicles can fire all guns; infantry cannot
-        if any([x in self.keywords for x in ["Vehicle", "Monster"]])
+        if any([x in self.keywords for x in ["Vehicle", "Monster"]]):
             for weapon in self.ranged_weapons:
                 ranged_offensive += weapon.weapon_points_raw
         else:
