@@ -1,0 +1,50 @@
+{    
+    "name": "Assault Warriors",
+    "ppm":15,
+    "move":6,
+    "tough": 4,
+    "save": 3,
+    "hp":2,
+    "lead": 6,
+    "oc": 2,
+    "keywords": [
+        "Infantry",
+        "Battleline",
+        "Grenades"
+    ],
+    "core_rules": [],
+    "faction_rules": ["Vow of Eternity"],
+    "unit_rules": [{
+            "name":"Shock Assault",
+            "text":"Reroll melee wound rolls of 1. If the targeted enemy is within range of an objective marker, re-roll all wound rolls instead."
+        }
+    ],
+    "range_weapons": [
+        "flamethrower_pistol",
+        "heavy_bolt_pistol",
+        "plasma_pistol"
+    ],
+    "melee_weapons": [
+        "chainblade",
+        "lightning_fist",
+    ],
+    "composition":[
+        "1 Assault Sergeant",
+        "4-9 Assault Warriors"
+    ],
+    "models_min": 5,
+    "models_max": 10,
+    "default_gear":[
+        "heavy_bolt_pistol",
+        "chainblade"
+    ],
+    "replacement_gear":{
+        "Assault Sergeant's Heavy Bolt Pistol":[
+            "flamethrower_pistol",
+            "plasma_pistol"
+        ],
+        "Assault Sergeant's Chainblade":[
+            "lightning_fist"
+        ]
+    }
+}
