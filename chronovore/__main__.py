@@ -59,7 +59,11 @@ def before_request():
 def after_request(resp):
     
     #for some reason HEAD doesn't seem to be getting the nonce from before_request
-    resp.headers["Content-Security-Policy"] = f"default-src * data:; script-src 'self' code.jquery.com cdn.jsdelivr.net 'nonce-{g.get('nonce')}'; object-src 'none'; style-src 'self' 'nonce-{g.get('nonce')}' cdn.jsdelivr.net; media-src 'none';"
+    if request.method=="HEAD":
+        resp.headers["Content-Security-Policy"] = f"default-src * data:; script-src 'self' code.jquery.com cdn.jsdelivr.net ; object-src 'none'; style-src 'self' cdn.jsdelivr.net; media-src 'none';"
+    else:
+        resp.headers["Content-Security-Policy"] = f"default-src * data:; script-src 'self' code.jquery.com cdn.jsdelivr.net 'nonce-{g.nonce}'; object-src 'none'; style-src 'self' 'nonce-{g.nonce}' cdn.jsdelivr.net; media-src 'none';"
+
     resp.headers["Cross-Origin-Opener-Policy"] = "same-origin"
     resp.headers["Cross-Origin-Resource-Policy"] = "same-origin"
     resp.headers["Permissions-Policy"] = "geolocation=(self)"
