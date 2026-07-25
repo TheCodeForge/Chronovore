@@ -31,8 +31,8 @@
     "models_min": 5,
     "models_max": 10,
     "default_gear":[
-        "bolt_pistol",
-        "bolt_rifle",
+        "slug_pistol",
+        "slug_rifle",
         "close_combat_weapon"
     ],
     "replacement_gear":{

@@ -21,7 +21,7 @@
     ],
     "range_weapons": [
         "flamethrower_pistol",
-        "heavy_bolt_pistol",
+        "heavy_slug_pistol",
         "plasma_pistol"
     ],
     "melee_weapons": [
@@ -35,11 +35,11 @@
     "models_min": 5,
     "models_max": 10,
     "default_gear":[
-        "heavy_bolt_pistol",
+        "heavy_slug_pistol",
         "chainblade"
     ],
     "replacement_gear":{
-        "Assault Sergeant's Heavy Bolt Pistol":[
+        "Assault Sergeant's Heavy Slug Pistol":[
             "flamethrower_pistol",
             "plasma_pistol"
         ],

@@ -20,7 +20,7 @@
         }
     ],
     "range_weapons": [
-        "heavy_bolt_rifle"
+        "heavy_slug_rifle"
     ],
     "melee_weapons": [
         "close_combat_weapon"
@@ -32,7 +32,7 @@
     "models_min": 5,
     "models_max": 10,
     "default_gear":[
-        "heavy_bolt_rifle",
+        "heavy_slug_rifle",
         "close_combat_weapon"
     ]
 }
