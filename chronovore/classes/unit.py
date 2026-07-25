@@ -87,8 +87,8 @@ class Unit(Base):
         print(f"Ranged offense: {ranged_offensive}")
 
         #count highest melee, then add extra attacks
-        melee_offensive = max([weapon.weapon_points_raw for weapon in self.melee_weapons if "Extra Attacks" not in weapon.keywords] or [0])
-        for weapon in [x for x in self.melee_weapons if "Extra Attacks" in x.keywords]:
+        melee_offensive = max([weapon.weapon_points_raw for weapon in self.melee_weapons if weapon in self.default_weapons and "Extra Attacks" not in weapon.keywords] or [0])
+        for weapon in [x for x in self.melee_weapons if weapon in self.default_weapons and "Extra Attacks" in x.keywords]:
             melee_offensive += weapon.weapon_points_raw
 
         print(f"Melee offense: {melee_offensive}")
