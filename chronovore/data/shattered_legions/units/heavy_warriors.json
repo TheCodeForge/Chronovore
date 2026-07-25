@@ -20,10 +20,10 @@
         }
     ],
     "range_weapons": [
-        "heavy_bolt_rifle",
+        "heavy_bolt_rifle"
     ],
     "melee_weapons": [
-        "close_combat_weapon",
+        "close_combat_weapon"
     ],
     "composition":[
         "1 Heavy Sergeant",
