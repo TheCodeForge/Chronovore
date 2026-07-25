@@ -80,8 +80,7 @@ class Unit(Base):
 
         #monsters and vehicles can fire all guns; infantry cannot
         if any([x in self.keywords for x in ["Vehicle", "Monster"]]):
-            for weapon in self.ranged_weapons:
-                ranged_offensive += weapon.weapon_points_raw
+            ranged_offensive = sum([weapon.weapon_points_raw for weapon in self.ranged_weapons if weapon in self.default_weapons] or [0])
         else:
             ranged_offensive = max([weapon.weapon_points_raw for weapon in self.ranged_weapons if weapon in self.default_weapons] or [0])
 
