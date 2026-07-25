@@ -10,7 +10,7 @@ from chronovore.__main__ import cache
 class Weapon(Base):
 
     def __repr__(self):
-        return f"<Weapon({self.faction.name} / {self.id})>"
+        return f"<Weapon({self.faction.name} / {self.name})>"
 
     @property
     @cache.memoize()
