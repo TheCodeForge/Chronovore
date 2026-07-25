@@ -1,0 +1,38 @@
+{    
+    "name": "Heavy Warriors",
+    "move":5,
+    "tough": 6,
+    "save": 3,
+    "hp":4,
+    "lead": 6,
+    "oc": 2,
+    "base":50,
+    "keywords": [
+        "Infantry",
+        "Grenades"
+    ],
+    "core_rules": ["Secure Objectives"],
+    "faction_rules": ["Vow of Eternity"],
+    "unit_rules": [
+        {
+            "name":"Stoic Resiliance",
+            "text":"While within range of an objective marker you control, models in this unit have +1 to Saving rolls made against 1-Damage attacks."
+        }
+    ],
+    "range_weapons": [
+        "heavy_bolt_rifle",
+    ],
+    "melee_weapons": [
+        "close_combat_weapon",
+    ],
+    "composition":[
+        "1 Heavy Sergeant",
+        "4-9 Heavy Warriors"
+    ],
+    "models_min": 5,
+    "models_max": 10,
+    "default_gear":[
+        "heavy_bolt_pistol",
+        "close_combat_weapon"
+    ]
+}
