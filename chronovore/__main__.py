@@ -51,14 +51,15 @@ def before_request():
     g.csrf_token=generate_hash(session.get('session_id'))
 
     #anti-csrf
-    if request.method in ["POST", "PUT", "DELETE"] and request.form.get("csrf_token") != g.csrf_token:
+    if request.method in ["POST", "PUT", "DELETE"] and request.values.get("csrf_token") != g.csrf_token:
         abort(401)
 
 
 @app.after_request
 def after_request(resp):
     
-    resp.headers["Content-Security-Policy"] = f"default-src * data:; script-src 'self' code.jquery.com cdn.jsdelivr.net 'nonce-{g.nonce}'; object-src 'none'; style-src 'self' 'nonce-{g.nonce}' cdn.jsdelivr.net; media-src 'none';"
+    #for some reason HEAD doesn't seem to be getting the nonce from before_request
+    resp.headers["Content-Security-Policy"] = f"default-src * data:; script-src 'self' code.jquery.com cdn.jsdelivr.net 'nonce-{g.get('nonce')}'; object-src 'none'; style-src 'self' 'nonce-{g.get('nonce')}' cdn.jsdelivr.net; media-src 'none';"
     resp.headers["Cross-Origin-Opener-Policy"] = "same-origin"
     resp.headers["Cross-Origin-Resource-Policy"] = "same-origin"
     resp.headers["Permissions-Policy"] = "geolocation=(self)"
