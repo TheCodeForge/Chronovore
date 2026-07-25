@@ -73,7 +73,7 @@ class Unit(Base):
         if "Stealth" in self.keywords:
             defensive *= 1.2
         
-        print(f"Defensive: {defensive}")
+        # print(f"Defensive: {defensive}")
 
         ranged_offensive = 0
         melee_offensive = 0
@@ -87,14 +87,14 @@ class Unit(Base):
             print('infantry')
             ranged_offensive = max([x.weapon_points_raw for x in self.ranged_weapons if x.id in self.default_gear] or [0])
 
-        print(f"Ranged offense: {ranged_offensive}")
+        # print(f"Ranged offense: {ranged_offensive}")
 
         #count highest melee, then add extra attacks
         melee_offensive = max([x.weapon_points_raw for x in self.melee_weapons if x.id in self.default_gear and "Extra Attacks" not in x.keywords] or [0])
         melee_offensive += sum([x.weapon_points_raw for x in self.melee_weapons if x.id in self.default_gear and "Extra Attacks" in x.keywords] or [0])
 
 
-        print(f"Melee offense: {melee_offensive}")
+        # print(f"Melee offense: {melee_offensive}")
 
         offensive = melee_offensive + ranged_offensive
 
@@ -147,9 +147,9 @@ class Unit(Base):
             if kwd=="Fly":
                 strategic *= 1.1
             
-        print(f"Strategic: {strategic}")
+        # print(f"Strategic: {strategic}")
         ppm = int((defensive * offensive * strategic)**(1/3) * 0.35)
-        print(ppm)
+        # print(ppm)
 
         return ppm
 
