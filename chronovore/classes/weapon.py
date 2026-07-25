@@ -89,5 +89,5 @@ class Weapon(Base):
             elif kwd=="Twin-Linked":
                 weapon_pts *= 1.25
 
-        print(f"    {self.name}: {weapon_pts}")
+        # print(f"    {self.name}: {weapon_pts}")
         return int(weapon_pts)
