@@ -24,6 +24,8 @@ class Unit(Base):
     @lazy
     def ppm_computed(self):
 
+        print(self.name)
+
         if self.profiles:
 
             ppm = sum([x.ppm_computed()*x.__dict__.get("qty",1) for x in self.profiles])
@@ -66,10 +68,13 @@ class Unit(Base):
             move = int(move.rstrip('+'))
 
         defensive = hp * (6/(fnp-1)) * (6/(save-1)) * (6/(invuln-1)) * sigmoid(tough)
+
         
         if "Stealth" in self.keywords:
             defensive *= 1.2
         
+        print(f"Defensive: {defensive}")
+
         ranged_offensive = 0
         melee_offensive = 0
 
@@ -80,10 +85,14 @@ class Unit(Base):
         else:
             ranged_offensive = max([weapon.weapon_points_raw for weapon in self.ranged_weapons if weapon in self.default_weapons] or [0])
 
+        print(f"Ranged offense: {ranged_offensive}")
+
         #count highest melee, then add extra attacks
         melee_offensive = max([weapon.weapon_points_raw for weapon in self.melee_weapons if "Extra Attacks" not in weapon.keywords] or [0])
         for weapon in [x for x in self.melee_weapons if "Extra Attacks" in x.keywords]:
             melee_offensive += weapon.weapon_points_raw
+
+        print(f"Melee offense: {melee_offensive}")
 
         offensive = melee_offensive + ranged_offensive
 
@@ -136,7 +145,7 @@ class Unit(Base):
             if kwd=="Fly":
                 strategic *= 1.1
             
-        print(self.name, int(defensive), int(offensive), int(strategic))
+        print(f"Strategic: {strategic}")
         ppm = int((defensive * offensive * strategic)**(1/3) * 0.35)
         print(ppm)
 
