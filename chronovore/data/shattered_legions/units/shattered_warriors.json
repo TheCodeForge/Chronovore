@@ -16,8 +16,8 @@
     "faction_rules": ["Vow of Eternity"],
     "unit_rules": [],
     "range_weapons": [
-        "bolt_pistol",
-        "bolt_rifle",
+        "slug_pistol",
+        "slug_rifle",
         "plasma_pistol"
     ],
     "melee_weapons": [
