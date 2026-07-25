@@ -82,16 +82,16 @@ class Unit(Base):
 
         if any([x in self.keywords for x in ["Vehicle", "Monster"]]):
             print("big guns")
-            ranged_offensive = sum([x.weapon_points_raw for x in self.ranged_weapons if x in self.default_weapons] or [0])
+            ranged_offensive = sum([x.weapon_points_raw for x in self.ranged_weapons if x.id in self.default_gear] or [0])
         else:
             print('infantry')
-            ranged_offensive = max([x.weapon_points_raw for x in self.ranged_weapons if x in self.default_weapons] or [0])
+            ranged_offensive = max([x.weapon_points_raw for x in self.ranged_weapons if x.id in self.default_gear] or [0])
 
         print(f"Ranged offense: {ranged_offensive}")
 
         #count highest melee, then add extra attacks
-        melee_offensive = max([x.weapon_points_raw for x in self.melee_weapons if x in self.default_weapons and "Extra Attacks" not in x.keywords] or [0])
-        melee_offensive += sum([x.weapon_points_raw for x in self.melee_weapons if x in self.default_weapons and "Extra Attacks" in x.keywords] or [0])
+        melee_offensive = max([x.weapon_points_raw for x in self.melee_weapons if x.id in self.default_gear and "Extra Attacks" not in x.keywords] or [0])
+        melee_offensive += sum([x.weapon_points_raw for x in self.melee_weapons if x.id in self.default_gear and "Extra Attacks" in x.keywords] or [0])
 
 
         print(f"Melee offense: {melee_offensive}")
