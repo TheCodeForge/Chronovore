@@ -176,12 +176,12 @@
     </form>
   </td>
   <td class="align-middle">{{ weapon.name }}{% if weapon.keywords %}<br><span class="keyword-group">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
-  <td class="text-center align-middle">{% if profile.rng %}{{ profile.rng }}"{% endif %}</td>
-  <td class="text-center align-middle text-nowrap">{{ (profile.psk|str)+'+' if profile.skl else '-'  }}</td>
-  <td class="text-center align-middle">{{ (profile.atk|str) }}</td>
-  <td class="text-center align-middle">{{ profile.str }}</td>
-  <td class="text-center align-middle">{{ '-'+(profile.ap|str) if profile.ap else '0' }}</td>
-  <td class="text-center align-middle text-nowrap">{{ profile.dmg }}</td>
+  <td class="text-center align-middle">{% if weapon.rng %}{{ weapon.rng }}"{% endif %}</td>
+  <td class="text-center align-middle text-nowrap">{{ (weapon.psk|str)+'+' if weapon.skl else '-'  }}</td>
+  <td class="text-center align-middle">{{ (weapon.atk|str) }}</td>
+  <td class="text-center align-middle">{{ weapon.str }}</td>
+  <td class="text-center align-middle">{{ '-'+(weapon.ap|str) if profile.ap else '0' }}</td>
+  <td class="text-center align-middle text-nowrap">{{ weapon.dmg }}</td>
 </tr>
 {% endif %}
 {% endmacro %}
