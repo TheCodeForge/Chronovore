@@ -59,7 +59,7 @@ def before_request():
 def after_request(resp):
     
     #for some reason HEAD doesn't seem to be getting the nonce from before_request
-    if request.method=="HEAD":
+    if not g.get('nonce'):
         resp.headers["Content-Security-Policy"] = f"default-src * data:; script-src 'self' code.jquery.com cdn.jsdelivr.net ; object-src 'none'; style-src 'self' cdn.jsdelivr.net; media-src 'none';"
     else:
         resp.headers["Content-Security-Policy"] = f"default-src * data:; script-src 'self' code.jquery.com cdn.jsdelivr.net 'nonce-{g.nonce}'; object-src 'none'; style-src 'self' 'nonce-{g.nonce}' cdn.jsdelivr.net; media-src 'none';"
