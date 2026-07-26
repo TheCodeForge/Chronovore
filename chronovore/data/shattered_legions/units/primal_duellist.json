@@ -26,10 +26,6 @@
         {
             "name":"Bodyguards of the Duellist",
             "text":"While within 3\" of a friendly +Adeptus Astartes Infantry+ unit, this model has +Lone Operative+."
-        },
-        {
-            "name":"Primal",
-            "text":"This unit must be selected as your +Warlord+."
         }
     ],
     "range_weapons": [
