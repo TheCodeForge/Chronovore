@@ -9,7 +9,8 @@
     "base":50,
     "keywords": [
         "Infantry",
-        "Grenades"
+        "Grenades",
+        "Heavy"
     ],
     "core_rules": ["Secure Objectives"],
     "faction_rules": ["Vow of Eternity"],
