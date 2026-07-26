@@ -22,6 +22,7 @@ class Unit(Base):
         return self.ppm_computed()
 
     @lazy
+    @cache.memoize
     def ppm_computed(self):
 
         # print(self.name)
@@ -278,6 +279,7 @@ class Unit(Base):
         return self.__dict__.get('is_profile', False)
 
     @property
+    @cache.memoize
     def unit_rules(self):
         output = self.__dict__.get('unit_rules', [])
 
@@ -288,5 +290,5 @@ class Unit(Base):
                 "text":"This model must be selected as your +Warlord+"
                 }
             )
-            
+
         return output
