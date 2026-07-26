@@ -56,13 +56,13 @@
 
         "Feel No Pain X+": "When this unit would take damage, roll a d6 for each point of damage assigned. For each unmodified result of X or greater, reduce the assigned damage by 1.",
 
-        "Infiltrators": "At the start of the game, the unit may be deployed anywhere on the Battlefield, at least 9\" from any enemy model <br></p><p><sup>All models in a unit must have this rule in order to use it.",
+        "Infiltrators": "At the start of the game, the unit may be deployed anywhere on the Battlefield, at least 9\" from any enemy model.</p><p><sup>All models in a unit must have this rule in order to use it.</sup>",
 
         "Leader [Keyword]": "At the start of the game, this model may be attached to an +Infantry+ or +Battleline+ unit that is not a +Character+ or +Epic Hero+, which has the specified +Keyword+, becoming a single combined unit. While attached, this model gains the +Leader+ keyword, and models in the attached unit gain the +Bodyguard+ keyword. Limit 1 +Leader+ per unit.",
 
         "Lone Operative": "This unit cannot be selected as the target of a ranged attack from over 12\" away. This rule does not apply while part of an attached unit.",
 
-        "Scouts X\"": "At the start of the first Battle Round, if every model in the unit has this ability, this unit may be moved up to X inches. All models in a unit must have this rule in order to use it.",
+        "Scouts X\"": "At the start of the first Battle Round, if every model in the unit has this ability, this unit may be moved up to X inches.</p><p><sup>All models in a unit must have this rule in order to use it.</sup>",
 
         "Second in Command": "See +Support+",
         
@@ -70,7 +70,7 @@
 
         "Secure Objectives": "Objective markers controlled by this unit remain under your control, even if you have no models within range of it, unless and until your opponent controls it at any scoring phase.",
 
-        "Stealth": "All ranged attacks made against the unit have -1 to hit. All models in a unit must have this rule in order to use it"
+        "Stealth": "All ranged attacks made against the unit have -1 to hit.</p><p><sup>All models in a unit must have this rule in order to use it.</sup>"
 
     }
 }
