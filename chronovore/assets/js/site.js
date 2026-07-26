@@ -259,7 +259,7 @@ $(document).ready(
     $('[data-bs-toggle="popover"]').popover({
       container: 'body',
       html: true,
-      placement: 'auto'
+      placement: 'bottom'
     })
   }
 )
