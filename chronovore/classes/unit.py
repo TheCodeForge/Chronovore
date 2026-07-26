@@ -276,3 +276,17 @@ class Unit(Base):
     @property
     def is_profile(self):
         return self.__dict__.get('is_profile', False)
+
+    @property
+    def unit_rules(self):
+        output = self.__dict__.get('unit_rules', [])
+
+        if "Supreme Commander" in self.keywords_all:
+            output.append(
+                {
+                "name":"Supreme Commander",
+                "text":"This model must be selected as your +Warlord+"
+                }
+            )
+            
+        return output
