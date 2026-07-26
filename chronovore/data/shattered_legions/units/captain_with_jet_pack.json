@@ -4,6 +4,7 @@
     "move":12,
     "tough": 4,
     "save": 3,
+    "invuln": 4,
     "hp":5,
     "lead": 6,
     "oc": 1,
