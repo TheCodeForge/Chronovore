@@ -189,7 +189,7 @@ class Unit(Base):
 
         if self.__dict__.get('models_max'):
             max_unit_size = self.models_max
-        elif any([x in self.keywords_all for x in ["Character","Monster","Vehicle","Epic Hero"]]):
+        elif any([x in self.keywords_all for x in ["Character","Monster","Vehicle","Hero"]]):
             max_unit_size= 1
 
         else:
