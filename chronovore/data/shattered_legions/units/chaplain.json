@@ -13,7 +13,7 @@
         "Tactical",
         "Chaplain"
     ],
-    "core_rules": ["Deep Strike", "Leader [Tactical]"],
+    "core_rules": ["Leader [Tactical]"],
     "faction_rules": ["Vow of Eternity"],
     "unit_rules": [{
             "name":"Inspire to Hate",
