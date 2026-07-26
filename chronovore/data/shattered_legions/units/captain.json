@@ -12,7 +12,8 @@
         "Infantry",
         "Character",
         "Grenades",
-        "Captain"
+        "Captain",
+        "Tactical"
     ],
     "core_rules": [
         "Leader [Battleline]"

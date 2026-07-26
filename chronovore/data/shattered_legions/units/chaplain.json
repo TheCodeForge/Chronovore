@@ -10,11 +10,10 @@
     "keywords": [
         "Infantry",
         "Character",
-        "Fly",
-        "Jet Pack",
+        "Tactical",
         "Chaplain"
     ],
-    "core_rules": ["Deep Strike", "Leader [Battleline]"],
+    "core_rules": ["Deep Strike", "Leader [Tactical]"],
     "faction_rules": ["Vow of Eternity"],
     "unit_rules": [{
             "name":"Inspire to Hate",

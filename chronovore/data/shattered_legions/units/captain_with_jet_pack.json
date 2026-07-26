@@ -13,10 +13,12 @@
         "Infantry",
         "Character",
         "Grenades",
-        "Captain"
+        "Captain",
+        "Fly",
+        "Jet Pack"
     ],
     "core_rules": [
-        "Leader [Battleline]"
+        "Leader [Jet Pack]"
     ],
     "faction_rules": ["Vow of Eternity"],
     "unit_rules": [

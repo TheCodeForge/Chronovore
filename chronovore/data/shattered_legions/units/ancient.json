@@ -10,7 +10,8 @@
         "Infantry",
         "Character",
         "Grenades",
-        "Ancient"
+        "Ancient",
+        "Tactical"
     ],
     "core_rules": ["Leader [Tactical]"],
     "faction_rules": ["Vow of Eternity"],
