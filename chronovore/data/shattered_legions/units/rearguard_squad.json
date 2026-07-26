@@ -36,7 +36,7 @@
     "models_max": 10,
     "default_gear":[
         "heavy_slug_pistol",
-        "heavy_slug_rifle"
+        "heavy_slug_rifle",
         "close_combat_weapon"
     ],
     "replacement_gear":{
