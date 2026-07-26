@@ -31,7 +31,6 @@
         }
     ],
     "range_weapons": [
-        "slug_pistol",
         "heavy_slug_pistol",
         "relic_slug_rifle"
     ],
@@ -42,7 +41,7 @@
         "1 Captain"
     ],
     "default_gear":[
-        "slug_pistol",
+        "heavy_slug_pistol",
         "relic_slug_rifle",
         "relic_power_sword"
     ]
