@@ -18,9 +18,9 @@
         }
     ],
     "range_weapons": [
-        "ballisticus_missile_launcher",
+        "dreadnaught_missile_launcher",
         "twin_slugger",
-        "ballisticus_beamcannon"
+        "dreadnaught_beamcannon"
     ],
     "melee_weapons": [
         "armored_feet"
@@ -29,9 +29,9 @@
         "1 Dreadnaught Ballisticus"
     ],
     "default_gear":[
-        "ballisticus_missile_launcher",
+        "dreadnaught_missile_launcher",
         "twin_slugger",
-        "ballisticus_beamcannon",
+        "dreadnaught_beamcannon",
         "armored_feet"
     ]
 }
