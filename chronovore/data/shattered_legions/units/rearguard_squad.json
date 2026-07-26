@@ -26,7 +26,8 @@
     ],
     "melee_weapons": [
         "chainblade",
-        "close_combat_weapon"
+        "close_combat_weapon",
+        "lightning_fist"
     ],
     "composition":[
         "1 Rearguard Sergeant",
