@@ -1,0 +1,40 @@
+{    
+    "name": "Chaplain",
+    "subtitle": "with Jet Pack",
+    "move":12,
+    "tough": 4,
+    "save": 3,
+    "hp":3,
+    "lead": 5,
+    "oc": 1,
+    "invuln": 4,
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Fly",
+        "Jet Pack",
+        "Chaplain"
+    ],
+    "core_rules": ["Deep Strike", "Leader [Jet Pack]"],
+    "faction_rules": ["Vow of Eternity"],
+    "unit_rules": [{
+            "name":"Inspire to Hate",
+            "text":"While leading a unit, melee attacks made by the combined unit have +1 to the Wound roll."
+        }
+    ],
+    "range_weapons": [
+        "slug_pistol"
+    ],
+    "melee_weapons": [
+        "holy_mace"
+    ],
+    "composition":[
+        "1 Chaplain with Jet Pack"
+    ],
+    "models_min": 1,
+    "models_max": 1,
+    "default_gear":[
+        "slug_pistol",
+        "holy_mace"
+    ]
+}
