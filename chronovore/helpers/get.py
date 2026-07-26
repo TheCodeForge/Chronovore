@@ -71,6 +71,9 @@ def get_keyword(keyword):
     elif keyword.startswith("Leader"):
         return "Leader [Keyword]", data["Leader [Keyword]"]
 
+    elif keyword.startswith("Support"):
+        return "Support [Keyword]", data["Support [Keyword]"]
+
     elif re.search(r"D?\d", keyword):
         keyword=re.sub(r"D?\d", "X", keyword)
         return keyword, data[keyword]
