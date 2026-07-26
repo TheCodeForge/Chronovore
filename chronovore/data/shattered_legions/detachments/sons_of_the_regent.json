@@ -1,12 +1,12 @@
 {
-    "name": "Sons of the Shattered King",
+    "name": "Sons of the Regent",
     "color": "0C39E5",
-    "secondary_faction":null,
+    "secondary_faction":"Sons of the Regent",
     "banned_keywords": [],
     "rules": [ 
         {
-            "name": "Wisdom of the Shattered",
-            "lore": "The warriors of the Shattered Legions strive to emulate their King in all they do. Inspired by recorded accounts of His deeds in battle, they employ ever-shifting tactics to respond to threats and eliminate their enemies. Few can match their flexibility and adaptability in warfare.",
+            "name": "Wisdom of the Regent",
+            "lore": "The warriors of the Shattered Legions strive to emulate their King in all they do. None accomplish this better than the Primal Regent they are modeled after. Inspired by recorded accounts of His deeds in battle, they employ ever-shifting tactics to respond to threats and eliminate their enemies. Few can match their flexibility and adaptability in warfare.",
             "text": "At the start of each Battle Round, select one of the three Tactics below. It is active for your whole army until the end of the Battle Round.",
             "options": [
                 {
