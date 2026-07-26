@@ -16,7 +16,7 @@
         "Tactical"
     ],
     "core_rules": [
-        "Leader [Battleline]"
+        "Leader [Tactical]"
     ],
     "faction_rules": ["Vow of Eternity"],
     "unit_rules": [

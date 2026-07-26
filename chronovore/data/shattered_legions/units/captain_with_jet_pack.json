@@ -17,9 +17,7 @@
         "Fly",
         "Jet Pack"
     ],
-    "core_rules": [
-        "Leader [Jet Pack]"
-    ],
+    "core_rules": ["Deep Strike", "Leader [Jet Pack]"],
     "faction_rules": ["Vow of Eternity"],
     "unit_rules": [
         {
