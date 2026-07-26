@@ -229,6 +229,11 @@ class Unit(Base):
 
     @property
     @cache.memoize()
+    def psychic_weapons(self):
+        return sorted([self.faction.weapon(x) for x in self.__dict__.get("psychic_weapons", [] )], key=lambda x: x.name)
+
+    @property
+    @cache.memoize()
     def ranged_weapons(self):
         return sorted([self.faction.weapon(x) for x in self.__dict__.get("range_weapons", [] )], key=lambda x: x.name)
 
