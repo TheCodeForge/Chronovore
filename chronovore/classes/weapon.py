@@ -47,9 +47,9 @@ class Weapon(Base):
         else:
             skl = self.skl
 
-        rng = self.__dict__.get('rng',12)
+        rng = self.__dict__.get('rng',7) #7 is average effective range of melee weapons due to charge
 
-        weapon_pts = (atk * (7-skl) * sigmoid(self.str) * math.sqrt(self.ap+1) * dmg * math.sqrt(rng/12))
+        weapon_pts = (atk * (7-skl) * sigmoid(self.str) * math.sqrt(self.ap+1) * dmg * math.sqrt(rng))
 
         for kwd in self.keywords:
             if kwd.startswith("Anti-"):
