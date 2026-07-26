@@ -1,0 +1,42 @@
+{    
+    "name": "Vanguard Squad",
+    "subtitle": "with Jet Packs",
+    "move":12,
+    "tough": 4,
+    "save": 3,
+    "hp":3,
+    "lead": 6,
+    "oc": 2,
+    "invuln": 4,
+    "keywords": [
+        "Infantry",
+        "Grenades",
+        "Fly",
+        "Jet Pack"
+    ],
+    "core_rules": ["Deep Strike"],
+    "faction_rules": ["Vow of Eternity"],
+    "unit_rules": [{
+            "name":"Vanguard Assault",
+            "text":"Whenever this unit makes a Charge move, until the end of the Battle Round, this unit's melee weapons have +Lethal Hits+."
+        }
+    ],
+    "range_weapons": [
+        "slug_pistol",
+        "flamethrower_pistol",
+        "plasma_pistol"
+    ],
+    "melee_weapons": [
+        "power_sword"
+    ],
+    "composition":[
+        "1 Vanguard Sergeant",
+        "4-9 Vanguard Warriors"
+    ],
+    "models_min": 5,
+    "models_max": 10,
+    "default_gear":[
+        "slug_pistol",
+        "power_sword"
+    ]
+}
