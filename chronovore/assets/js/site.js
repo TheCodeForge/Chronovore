@@ -256,7 +256,9 @@ $('#rows_show_button').click(function(){
 //Initialize popovers
 $(document).ready(
   function() {
-    $('[data-bs-toggle="popover"]').popover()
+    $('[data-bs-toggle="popover"]').popover({
+      container: 'body'
+    })
   }
 )
 
