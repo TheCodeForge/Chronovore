@@ -6,7 +6,7 @@
     "rules": [ 
         {
             "name": "Wisdom of the Regent",
-            "lore": "The warriors of the Shattered Legions strive to emulate their King in all they do. None accomplish this better than the Primal Regent they are modeled after. Inspired by recorded accounts of His deeds in battle, they employ ever-shifting tactics to respond to threats and eliminate their enemies. Few can match their flexibility and adaptability in warfare.",
+            "lore": "The sons of the Regent strive to emulate their King in all they do. None accomplish this better than the Primal Regent they are modeled after. Inspired by recorded accounts of His deeds in battle, they employ ever-shifting tactics to respond to threats and eliminate their enemies. Few can match their flexibility and adaptability in warfare.",
             "text": "At the start of each Battle Round, select one of the three Tactics below. It is active for your whole army until the end of the Battle Round.",
             "options": [
                 {
@@ -49,7 +49,7 @@
     ],
     "upgrades":[
         {
-            "name":"Scion of the Shattered",
+            "name":"Scion of the Regent",
             "cost":10,
             "text":"At the start of the battle, gain 1 CP."
         },
@@ -59,7 +59,7 @@
             "text":"Your +Warlord+ gains !Feel No Pain 6+!. If it already had !Feel No Pain 6+!, it gains !Feel No Pain 5+! instead."
         },
         {
-            "name":"Fervent Crusaders",
+            "name":"Records of Glory",
             "cost":40,
             "text":"At the start of the battle, select a \"Wisdom of the Shattered\" Tactic. It is active for your +Warlord+ (and their attached unit, if any) for the entire battle."
         }
