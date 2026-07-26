@@ -32,8 +32,8 @@
         "1 Sniper Sergeant",
         "2 Snipers"
     ],
-    "models_min": 5,
-    "models_max": 10,
+    "models_min": 3,
+    "models_max": 3,
     "default_gear":[
         "slug_pistol",
         "slug_sniper_rifle",
