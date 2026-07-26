@@ -36,7 +36,7 @@
     "models_max": 10,
     "default_gear":[
         "slug_pistol",
-        "slug_sniper_rifle"
+        "slug_sniper_rifle",
         "close_combat_weapon"
     ],
     "replacement_gear": {
