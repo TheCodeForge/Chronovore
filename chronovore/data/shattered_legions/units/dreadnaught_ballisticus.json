@@ -1,0 +1,37 @@
+{    
+    "name": "Dreadnaught Ballisticus",
+    "move":8,
+    "tough": 10,
+    "save": 2,
+    "hp":12,
+    "lead": 6,
+    "oc": 4,
+    "base":90,
+    "keywords": [
+        "Vehicle"
+    ],
+    "core_rules": ["Deadly Demise D3"],
+    "faction_rules": ["Vow of Eternity"],
+    "unit_rules": [{
+            "name":"Ballisticus Strike",
+            "text":"This model may re-roll the Hit roll against targets above half strength"
+        }
+    ],
+    "range_weapons": [
+        "ballisticus_missile_launcher",
+        "twin_slugger",
+        "ballisticus_beamcannon"
+    ],
+    "melee_weapons": [
+        "armored_feet"
+    ],
+    "composition":[
+        "1 Dreadnaught Ballisticus"
+    ],
+    "default_gear":[
+        "ballisticus_missile_launcher",
+        "twin_slugger",
+        "ballisticus_beamcannon"
+        "armored_feet"
+    ]
+}
