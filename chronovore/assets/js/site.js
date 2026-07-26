@@ -260,7 +260,8 @@ $(document).ready(
       container: 'body',
       html: true,
       placement: 'bottom',
-      trigger: 'hover'
+      trigger: 'hover',
+      fallbackPlacements: []
     })
   }
 )
