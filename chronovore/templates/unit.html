@@ -180,7 +180,7 @@
   <td class="text-center align-middle text-nowrap">{{ (weapon.psk|str)+'+' if weapon.skl else '-'  }}</td>
   <td class="text-center align-middle">{{ (weapon.atk|str) }}</td>
   <td class="text-center align-middle">{{ weapon.str }}</td>
-  <td class="text-center align-middle">{{ '-'+(weapon.ap|str) if profile.ap else '0' }}</td>
+  <td class="text-center align-middle">{{ '-'+(weapon.ap|str) if weapon.ap else '0' }}</td>
   <td class="text-center align-middle text-nowrap">{{ weapon.dmg }}</td>
 </tr>
 {% endif %}
