@@ -157,7 +157,7 @@
   </td>
   <td class="align-middle">{{ weapon.name }} - {{ profile.name }}{% if profile.keywords %}<br><span class="keyword-group">[{{ ", ".join(profile.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
   <td class="text-center align-middle">{% if profile.rng %}{{ profile.rng }}"{% endif %}</td>
-  <td class="text-center align-middle text-nowrap">{{ (profile.psk|str)+'+' if profile.skl else '-'  }}</td>
+  <td class="text-center align-middle text-nowrap">{{ (profile.psk|str)+'+' if profile.psk else '-'  }}</td>
   <td class="text-center align-middle">{{ profile.atk }}</td>
   <td class="text-center align-middle">{{ profile.str }}</td>
   <td class="text-center align-middle">{{ '-'+(profile.ap|str) if profile.ap else '0' }}</td>
@@ -177,7 +177,7 @@
   </td>
   <td class="align-middle">{{ weapon.name }}{% if weapon.keywords %}<br><span class="keyword-group">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
   <td class="text-center align-middle">{% if weapon.rng %}{{ weapon.rng }}"{% endif %}</td>
-  <td class="text-center align-middle text-nowrap">{{ (weapon.psk|str)+'+' if weapon.skl else '-'  }}</td>
+  <td class="text-center align-middle text-nowrap">{{ (weapon.psk|str)+'+' if weapon.psk else '-'  }}</td>
   <td class="text-center align-middle">{{ weapon.atk }}</td>
   <td class="text-center align-middle">{{ weapon.str }}</td>
   <td class="text-center align-middle">{{ '-'+(weapon.ap|str) if weapon.ap else '0' }}</td>
