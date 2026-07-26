@@ -197,7 +197,7 @@ class Unit(Base):
 
         if "Battleline" in self.keywords_all:
             return max_unit_size * 6
-        elif "Epic Hero" in self.keywords_all:
+        elif "Hero" in self.keywords_all:
             return max_unit_size
 
         else:
