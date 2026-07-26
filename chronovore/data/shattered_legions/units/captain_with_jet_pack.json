@@ -1,6 +1,7 @@
 {    
     "name": "Captain",
-    "move":6,
+    "subtitle": "with Jet Pack",
+    "move":12,
     "tough": 4,
     "save": 3,
     "hp":5,
