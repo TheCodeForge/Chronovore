@@ -21,7 +21,6 @@ class Unit(Base):
     def ppm(self):
         return self.ppm_computed()
 
-    @cache.memoize
     @lazy
     def ppm_computed(self):
 
