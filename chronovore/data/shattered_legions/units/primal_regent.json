@@ -1,0 +1,47 @@
+{    
+    "name": "The Primal Regent",
+    "move":8,
+    "tough": 9,
+    "save": 2,
+    "hp":14,
+    "lead": 5,
+    "oc": 4,
+    "invuln": 4,
+    "base":60,
+    "keywords": [
+        "Monster",
+        "Character",
+        "Hero",
+        "Supreme Commander",
+        "Primal"
+    ],
+    "secondary_faction":"The Regent",
+    "core_rules": [],
+    "faction_rules": ["Vow of Eternity"],
+    "unit_rules": [
+        {
+            "name":"Author of the Shattered Scriptures",
+            "text":"At the start of the Battle Round, do one of the following:\n* Add 1 to the OC of friendly units within 6\"\n* Target an enemy unit within 24\" with the \"Second Vow\" stretegem for 0CP.\n* Target a friendly unit within 12\" with a Strategem for 0 CP\n"
+        },
+        {
+            "name":"Bodyguards of the Regent",
+            "text":"While within 3\" of a friendly +Shattered Legions Infantry+ unit, this model has +Lone Operative+."
+        }
+    ],
+    "range_weapons": [
+        "hand_of_authority_ranged"
+    ],
+    "melee_weapons": [
+        "primal_sword",
+        "hand_of_authority_melee"
+    ],
+    "composition":[
+        "1 Primal Regent"
+    ],
+    "models_min":1,
+    "models_max":1,
+    "default_gear":[
+        "hand_of_dominion_ranged",
+        "primal_sword"
+    ]
+}
