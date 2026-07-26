@@ -40,7 +40,7 @@ class Weapon(Base):
         else:  
             dmg = self.dmg
 
-        if "psk" in self.___dict__:
+        if "psk" in self.__dict__:
 
             rng = self.__dict__.get('rng')
 
