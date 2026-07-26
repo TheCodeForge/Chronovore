@@ -20,7 +20,7 @@
     "faction_rules": ["Vow of Eternity"],
     "unit_rules": [
         {
-            "name":"Author of the Shattered Scriptures",
+            "name":"The Regent",
             "text":"At the start of the Battle Round, do one of the following:\n* Add 1 to the OC of friendly units within 6\"\n* Target an enemy unit within 24\" with the \"Second Vow\" stretegem for 0CP.\n* Target a friendly unit within 12\" with a Strategem for 0 CP\n"
         },
         {
