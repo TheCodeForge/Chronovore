@@ -146,7 +146,7 @@ class Unit(Base):
                 strategic *= 1.1
             
         # print(f"Strategic: {strategic}")
-        ppm = int((defensive * offensive * strategic)**(1/3) * 0.35)
+        ppm = int((defensive * offensive * strategic)**(1/3) * 0.55)
         # print(ppm)
 
         return ppm
