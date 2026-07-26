@@ -215,6 +215,25 @@
 
     <div class="row g-0 overflow-auto">
       <table class="table w-100 table-faction">
+        {% if u.psyker %}
+        <thead>
+          <tr>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap mx-3" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Weapon Count"><i class="fas fa-fw fa-hashtag"></i></span></th>
+            <th scope="col"><i class="fas fa-fw fa-crosshairs"></i> Psychic Attacks</th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Range"><i class="fas fa-fw fa-ruler"></i></span></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Attacks"><i class="fas fa-fw fa-hat-wizard"></i></span></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Ranged Skill"><i class="fas fa-fw fa-swords"></i></span></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Strength"><i class="fas fa-fw fa-hand-fist"></i></span></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Armor Break"><i class="fas fa-fw fa-shield-minus"></i></span></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Damage"><i class="fas fa-fw fa-droplet"></i></span></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for weapon in u.ranged_weapons %}
+          {{ weapon_line(weapon) }}
+          {% endfor %}
+        </tbody>
+        {% endif %}
         {% if u.ranged_weapons %}
         <thead>
           <tr>
