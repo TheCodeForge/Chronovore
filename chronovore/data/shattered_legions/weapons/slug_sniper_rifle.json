@@ -1,0 +1,13 @@
+{
+    "name": "Slug Sniper Rifle",
+    "keywords":[
+        "Heavy",
+        "Precision"
+    ],
+    "rng":36,
+    "atk":1,
+    "skl":3,
+    "str":5,
+    "ap": 2,
+    "dmg":2
+}

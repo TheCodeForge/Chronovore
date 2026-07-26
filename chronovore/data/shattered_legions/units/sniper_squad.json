@@ -1,0 +1,45 @@
+{    
+    "name": "Sniper Squad",
+    "base": 40,
+    "move":6,
+    "tough": 4,
+    "save": 3,
+    "hp":2,
+    "lead": 6,
+    "oc": 1,
+    "keywords": [
+        "Infantry",
+        "Grenades",
+        "Light"
+    ],
+    "core_rules": ["Infiltrators", "Stealth"],
+    "faction_rules": ["Vow of Eternity"],
+    "unit_rules": [
+        {
+            "name":"Marked Target",
+            "text":"Whenever this unit Remains Stationary, until the end of the Battle Round, ranged weapons equipped by this unit have +[Devastating Wounds]+."
+        }
+    ],
+    "range_weapons": [
+        "slug_pistol",
+        "slug_sniper_rifle",
+        "slug_carbine"
+    ],
+    "melee_weapons": [
+        "close_combat_weapon"
+    ],
+    "composition":[
+        "1 Sniper Sergeant",
+        "2 Snipers"
+    ],
+    "models_min": 5,
+    "models_max": 10,
+    "default_gear":[
+        "slug_pistol",
+        "slug_sniper_rifle"
+        "close_combat_weapon"
+    ],
+    "replacement_gear": {
+        "Sniper Sergeant's Slug Sniper Rifle": ["slug_carbine"]
+    }
+}
