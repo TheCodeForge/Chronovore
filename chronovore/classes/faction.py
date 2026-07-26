@@ -107,7 +107,7 @@ class Faction(Base):
     def unit_listing(self):
 
         cats = [
-            "Epic Hero",
+            "Hero",
             "Character",
             "Infantry",
             "Mounted",
