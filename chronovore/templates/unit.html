@@ -138,6 +138,54 @@
 {% endif %}
 {% endmacro %}
 
+{% macro psychic_weapon_line(weapon) %}
+{% if weapon.profiles %}
+{% for profile in weapon.profiles %}
+<tr class="weapon-profile{% if loop.index<(weapon.profiles|length) %} border-bottom-0{% endif %}">
+  <td class="text-center align-middle">
+    {% if loop.index0 %}
+    <span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-title="Multiple Profile Weapon" data-bs-content="When attacking, select one of this weapon's profiles to use."><i class="fas fa-fw fa-arrow-turn-down-right"></i></span>
+    {% else %}
+    <form id="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" method="post" action="/weapon_qty" class="no-submit m-0">
+      <input type="hidden" name="csrf_token" value="{{ g.csrf_token }}">
+      <input type="hidden" name="faction" value="{{ u.faction.id }}">
+      <input type="hidden" name="unit_id" value="{{ u.id }}">
+      <input type="hidden" name="weapon_id" value="{{ weapon.id }}">
+      <input id="qty_{{ u.id }}_{{ weapon.id }}" type="number" class="form-control wep-qty mx-auto" min="0" max="{{ u.max_models }}" data-form="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" value="{{ session.get('qty_'+u.faction.id+'_'+u.id+'_'+weapon.id,'') }}" name="qty">
+    </form>
+    {% endif %}
+  </td>
+  <td class="align-middle">{{ weapon.name }} - {{ profile.name }}{% if profile.keywords %}<br><span class="keyword-group">[{{ ", ".join(profile.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
+  <td class="text-center align-middle">{% if profile.rng %}{{ profile.rng }}"{% endif %}</td>
+  <td class="text-center align-middle text-nowrap">{{ (profile.psk|str)+'+' if profile.skl else '-'  }}</td>
+  <td class="text-center align-middle">{{ (profile.atk|str) }}</td>
+  <td class="text-center align-middle">{{ profile.str }}</td>
+  <td class="text-center align-middle">{{ '-'+(profile.ap|str) if profile.ap else '0' }}</td>
+  <td class="text-center align-middle text-nowrap">{{ profile.dmg }}</td>
+</tr>
+{% endfor %}
+{% else %}
+<tr>
+  <td class="text-center align-middle">
+    <form id="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" method="post" action="/weapon_qty" class="no-submit m-0">
+      <input type="hidden" name="csrf_token" value="{{ g.csrf_token }}">
+      <input type="hidden" name="faction" value="{{ u.faction.id }}">
+      <input type="hidden" name="unit_id" value="{{ u.id }}">
+      <input type="hidden" name="weapon_id" value="{{ weapon.id }}">
+      <input id="qty_{{ u.id }}_{{ weapon.id }}" type="number" class="form-control wep-qty mx-auto" min="0" max="{{ u.max_models }}" data-form="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" value="{{ session.get('qty_'+u.faction.id+'_'+u.id+'_'+weapon.id,'') }}" name="qty">
+    </form>
+  </td>
+  <td class="align-middle">{{ weapon.name }}{% if weapon.keywords %}<br><span class="keyword-group">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
+  <td class="text-center align-middle">{% if profile.rng %}{{ profile.rng }}"{% endif %}</td>
+  <td class="text-center align-middle text-nowrap">{{ (profile.psk|str)+'+' if profile.skl else '-'  }}</td>
+  <td class="text-center align-middle">{{ (profile.atk|str) }}</td>
+  <td class="text-center align-middle">{{ profile.str }}</td>
+  <td class="text-center align-middle">{{ '-'+(profile.ap|str) if profile.ap else '0' }}</td>
+  <td class="text-center align-middle text-nowrap">{{ profile.dmg }}</td>
+</tr>
+{% endif %}
+{% endmacro %}
+
 {% block pagecontent %}
 
 <div class="row g-0">
@@ -219,7 +267,7 @@
         <thead>
           <tr>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap mx-3" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Weapon Count"><i class="fas fa-fw fa-hashtag"></i></span></th>
-            <th scope="col"><i class="fas fa-fw fa-crosshairs"></i> Psychic Weapons</th>
+            <th scope="col"><i class="fas fa-fw fa-staff"></i> Psychic Weapons</th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Range"><i class="fas fa-fw fa-ruler"></i></span></th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Attacks"><i class="fas fa-fw fa-hat-wizard"></i></span></th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Ranged Skill"><i class="fas fa-fw fa-swords"></i></span></th>
@@ -230,7 +278,7 @@
         </thead>
         <tbody>
           {% for weapon in u.psychic_weapons %}
-          {{ weapon_line(weapon) }}
+          {{ psychic_weapon_line(weapon) }}
           {% endfor %}
         </tbody>
         {% endif %}
