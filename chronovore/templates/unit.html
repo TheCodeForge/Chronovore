@@ -90,7 +90,53 @@
 
 {% endmacro %}
 
-{% macro weapon_line(weapon) %}
+{% macro melee_weapon_line(weapon) %}
+{% if weapon.profiles %}
+{% for profile in weapon.profiles %}
+<tr class="weapon-profile{% if loop.index<(weapon.profiles|length) %} border-bottom-0{% endif %}">
+  <td class="text-center align-middle">
+    {% if loop.index0 %}
+    <span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-title="Multiple Profile Weapon" data-bs-content="When attacking, select one of this weapon's profiles to use."><i class="fas fa-fw fa-arrow-turn-down-right"></i></span>
+    {% else %}
+    <form id="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" method="post" action="/weapon_qty" class="no-submit m-0">
+      <input type="hidden" name="csrf_token" value="{{ g.csrf_token }}">
+      <input type="hidden" name="faction" value="{{ u.faction.id }}">
+      <input type="hidden" name="unit_id" value="{{ u.id }}">
+      <input type="hidden" name="weapon_id" value="{{ weapon.id }}">
+      <input id="qty_{{ u.id }}_{{ weapon.id }}" type="number" class="form-control wep-qty mx-auto" min="0" max="{{ u.max_models }}" data-form="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" value="{{ session.get('qty_'+u.faction.id+'_'+u.id+'_'+weapon.id,'') }}" name="qty">
+    </form>
+    {% endif %}
+  </td>
+  <td class="align-middle" colspan="2">{{ weapon.name }} - {{ profile.name }}{% if profile.keywords %}<br><span class="keyword-group">[{{ ", ".join(profile.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
+  <td class="text-center align-middle text-nowrap">{{ profile.atk }}</td>
+  <td class="text-center align-middle">{{ (profile.skl|str)+'+' if profile.skl else '-' }}</td>
+  <td class="text-center align-middle">{{ profile.str }}</td>
+  <td class="text-center align-middle">{{ '-'+(profile.ap|str) if profile.ap else '0' }}</td>
+  <td class="text-center align-middle text-nowrap">{{ profile.dmg }}</td>
+</tr>
+{% endfor %}
+{% else %}
+<tr>
+  <td class="text-center align-middle">
+    <form id="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" method="post" action="/weapon_qty" class="no-submit m-0">
+      <input type="hidden" name="csrf_token" value="{{ g.csrf_token }}">
+      <input type="hidden" name="faction" value="{{ u.faction.id }}">
+      <input type="hidden" name="unit_id" value="{{ u.id }}">
+      <input type="hidden" name="weapon_id" value="{{ weapon.id }}">
+      <input id="qty_{{ u.id }}_{{ weapon.id }}" type="number" class="form-control wep-qty mx-auto" min="0" max="{{ u.max_models }}" data-form="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" value="{{ session.get('qty_'+u.faction.id+'_'+u.id+'_'+weapon.id,'') }}" name="qty">
+    </form>
+  </td>
+  <td class="align-middle" colspan="2">{{ weapon.name }}{% if weapon.keywords %}<br><span class="keyword-group">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
+  <td class="text-center align-middle text-nowrap">{{ weapon.atk }}</td>
+  <td class="text-center align-middle">{{ (weapon.skl|str)+'+' if weapon.skl else '-' }}</td>
+  <td class="text-center align-middle">{{ weapon.str }}</td>
+  <td class="text-center align-middle">{{ '-'+(weapon.ap|str) if weapon.ap else '0' }}</td>
+  <td class="text-center align-middle text-nowrap">{{ weapon.dmg }}</td>
+</tr>
+{% endif %}
+{% endmacro %}
+
+{% macro ranged_weapon_line(weapon) %}
 {% if weapon.profiles %}
 {% for profile in weapon.profiles %}
 <tr class="weapon-profile{% if loop.index<(weapon.profiles|length) %} border-bottom-0{% endif %}">
@@ -301,15 +347,14 @@
         </thead>
         <tbody>
           {% for weapon in u.ranged_weapons %}
-          {{ weapon_line(weapon) }}
+          {{ ranged_weapon_line(weapon) }}
           {% endfor %}
         </tbody>
         {% endif %}
         <thead>
           <tr>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap mx-3" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Weapon Count"><i class="fas fa-fw fa-hashtag"></i></span></th>
-            <th scope="col"><i class="fas fa-fw fa-hammer-war"></i> Melee Weapons</th>
-            <th></th>
+            <th scope="col" colspan="2"><i class="fas fa-fw fa-hammer-war"></i> Melee Weapons</th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Attacks"><i class="fas fa-fw fa-swords"></i></span></th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Melee Skill"><i class="fas fa-fw fa-hammer-crash"></i></span></th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Strength"><i class="fas fa-fw fa-hand-fist"></i></span></th>
@@ -319,7 +364,7 @@
         </thead>
         <tbody>
           {% for weapon in u.melee_weapons %}
-          {{ weapon_line(weapon) }}
+          {{ melee_weapon_line(weapon) }}
           {% endfor %}
         </tbody>
       </table>
