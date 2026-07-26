@@ -259,7 +259,8 @@ $(document).ready(
     $('[data-bs-toggle="popover"]').popover({
       container: 'body',
       html: true,
-      placement: 'bottom'
+      placement: 'bottom',
+      trigger: 'hover'
     })
   }
 )
