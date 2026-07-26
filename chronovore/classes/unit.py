@@ -75,8 +75,11 @@ class Unit(Base):
         
         # print(f"Defensive: {defensive}")
 
+        psychic_offensive = 0
         ranged_offensive = 0
         melee_offensive = 0
+
+        psychic_offensive = sum([x.weapon_points_raw for x in self.psychic_weapons if x.id in self.default_gear] or [0])
 
         #monsters and vehicles can fire all guns; infantry cannot
 
@@ -94,7 +97,7 @@ class Unit(Base):
 
         # print(f"Melee offense: {melee_offensive}")
 
-        offensive = melee_offensive + ranged_offensive
+        offensive = melee_offensive + ranged_offensive + psychic_offensive
 
         if isinstance(move, str):
             move=int(move.rstrip('+'))
