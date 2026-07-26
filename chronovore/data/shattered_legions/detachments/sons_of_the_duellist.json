@@ -1,0 +1,53 @@
+{
+    "name": "Sons of the Duellist",
+    "color": "00401f",
+    "secondary_faction":"The Duellist",
+    "banned_keywords": [],
+    "rules": [ 
+        {
+            "name": "Resilience of the Duellist",
+            "lore": "The Primal Duellist and his sons are known for their unshakable resolve, maintaining the strictest of discipline in battle even while enduring the harshest of conditions and the unrelenting assaults of the enemy. Indeed, enemy attacks seem only to strengthen them.",
+            "text": "While a +Shattered Legions+ unit in your army is battleshocked, its Objective Control is 1, instead of 0."
+        }
+    ],
+    "strategems": [
+        {
+            "name": "Returning Fury",
+            "cost": 1,
+            "when": "Your unit's Activation",
+            "target": "Your +Shattered Legions+ +Infantry+ unit being Activated",
+            "effect": "Until the end of the Battle Round, weapons equipped by the target unit have +[Lethal Hits]+. Additionally, until the end of the Battle Round, while any other +Shattered Legions+ units in your army are Battle-Shocked, unmodified Hit rolls of 5+ made by the target unit score a Critical Hit."
+        },
+        {
+            "name": "Inhuman Rage",
+            "cost": 1,
+            "when": "Your unit's Activation",
+            "target": "Your +Shattered Legions+ +Infantry+ unit being Activated",
+            "effect": "Until the end of the Battle Round, ranged weapons equipped by models in the unit have +[Assault]+, +[Heavy]+, and +[Ignores Cover]+."
+        },
+        {
+            "name": "Silent Retribution",
+            "cost": 1,
+            "when": "After an Activated enemy unit has completed its Shoot attacks.",
+            "target": "A +Shattered Legions+ unit that just had one or more of its models destroyed as a result of that attacks",
+            "effect": "The selected unit can shoot as if it was Activated, but it must target the enemy unit that is currently Activated, and it may only do so if that enemy unit is an eligible target."
+        }
+    ],
+    "upgrades":[
+        {
+            "name":"Scion of the Duellist",
+            "cost":10,
+            "text":"At the start of the battle, gain 1 CP."
+        },
+        {
+            "name":"Silent Command",
+            "cost":20,
+            "text":"Your +Warlord+ has !Feel No Pain 5+! while it is Battle-Shocked."
+        },
+        {
+            "name":"Grim Execution",
+            "cost":40,
+            "text":"Your +Shattered Legions+ +Infantry+ units have +1\" to their Movement traits while they are Battle-Shocked."
+        }
+    ]
+}

@@ -26,6 +26,10 @@
         {
             "name":"Bodyguards of the Regent",
             "text":"While within 3\" of a friendly +Shattered Legions+ +Infantry+ unit, this model has +Lone Operative+."
+        },
+        {
+            "name":"Primal",
+            "text":"This unit must be selected as your +Warlord+."
         }
     ],
     "range_weapons": [
