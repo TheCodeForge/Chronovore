@@ -70,7 +70,7 @@
 
         "Secure Objectives": "Objective markers controlled by this unit remain under your control, even if you have no models within range of it, unless and until your opponent controls it at any scoring phase.",
 
-        "Stealth": "All ranged attacks made against the unit have -1 to hit.</p><p><sup>All models in a unit must have this rule in order to use it.</sup>"
+        "Stealth": "All ranged attacks made against the unit have -1 to hit.</p><p class=\"text-small\">All models in a unit must have this rule in order to use it."
 
     }
 }
