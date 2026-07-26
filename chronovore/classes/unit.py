@@ -279,9 +279,8 @@ class Unit(Base):
         return self.__dict__.get('is_profile', False)
 
     @property
-    @cache.memoize
     def unit_rules(self):
-        output = self.__dict__.get('unit_rules', [])
+        output = [x for x in self.__dict__.get('unit_rules', [])]
 
         if "Supreme Commander" in self.keywords_all:
             output.append(
