@@ -3,7 +3,7 @@
     "keywords":[
         "Psychic"
     ],
-    "rng":12,
+    "rng":6,
     "psk":5,
     "atk":4,
     "target":"aoe",
