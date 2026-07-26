@@ -6,7 +6,7 @@
     "rng":12,
     "psk":5,
     "atk":4,
-    "str":6,
+    "target":"aoe",
     "ap": 1,
     "dmg":"d3"
 }
