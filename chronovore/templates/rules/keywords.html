@@ -14,7 +14,7 @@
 
 ## <span class="keyword">{{ entry }}</span>
 
-{{ data['unit_keywords'][entry] }}
+{{ data['unit_keywords'][entry] | safe }}
 
 {% endfor %}
 
@@ -24,7 +24,7 @@
 
 ## <span class="keyword">{{ entry }}</span>
 
-{{ data['weapon_keywords'][entry] }}
+{{ data['weapon_keywords'][entry] | safe}}
 
 {% endfor %}
 
