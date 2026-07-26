@@ -215,11 +215,11 @@
 
     <div class="row g-0 overflow-auto">
       <table class="table w-100 table-faction">
-        {% if u.psyker %}
+        {% if u.psyker and u.psychic_weapons%}
         <thead>
           <tr>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap mx-3" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Weapon Count"><i class="fas fa-fw fa-hashtag"></i></span></th>
-            <th scope="col"><i class="fas fa-fw fa-crosshairs"></i> Psychic Attacks</th>
+            <th scope="col"><i class="fas fa-fw fa-crosshairs"></i> Psychic Weapons</th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Range"><i class="fas fa-fw fa-ruler"></i></span></th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Attacks"><i class="fas fa-fw fa-hat-wizard"></i></span></th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Ranged Skill"><i class="fas fa-fw fa-swords"></i></span></th>
@@ -229,7 +229,7 @@
           </tr>
         </thead>
         <tbody>
-          {% for weapon in u.ranged_weapons %}
+          {% for weapon in u.psychic_weapons %}
           {{ weapon_line(weapon) }}
           {% endfor %}
         </tbody>

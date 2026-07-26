@@ -29,14 +29,14 @@
     "range_weapons": [
         "slug_pistol"
     ],
-    "melee_weapons": [
-        "force_weapon"
+    "psychic_weapons": [
+        "arcane_battlestaff"
     ],
     "composition":[
         "1 Librarian"
     ],
     "default_gear":[
         "slug_pistol",
-        "force_weapon"
+        "arcane_battlestaff"
     ]
 }
