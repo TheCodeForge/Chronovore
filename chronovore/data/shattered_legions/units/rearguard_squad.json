@@ -1,0 +1,50 @@
+{    
+    "name": "Rearguard Squad",
+    "move":6,
+    "tough": 4,
+    "save": 3,
+    "hp":3,
+    "lead": 6,
+    "oc": 2,
+    "keywords": [
+        "Infantry",
+        "Grenades",
+        "Fly",
+        "Jet Pack"
+    ],
+    "core_rules": ["Deep Strike"],
+    "faction_rules": ["Vow of Eternity"],
+    "unit_rules": [{
+            "name":"Vanguard Assault",
+            "text":"Whenever this unit makes a Charge move, until the end of the Battle Round, this unit's melee weapons have +Lethal Hits+."
+        }
+    ],
+    "range_weapons": [
+        "heavy_slug_pistol",
+        "heavy_slug_rifle",
+        "relic_slug_rifle"
+    ],
+    "melee_weapons": [
+        "chainblade",
+        "close_combat_weapon"
+    ],
+    "composition":[
+        "1 Rearguard Sergeant",
+        "4-9 Rearguard Warriors"
+    ],
+    "models_min": 5,
+    "models_max": 10,
+    "default_gear":[
+        "heavy_slug_pistol",
+        "heavy_slug_rifle"
+        "close_combat_weapon"
+    ],
+    "replacement_gear":{
+        "Rearguard Sergeant's Close Combat Knives":[
+            "chainblade",
+            "power_sword",
+            "lightning_fist"
+        ],
+        "Every 5th model's Heavy Slug Rifle":["relic_slug_rifle"]
+    }
+}
