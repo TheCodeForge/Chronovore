@@ -139,6 +139,9 @@
 {% endmacro %}
 
 {% macro psychic_weapon_line(weapon) %}
+
+{% set target_icons={"self":"arrows-to-dot", "aoe": "arrows-maximize", "single": "square-1"} %}
+
 {% if weapon.profiles %}
 {% for profile in weapon.profiles %}
 <tr class="weapon-profile{% if loop.index<(weapon.profiles|length) %} border-bottom-0{% endif %}">
@@ -159,7 +162,7 @@
   <td class="text-center align-middle">{% if profile.rng %}{{ profile.rng }}"{% endif %}</td>
   <td class="text-center align-middle text-nowrap">{{ (profile.psk|str)+'+' if profile.psk else '-'  }}</td>
   <td class="text-center align-middle">{{ profile.atk }}</td>
-  <td class="text-center align-middle">{{ profile.str }}</td>
+  <td class="text-center align-middle"><i class="fas fa-{{ target_icons.get(weapon.target) or 'question' }}"></i></td>
   <td class="text-center align-middle">{{ '-'+(profile.ap|str) if profile.ap else '0' }}</td>
   <td class="text-center align-middle text-nowrap">{{ profile.dmg }}</td>
 </tr>
@@ -179,7 +182,7 @@
   <td class="text-center align-middle">{% if weapon.rng %}{{ weapon.rng }}"{% endif %}</td>
   <td class="text-center align-middle text-nowrap">{{ (weapon.psk|str)+'+' if weapon.psk else '-'  }}</td>
   <td class="text-center align-middle">{{ weapon.atk }}</td>
-  <td class="text-center align-middle">{{ weapon.str }}</td>
+  <td class="text-center align-middle"><i class="fas fa-{{ target_icons.get(weapon.target) or 'question' }}"></i></td>
   <td class="text-center align-middle">{{ '-'+(weapon.ap|str) if weapon.ap else '0' }}</td>
   <td class="text-center align-middle text-nowrap">{{ weapon.dmg }}</td>
 </tr>
@@ -271,7 +274,7 @@
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Range"><i class="fas fa-fw fa-ruler"></i></span></th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Psychic Test"><i class="fas fa-fw fa-hat-wizard"></i></span></th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Attacks"><i class="fas fa-fw fa-swords"></i></span></th>
-            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Strength"><i class="fas fa-fw fa-hand-fist"></i></span></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Target"><i class="fas fa-fw fa-bullseye"></i></span></th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Armor Break"><i class="fas fa-fw fa-shield-minus"></i></span></th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Damage"><i class="fas fa-fw fa-droplet"></i></span></th>
           </tr>
