@@ -41,7 +41,7 @@
     "models_min":1,
     "models_max":1,
     "default_gear":[
-        "hand_of_dominion_ranged",
+        "hand_of_authority_ranged",
         "primal_sword"
     ]
 }
