@@ -1,0 +1,39 @@
+{    
+    "name": "Ancient Veteran",
+    "move":6,
+    "tough": 4,
+    "save": 3,
+    "hp":3,
+    "lead": 6,
+    "oc": 1,
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Grenades",
+        "Ancient"
+    ],
+    "core_rules": ["Leader [Tactical]"],
+    "faction_rules": ["Vow of Eternity"],
+    "unit_rules": [{
+            "name":"Inspire to Hate",
+            "text":"While leading a unit, all models in the unit have +1 to their Objective Control."
+        }
+    ],
+    "range_weapons": [
+        "slug_pistol",
+        "slug_rifle"
+    ],
+    "melee_weapons": [
+        "power_sword"
+    ],
+    "composition":[
+        "1 Anicent"
+    ],
+    "models_min": 1,
+    "models_max": 1,
+    "default_gear":[
+        "slug_pistol",
+        "slug_rifle",
+        "power_sword"
+    ]
+}
