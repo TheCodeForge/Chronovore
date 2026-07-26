@@ -140,7 +140,8 @@
 
 {% macro psychic_weapon_line(weapon) %}
 
-{% set target_icons={"self":"arrows-to-dot", "aoe": "arrows-maximize", "single": "square-1"} %}
+{% set target_icons={"melee":"arrows-to-dot", "aoe": "arrows-maximize", "single": "square-1"} %}
+{% set target_descriptions={"melee":"Hits all enemy units within Melee Distance", "aoe": "Hits all enemy units within range", "single": "Hits one selected enemy unit within range"} %}
 
 {% if weapon.profiles %}
 {% for profile in weapon.profiles %}
@@ -182,7 +183,7 @@
   <td class="text-center align-middle">{% if weapon.rng %}{{ weapon.rng }}"{% endif %}</td>
   <td class="text-center align-middle text-nowrap">{{ (weapon.psk|str)+'+' if weapon.psk else '-'  }}</td>
   <td class="text-center align-middle">{{ weapon.atk }}</td>
-  <td class="text-center align-middle"><i class="fas fa-{{ target_icons.get(weapon.target) or 'question' }}"></i></td>
+  <td class="text-center align-middle"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="{{ target_descriptions.get(weapon.target) or 'unknown' }}"><i class="fas fa-{{ target_icons.get(weapon.target) or 'question' }}"></i></span></td>
   <td class="text-center align-middle">{{ '-'+(weapon.ap|str) if weapon.ap else '0' }}</td>
   <td class="text-center align-middle text-nowrap">{{ weapon.dmg }}</td>
 </tr>
