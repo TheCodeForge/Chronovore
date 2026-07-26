@@ -1,5 +1,6 @@
 {    
     "name": "Warriors",
+    "base": 32,
     "move":6,
     "tough": 4,
     "save": 3,

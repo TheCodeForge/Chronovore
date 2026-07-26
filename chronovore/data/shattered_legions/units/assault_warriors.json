@@ -1,5 +1,6 @@
 {    
     "name": "Assault Warriors",
+    "base": 32,
     "ppm":15,
     "move":6,
     "tough": 4,

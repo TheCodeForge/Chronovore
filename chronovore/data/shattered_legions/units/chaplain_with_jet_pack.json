@@ -1,6 +1,7 @@
 {    
     "name": "Chaplain",
     "subtitle": "with Jet Pack",
+    "base": 40,
     "move":12,
     "tough": 4,
     "save": 3,

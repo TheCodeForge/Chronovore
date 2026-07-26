@@ -1,5 +1,6 @@
 {    
     "name": "Captain",
+    "base": 40,
     "move":6,
     "tough": 4,
     "save": 3,

@@ -1,6 +1,7 @@
 {    
     "name": "Vanguard Squad",
     "subtitle": "with Jet Packs",
+    "base": 32,
     "move":12,
     "tough": 4,
     "save": 3,

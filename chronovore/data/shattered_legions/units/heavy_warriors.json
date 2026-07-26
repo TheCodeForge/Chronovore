@@ -1,5 +1,6 @@
 {    
     "name": "Heavy Warriors",
+    "base": 40,
     "move":5,
     "tough": 6,
     "save": 3,
