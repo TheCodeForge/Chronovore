@@ -1,0 +1,5 @@
+{
+    "name":"Teleport Beacon",
+    "base":25,
+    "text":"At the start of the game, place the Teleport Beacon token anywhere on the Battlefield. Whenever this unit is either Activated or selected to deploy from Reserves, it may instead be placed within 3\" of the Teleport Beacon token, and the Teleport Beacon token is removed from the Battlefield."
+}
