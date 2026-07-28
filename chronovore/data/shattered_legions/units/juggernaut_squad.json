@@ -15,11 +15,7 @@
     ],
     "core_rules": ["Deep Strike"],
     "faction_rules": ["Vow of Eternity"],
-    "unit_rules": [{
-            "name":"Vanguard Assault",
-            "text":"Whenever this unit makes a Charge move, until the end of the Battle Round, this unit's melee weapons have +Lethal Hits+."
-        }
-    ],
+    "unit_rules": [],
     "range_weapons": [
         "heavy_slug_pistol"
     ],
@@ -27,6 +23,9 @@
         "power_sword",
         "lightning_fist"
     ],
+    "wargear":[
+        "teleport_beacon"
+    ]
     "composition":[
         "1 Juggernaut Sergeant",
         "4-9 Juggernauts"
