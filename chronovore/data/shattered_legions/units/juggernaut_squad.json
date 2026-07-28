@@ -17,7 +17,7 @@
     "faction_rules": ["Vow of Eternity"],
     "unit_rules": [],
     "range_weapons": [
-        "heavy_slug_pistol"
+        "dual_heavy_slug_pistol"
     ],
     "melee_weapons": [
         "power_sword",
@@ -33,13 +33,13 @@
     "models_min": 5,
     "models_max": 10,
     "default_gear":[
-        "heavy_slug_pistol",
+        "dual_heavy_slug_pistol",
         "lightning_fist"
     ],
     "replacement_gear":{
         "Juggernaut Sergeant's Lightning Fist":[
             "power_sword"
         ],
-        "Every 5th model's Heavy Slug Rifle":["relic_slug_rifle"]
+        "Every 5th model's Dual Heavy Slug Pistol":["heavy_slug_rifle"]
     }
 }
