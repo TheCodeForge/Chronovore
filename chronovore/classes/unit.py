@@ -62,6 +62,20 @@ class Unit(Base):
             break
         else:
             fnp=7
+
+        dice_map={
+            2:36,
+            3:35,
+            4:33,
+            5:30,
+            6:26,
+            7:21,
+            8:15,
+            9:10,
+            10:6,
+            11:3,
+            12:1,
+        }
     
 
         if isinstance(move, str):
@@ -79,7 +93,12 @@ class Unit(Base):
         ranged_offensive = 0
         melee_offensive = 0
 
-        psychic_offensive = sum([x.weapon_points_raw for x in self.psychic_weapons if x.id in self.default_gear] or [0])
+        psychic_offensive = max([x.weapon_points_raw for x in self.psychic_weapons if x.id in self.default_gear] or [0])
+
+        if self.psk and psychic_offensive:
+            psychic_difficulty = max([x.psk for x in self.psychic_weapons if x.id in self.default_gear])
+            true_difficulty = max(psychic_difficulty-self.psk, 2)
+            psychic_offensive *= dice_map[true_difficulty]/dice_map[psychic_difficulty] 
 
         #monsters and vehicles can fire all guns; infantry cannot
 
@@ -104,21 +123,7 @@ class Unit(Base):
 
         #leadership, based on passing 2d6 roll
 
-        lead_map={
-            2:36,
-            3:35,
-            4:33,
-            5:30,
-            6:26,
-            7:21,
-            8:15,
-            9:10,
-            10:6,
-            11:3,
-            12:1,
-        }
-            
-        strategic = lead_map[lead] + oc + move
+        strategic = dice_map[lead] + oc + move
 
         for kwd in self.core_rules:
             if kwd.startswith("Deadly Demise"):

@@ -44,7 +44,7 @@ class Weapon(Base):
 
             rng = self.__dict__.get('rng')
 
-            psk_map={
+            dice_map={
                 2:36,
                 3:35,
                 4:33,
@@ -58,7 +58,7 @@ class Weapon(Base):
                 12:1,
             }
 
-            weapon_pts = psk_map[self.psk] * self.atk * math.sqrt(self.ap+1) * dmg * math.sqrt(rng)
+            weapon_pts = dice_map[self.psk] * self.atk * math.sqrt(self.ap+1) * dmg * math.sqrt(rng)
 
 
 
