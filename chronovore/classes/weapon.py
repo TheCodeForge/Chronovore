@@ -58,7 +58,7 @@ class Weapon(Base):
                 12:1,
             }
 
-            weapon_pts = psk_map[self.psk] * self.atk * math.sqrt(self.ap+1) + dmg * math.sqrt(rng)
+            weapon_pts = psk_map[self.psk] * self.atk * math.sqrt(self.ap+1) * dmg * math.sqrt(rng)
 
 
 
