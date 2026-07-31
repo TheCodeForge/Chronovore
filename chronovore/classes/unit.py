@@ -95,9 +95,9 @@ class Unit(Base):
 
         psychic_offensive = max([x.weapon_points_raw for x in self.psychic_weapons if x.id in self.default_gear] or [0])
 
-        if self.psk and psychic_offensive:
+        if self.psker and psychic_offensive:
             psychic_difficulty = min([x.psk for x in self.psychic_weapons if x.id in self.default_gear] or [0])
-            true_difficulty = max(psychic_difficulty-self.psk, 2)
+            true_difficulty = max(psychic_difficulty-self.psker, 2)
             psychic_offensive *= dice_map[true_difficulty]/dice_map[psychic_difficulty] 
 
         #monsters and vehicles can fire all guns; infantry cannot
