@@ -208,7 +208,7 @@
   <td class="align-middle">{{ weapon.name }} - {{ profile.name }}{% if profile.keywords %}<br><span class="keyword-group">[{{ ", ".join(profile.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
   <td class="text-center align-middle">{% if profile.rng %}{{ profile.rng }}"{% endif %}</td>
   <td class="text-center align-middle">{{ profile.atk }}</td>
-  <td class="text-center align-middle"><i class="fas fa-{{ target_icons.get(weapon.target) or 'question' }}"></i></td>
+  <td class="text-center align-middle"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="{{ target_descriptions.get(profile.target) or 'unknown' }}"><i class="fas fa-{{ target_icons.get(profile.target) or 'question' }}"></i></span></td>
   <td class="text-center align-middle text-nowrap">{{ (profile.psk|str)+'+' if profile.psk else '-'  }}</td>
   <td class="text-center align-middle">{{ '-'+(profile.ap|str) if profile.ap else '0' }}</td>
   <td class="text-center align-middle text-nowrap">{{ profile.dmg }}</td>
