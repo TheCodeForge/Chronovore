@@ -58,7 +58,14 @@ class Weapon(Base):
                 12:1,
             }
 
+
+
             weapon_pts = dice_map[self.psk] * self.atk * math.sqrt(self.ap+1) * dmg * math.sqrt(rng)
+
+            if self.target=="multi":
+                weapon_pts*=1.1
+            elif self.target=="aoe":
+                weapon_pts*=math.sqrt(rng)
 
 
 
