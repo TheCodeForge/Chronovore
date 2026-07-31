@@ -31,7 +31,7 @@
         }
     ],
     "range_weapons": [
-        "storm_bolter"
+        "dual_heavy_slug_pistol"
     ],
     "melee_weapons": [],
     "psychic_weapons":[
@@ -41,7 +41,7 @@
         "1 Juggernaut Librarian"
     ],
     "default_gear":[
-        "storm_bolter",
+        "dual_heavy_slug_pistol",
         "arcane_battlestaff"
     ]
 }
