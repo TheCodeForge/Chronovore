@@ -1,7 +1,8 @@
 {
     "name":"Arcane Gravstaff",
     "keywords":[
-        "Psychic"
+        "Psychic",
+        "Demoralizing"
     ],
     "rng":6,
     "psk":5,
