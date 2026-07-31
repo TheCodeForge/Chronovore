@@ -1,0 +1,51 @@
+{    
+    "name": "Juggernaut Captain",
+    "move":5,
+    "tough": 5,
+    "save": 2,
+    "hp":6,
+    "lead": 6,
+    "oc": 1,
+    "invuln": 4,
+    "base":50,
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Juggernaut",
+        "Captain"
+    ],
+    "core_rules": [
+        "Deep Strike",
+        "Leader [Juggernaut]"
+    ],
+    "faction_rules": ["Vow of Eternity"],
+    "unit_rules": [{
+            "name":"Rites of Battle",
+            "text":"Once per Battle Round, you may target a friendly +Captain+ model (and its attached unit) with a Strategem, even if that Strategem has already been used that Battle Round. The Strategem costs 1 CP less."
+        },
+        {
+            "name":"Sword of Hatred",
+            "text":"You may re-roll Charge rolls made for this model's unit."
+        }
+    ],
+    "range_weapons": [
+        "combi_weapon",
+        "dual_heavy_slug_pistol"
+    ],
+    "melee_weapons": [
+        "lightning_fist",
+        "relic_power_sword"
+    ],
+    "composition":[
+        "1 Juggernaut Captain"
+    ],
+    "default_gear":[
+        "dual_heavy_slug_pistol",
+        "lightning_fist"
+    ],
+    "replacement_gear":{
+        "Lightning Fist":[
+            "relic_power_sword"
+        ]
+    }
+}

@@ -4,9 +4,10 @@
     "move":5,
     "tough": 6,
     "save": 3,
-    "hp":4,
+    "hp":3,
     "lead": 6,
     "oc": 2,
+    "base": 40,
     "keywords": [
         "Infantry",
         "Grenades",
