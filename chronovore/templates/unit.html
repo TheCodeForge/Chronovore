@@ -187,7 +187,7 @@
 {% macro psychic_weapon_line(weapon) %}
 
 {% set target_icons={"melee":"arrows-to-dot", "aoe": "arrows-maximize", "single": "arrow-up-to-line"} %}
-{% set target_descriptions={"melee":"Hits all enemy units within Melee Distance", "aoe": "Hits all enemy units within range", "single": "Hits one selected enemy unit within range"} %}
+{% set target_descriptions={"melee":"Hits all enemy units within Melee Distance", "aoe": "Attacks may be divided between multiple enemies within range.", "single": "Hits one selected enemy unit within range"} %}
 
 {% if weapon.profiles %}
 {% for profile in weapon.profiles %}
@@ -207,9 +207,9 @@
   </td>
   <td class="align-middle">{{ weapon.name }} - {{ profile.name }}{% if profile.keywords %}<br><span class="keyword-group">[{{ ", ".join(profile.keywords | sort | keyword) | safe }}]</span>{% endif %}</td>
   <td class="text-center align-middle">{% if profile.rng %}{{ profile.rng }}"{% endif %}</td>
-  <td class="text-center align-middle text-nowrap">{{ (profile.psk|str)+'+' if profile.psk else '-'  }}</td>
   <td class="text-center align-middle">{{ profile.atk }}</td>
   <td class="text-center align-middle"><i class="fas fa-{{ target_icons.get(weapon.target) or 'question' }}"></i></td>
+  <td class="text-center align-middle text-nowrap">{{ (profile.psk|str)+'+' if profile.psk else '-'  }}</td>
   <td class="text-center align-middle">{{ '-'+(profile.ap|str) if profile.ap else '0' }}</td>
   <td class="text-center align-middle text-nowrap">{{ profile.dmg }}</td>
 </tr>
