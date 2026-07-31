@@ -186,8 +186,8 @@
 
 {% macro psychic_weapon_line(weapon) %}
 
-{% set target_icons={"melee":"arrows-to-dot", "aoe": "arrows-maximize", "single": "arrow-up-to-line"} %}
-{% set target_descriptions={"melee":"Hits all enemy units within Melee Distance", "aoe": "Attacks may be divided between multiple enemies within range.", "single": "Hits one selected enemy unit within range"} %}
+{% set target_icons={"aoe":"burst", "multi": "arrows-maximize", "single": "circle-dot"} %}
+{% set target_descriptions={"aoe":"Hits all enemy units within range", "multi": "Attacks may be divided between multiple enemies within range.", "single": "Hits one selected enemy unit within range"} %}
 
 {% if weapon.profiles %}
 {% for profile in weapon.profiles %}
@@ -320,7 +320,7 @@
             <th scope="col"><i class="fas fa-fw fa-staff"></i> Psychic Weapons</th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Range"><i class="fas fa-fw fa-ruler"></i></span></th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Attacks"><i class="fas fa-fw fa-swords"></i></span></th>
-            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Target"><i class="fas fa-fw fa-bullseye"></i></span></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Target Type"><i class="fas fa-fw fa-explosion"></i></span></th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Psychic Difficulty"><i class="fas fa-fw fa-wand-sparkles"></i></span></th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Armor Break"><i class="fas fa-fw fa-shield-minus"></i></span></th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Damage"><i class="fas fa-fw fa-droplet"></i></span></th>
