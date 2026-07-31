@@ -30,13 +30,13 @@
         "slug_pistol"
     ],
     "psychic_weapons": [
-        "arcane_battlestaff"
+        "arcane_gravstaff"
     ],
     "composition":[
         "1 Librarian"
     ],
     "default_gear":[
         "slug_pistol",
-        "arcane_battlestaff"
+        "arcane_gravstaff"
     ]
 }

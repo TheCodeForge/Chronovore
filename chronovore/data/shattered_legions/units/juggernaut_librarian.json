@@ -35,13 +35,13 @@
     ],
     "melee_weapons": [],
     "psychic_weapons":[
-        "arcane_battlestaff"
+        "arcane_gravstaff"
     ],
     "composition":[
         "1 Juggernaut Librarian"
     ],
     "default_gear":[
         "dual_heavy_slug_pistol",
-        "arcane_battlestaff"
+        "arcane_gravstaff"
     ]
 }
