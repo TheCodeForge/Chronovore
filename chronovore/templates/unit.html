@@ -186,7 +186,7 @@
 
 {% macro psychic_weapon_line(weapon) %}
 
-{% set target_icons={"melee":"arrows-to-dot", "aoe": "arrows-maximize", "single": "square-1"} %}
+{% set target_icons={"melee":"arrows-to-dot", "aoe": "arrows-maximize", "single": "arrow-up-to-line"} %}
 {% set target_descriptions={"melee":"Hits all enemy units within Melee Distance", "aoe": "Hits all enemy units within range", "single": "Hits one selected enemy unit within range"} %}
 
 {% if weapon.profiles %}
@@ -274,7 +274,7 @@
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Leadership"><i class="fas fa-fw fa-flag"></i> {{ u.profiles[0].lead }}+</span></th>
             <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Objective Control"><i class="fas fa-fw fa-bullseye"></i> {{ u.profiles[0].oc }}</span></th>
             {% if 'psyker' in u.profiles[0].__dict__.keys() %}
-            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Psyker Power"><i class="fas fa-fw fa-hat-wizard"></i> {{ '+' if u.profiles[0].psyker >= 0 else '-' }}{{ u.profiles[0].psyker }}</span></th>
+            <th scope="col" class="text-center align-top"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Psychic Power"><i class="fas fa-fw fa-hat-wizard"></i> {{ '+' if u.profiles[0].psyker >= 0 else '-' }}{{ u.profiles[0].psyker }}</span></th>
             {% endif %}
           </tr>
         </thead>
@@ -319,7 +319,7 @@
             <th scope="col" class="text-center"><span type="button" class="text-nowrap mx-3" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Weapon Count"><i class="fas fa-fw fa-hashtag"></i></span></th>
             <th scope="col"><i class="fas fa-fw fa-staff"></i> Psychic Weapons</th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Range"><i class="fas fa-fw fa-ruler"></i></span></th>
-            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Psychic Test"><i class="fas fa-fw fa-hat-wizard"></i></span></th>
+            <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Psychic Difficulty"><i class="fas fa-fw fa-wand-sparkles"></i></span></th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Attacks"><i class="fas fa-fw fa-swords"></i></span></th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Target"><i class="fas fa-fw fa-bullseye"></i></span></th>
             <th scope="col" class="text-center"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="Armor Break"><i class="fas fa-fw fa-shield-minus"></i></span></th>

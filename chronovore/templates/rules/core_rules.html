@@ -343,27 +343,45 @@ At any point in the game (except during a Unit's movement), if a Unit is found t
 
 Only +Psyker+ Models may perform this action.
 
-Select a spell from your Detachment rules.
+Select a spell from your Detachment rules, OR select a Psychic Weapon from the unit's data card.
 
-For each +Psyker+ model in the unit, make a Psychic Test.
+### Spells
+
+For each attacking +Psyker+ model, make a (Psychic Test)[#psychic_test]. Modify the result by the model's <i class="fas fa-fw fa-hat-wizard"></i> Psychic Power trait.
 
 If the result of the Psychic Test is greater than or equal to the spell's Difficulty (shown in brackets next to the spell name), then the spell is successful. Resolve the effects of the spell. Any damage caused by the spell to any other unit is considered +[Psychic]+.
 
+### Psychic Weapons
+
+Select Psychic weapon profile.
+
+For <i class="fas fa-fw fa-arrow-up-to-line"></i> single-target weapons, select one enemy unit within the weapon's <i class="fas fa-fw fa-ruler"></i> range shown in the selected weapon profile. For <i class="fas fa-arrows-maximize"></i> area-of-effect attacks, select up to the number of targets indicated by the weapon's <i class="fas fa-swords"></i> Attacks trait, and declare how many attacks are directed at each target.
+
+For each attacking +Psyker+ model, make a (Psychic Test)[#psychic_test]. The opposing player may attempt to [Deny the Psychic](#deny_the_psychic).
+
+If the result of the Psychic test is greater than or equal to the weapon's <i class="fas fa-fw fa-wand-sparkles"></i> Psychic Difficulty, then all attacks made by that model are successful.
+
+Enemy targets recieve the designated number of attacks, and may defend with [Saving rolls](#saving_roll), modified by the attack's <i class="fas fa-fw fa-shield-minus"></i> Armor Break trait. Attacks that are not saved inflict damage equal to the attack's <i class="fas fa-fw fa-droplet"></i> Damage trait.
+
 ### Psychic Test
 
-Roll 2d6. Modify the result by the model's <i class="fas fa-fw fa-hat-wizard"></i> Psychic Power trait. If the modified result is equal to or greater than the relevant difficulty value, then the test is passed.
+Roll 2d6. If the result (after any modifications) is equal to or greater than the relevant difficulty value, then the test is passed.
 
 All Psychic Tests are subject to Perils of Power.
 
-### Perils of Power
+### Hazards of the Void
 
 If the result of a Psychic Test was an unmodified 2 or unmodified 12, then the Model suffers Perils of Power: The model suffers d3 Mortal Damage.
 
-If the Psychic Test was passed, resolve the spell's effects first before applying damage from Perils of Power.
+If the Psychic Test was passed, resolve the spell's effects or weapon's attacks first before applying damage from Hazards of the Void.
 
 ### Deny the Psychic
 
-If the Psychic Test is passed, the opposing player may attempt to Deny the Psychic before the spell effects are resolved. The opposing player selects one +Psyker+ Model within 18" of the Activated +Psyker+ Model, and makes a Psychic Test. If the result of the opposing Psychic Test is greater than the Activated model's Psychic Test, then the spell is blocked and does not take effect.
+If the Psychic Test is passed, the opposing player may attempt to Deny the Psychic before the spell effects or weapon attacks are resolved. The opposing player selects one +Psyker+ Model within 18" of the Activated +Psyker+ Model, which has not already attempted to Deny the Psychic this Battle Round, and makes a Psychic Test, modifying the result by the model's <i class="fas fa-fw fa-hat-wizard"></i> Psychic Power trait.
+
+If the result of this opposing Psychic Test is greater than the Activated model's Psychic Test, then the spell or attack is denied and does not take effect.
+
+Deny the Psychic rolls are not subject to Hazards of the Void.
 
 ### Smite
 
@@ -374,7 +392,7 @@ All +Psyker+ Models know the spell Smite:
 
 ## Shoot
 
-Select a target enemy unit and a Ranged weapon profile to attack it with.
+Select a target enemy unit and a Ranged weapon profile to attack it with. The enemy unit must be within the weopon's <i class="fas fa-fw fa-ruler"></i> range.
 
 If the Activated unit is within Melee Distance of an enemy, it cannot Shoot, unless all of the following are true:
 
