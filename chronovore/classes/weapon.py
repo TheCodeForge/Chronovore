@@ -82,9 +82,9 @@ class Weapon(Base):
                 elif kwd=="Assault":
                     weapon_pts *= 1.1
                 elif kwd=="Blast":
-                    weapon_pts*=1.1
+                    weapon_pts *= 1.1
                 elif kwd=="Demoralizing":
-                    weapon_pts*=1.1
+                    weapon_pts *= 1.1
                 elif kwd=="Devastating Wounds":
                     weapon_pts *= 1.2
                 elif kwd=="Hazardous":
