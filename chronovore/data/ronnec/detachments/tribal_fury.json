@@ -2,7 +2,7 @@
     "name": "Tribal Fury",
     "rules": [ 
         {
-            "name": "Command Protocols",
+            "name": "Leadership Discipline",
             "lore": "The tribal lords of the Ronnec make war in a cold and calculated fashion. Their commonds crackle out across the battlefield, compelling their warriors into battle, one step at a time.",
             "text": "While leading a unit, your +Ronnec+ +Leader+ models and their attached +Bodyguard+ and +Support+ models have +1 to Hit rolls."
         }
