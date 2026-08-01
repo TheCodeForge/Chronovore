@@ -1,6 +1,6 @@
 {    
-    "name": "Saengswi, Deity of Light",
-    "move":14,
+    "name": "Kwamtae, God of Death",
+    "move":12,
     "tough": 11,
     "save": 4,
     "hp":24,
@@ -35,7 +35,7 @@
         "canoptek_tail_blades"
     ],
     "composition":[
-        "1 C'tan Shard of the Void Dragon"
+        "1 Saengswi, Deity of Light"
     ],
     "default_gear":[
         "spear_of_the_void_dragon_range",

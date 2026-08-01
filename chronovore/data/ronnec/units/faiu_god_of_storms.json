@@ -1,0 +1,45 @@
+{    
+    "name": "Faiu, God of Storms",
+    "move":12,
+    "tough": 11,
+    "save": 4,
+    "hp":24,
+    "lead": 6,
+    "oc": 4,
+    "invuln": 4,
+    "keywords": [
+        "Monster",
+        "Character",
+        "Fly",
+        "Hero",
+        "Pagan Deity"
+    ],
+    "core_rules": ["Deadly Demise D6", "Feel No Pain 5+"],
+    "faction_rules": ["Arcane Biotek"],
+    "unit_rules": [
+        {
+            "name": "Matter Absorption",
+            "text": "Before this model Shoots, select one enemy +Vehicle+ unit within 12\". Roll d6. On a 2+, that enemy unit suffers d3 mortal damage, and this model regains the same amount of lost Health."
+        },
+        {
+            "name": "Void Entity",
+            "text": "This model cannot be your +Warlord+."
+        }        
+    ],
+    "range_weapons": [
+        "spear_of_the_void_dragon_range",
+        "voltaic_storm"
+    ],
+    "melee_weapons": [
+        "spear_of_the_void_dragon_melee",
+        "canoptek_tail_blades"
+    ],
+    "composition":[
+        "1 Faiu, God of Storms"
+    ],
+    "default_gear":[
+        "spear_of_the_void_dragon_range",
+        "voltaic_storm",
+        "canoptek_tail_blades"
+    ]
+}
