@@ -30,9 +30,17 @@ app.config['SESSION_COOKIE_SECURE']         = True
 app.config['COLOR_PRIMARY']                 = environ.get("COLOR_PRIMARY", "0d6efd").lstrip().rstrip()
 app.config['COLOR_SECONDARY']               = environ.get("COLOR_SECONDARY", "6c757d").lstrip().rstrip()
 
+#===BANNED BOTS===
+app.config['BANNED_UAS']=[
+    "anthropic"
+]
+
 
 @app.before_request
 def before_request():
+
+    if any([x in request.headers["User-Agent"] for x in app.config["BANNED_UAS"]]):
+        abort(418)
 
     g.time=int(time.time())
 
