@@ -3,7 +3,7 @@
     "move":12,
     "tough": 11,
     "save": 4,
-    "hp":24,
+    "hp":8,
     "lead": 6,
     "oc": 4,
     "invuln": 4,
@@ -14,12 +14,12 @@
         "Character",
         "Pagan Deity"
     ],
-    "core_rules": ["Deadly Demise D6", "Feel No Pain 5+", "Entourage"],
+    "core_rules": ["Deadly Demise D6", "Feel No Pain 5+"],
     "faction_rules": ["Arcane Biotek"],
     "unit_rules": [
         {
             "name": "Void Illusions",
-            "text": "During unit deployment, this unit does not need to be placed within Unit Coherency. At the start of the battle, each model in this Unit becomes its own unit."
+            "text": "During deployment, this unit does not need to be placed within Unit Coherency. At the start of the battle, each model becomes its own unit."
         },
         {
             "name": "Illusory Teleport",
@@ -39,7 +39,7 @@
         "thundrous_tail_whip"
     ],
     "composition":[
-        "3 Paphlon, God of Illusion"
+        "1-3 Paphlon, God of Illusion"
     ],
     "default_gear":[
         "charged_storm"
