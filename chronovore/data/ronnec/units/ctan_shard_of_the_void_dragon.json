@@ -1,10 +1,9 @@
 {    
-    "name": "C'tan Shard of the Void Dragon",
-    "ppm": 290,
-    "move":6,
+    "name": "Saengswi, Deity of Light",
+    "move":14,
     "tough": 11,
     "save": 4,
-    "hp":12,
+    "hp":24,
     "lead": 6,
     "oc": 4,
     "invuln": 4,
@@ -12,22 +11,18 @@
         "Monster",
         "Character",
         "Fly",
-        "Epic Hero",
-        "C'tan Shard"
+        "Hero",
+        "Pagan Deity"
     ],
     "core_rules": ["Deadly Demise D6", "Feel No Pain 5+"],
-    "faction_rules": ["Reanimation Protocols"],
+    "faction_rules": ["Arcane Biotek"],
     "unit_rules": [
         {
             "name": "Matter Absorption",
             "text": "Before this model Shoots, select one enemy +Vehicle+ unit within 12\". Roll d6. On a 2+, that enemy unit suffers d3 mortal damage, and this model regains the same amount of lost Health."
         },
         {
-            "name": "Necrodermis",
-            "text": "Attacks made against this model have their Damage trait halved (rounding up)."
-        },
-        {
-            "name": "Enslaved Star God",
+            "name": "Void Entity",
             "text": "This model cannot be your +Warlord+."
         }        
     ],
