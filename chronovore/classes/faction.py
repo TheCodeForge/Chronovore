@@ -130,6 +130,7 @@ class Faction(Base):
                 try:
                     u=Unit(json.load(unitfile))
                     u.faction=self
+                    u.__dict__['faction_rules'] = self.__dict__['faction_rules']
                     # u.id=filename.split('.')[0]
                 except json.decoder.JSONDecodeError as e:
                     raise ValueError(f"Unable to read unit {self.id}/{filename}: {e}")
