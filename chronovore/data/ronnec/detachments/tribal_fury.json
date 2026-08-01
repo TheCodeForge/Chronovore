@@ -50,7 +50,7 @@
                 "cost": 1,
                 "when": "After the Activated enemy unit passes a Psychic Test for a Spell or Psychic Weapon",
                 "target": "Any +Ronnec+ +Character+ model within 18\" of the Activated enemy unit.",
-                "effect": "The targeted +Ronnec+ +Character+ model may attempt to Deny the Psychic, even though it is not a +Psyker+"
+                "effect": "The targeted +Ronnec+ +Character+ model may attempt a Deny the Psychic roll against the Activated unit, even though it is not a +Psyker+"
             }
         }
     ]
