@@ -31,15 +31,15 @@
         "voltaic_storm"
     ],
     "melee_weapons": [
-        "spear_of_the_void_dragon_melee",
-        "canoptek_tail_blades"
+        "spear_of_ligning_melee",
+        "thundrous_tail_whip"
     ],
     "composition":[
         "1 Faiu, God of Storms"
     ],
     "default_gear":[
-        "spear_of_the_void_dragon_range",
-        "voltaic_storm",
-        "canoptek_tail_blades"
+        "spear_of_ligning_melee",
+        "thundrous_tail_whip"
+        "charged_storm"
     ]
 }
