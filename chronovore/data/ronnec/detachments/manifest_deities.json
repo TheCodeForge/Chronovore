@@ -3,7 +3,7 @@
     "color": "015971",
     "rules": [ 
         {
-            "name": "The pagan gods of the Ronnec",
+            "name": "Void Deities",
             "lore": "The terrifying deities of the Ronnec stride across the battlefield, unencumbered by gravity and unbothered by cannon fire. Where the go, raw destruction follows, and fear is left in their wake.",
             "text": "Attacks made against enemy units which are within 6\" of a friendly +Ronnec+ +Monster+ unit have their Armor Break trait improved by 1."
         }
@@ -29,6 +29,23 @@
             "when": "At the start of the battle round",
             "target": "An enemy unit within 6\" of a friendly +Ronnec+ +Monster+ unit",
             "effect": "Until the end of the Battle Round, attacks made against the target unit can re-roll Hit and Wound rolls of 1."
+        }
+    ],
+    "upgrades":[
+        {
+            "name":"Vengeance of the Void",
+            "cost":10,
+            "text":"At the start of the battle, select a friendly +Ronnec+ +Monster+ unit. When it dies, deal d3 Mortal Damage to the unit that killed it."
+        },
+        {
+            "name":"Blessings of the Shattered King",
+            "cost":20,
+            "text":"At the start of the battle, select a friendly +Ronnec+ +Monster+ unit. Whenever its Arcane Biotek activates, it restores an additional 1 Health"
+        },
+        {
+            "name":"Void Infusion",
+            "cost":40,
+            "text":"The range for \"Void Deities\" rule and the three detachment Strategems is increased from 6\" to 7\"."
         }
     ]
 }

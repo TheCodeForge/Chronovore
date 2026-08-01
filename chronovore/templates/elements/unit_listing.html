@@ -68,7 +68,13 @@
     <tr id="unit_row_{{ upgrade.name | snake }}" class="unit-row unit_cat_upgrades{% if session.get('hide_rows') and not session.get('qty_'+upgrade.faction.id+'_'+upgrade.id, 0) %} d-none{% endif %}">
     <td class="align-middle">
       <p class="mb-0"><b>{{ upgrade.name }}</b></p>
-      {{ upgrade.text | markdown | safe }}
+      {% if upgrade.text %}{{ upgrade.text | markdown | safe }}{% endif %}
+      {% if upgrade.strategem  %}
+      Your army gains access to the following strategem:
+      {% with strat=upgrade.strategem %}
+      {% include "elements/strategem.html" %}
+      {% endwith %}
+      {% endif %}
     </td>
     <td class="text-center align-middle">{{ upgrade.cost }}</td>
     <td class="text-center align-middle">
