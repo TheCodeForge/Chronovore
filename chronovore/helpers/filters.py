@@ -141,12 +141,12 @@ def core_strategems(x):
     return data["data"]
 
 @app.template_filter("hide_cat")
-def hide_cat(unit_listing, faction, role):
+def hide_cat(unit_listing, faction, role, detachment=None):
 
     if not session.get('hide_rows'):
         return False
 
     if role=="Upgrades":
-        return not any([session.get(f"qty_{upgrade.faction.id}_{upgrade.id}") for upgrade in faction.upgrades])
+        return not any([session.get(f"qty_{upgrade.faction.id}_{upgrade.id}") for upgrade in d.upgrades])
 
     return not any([session.get(f"qty_{unit.faction.id}_{unit.id}") for unit in unit_listing[role]])
