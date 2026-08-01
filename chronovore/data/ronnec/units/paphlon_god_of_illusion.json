@@ -14,7 +14,7 @@
         "Character",
         "Pagan Deity"
     ],
-    "core_rules": ["Deadly Demise D6", "Feel No Pain 5+"],
+    "core_rules": ["Deadly Demise D6", "Feel No Pain 5+", "Entourage"],
     "faction_rules": ["Arcane Biotek"],
     "unit_rules": [
         {
@@ -39,7 +39,7 @@
         "thundrous_tail_whip"
     ],
     "composition":[
-        "1 Paphlon, God of Illusion"
+        "3 Paphlon, God of Illusion"
     ],
     "default_gear":[
         "charged_storm"
