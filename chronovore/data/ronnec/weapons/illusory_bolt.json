@@ -1,0 +1,11 @@
+{
+    "name": "Illusory Bolt",
+    "keywords": ["Assault", "Sustained Hits 1"],
+    "rng":12,
+    "atk":6,
+    "skl":2,
+    "str":8,
+    "ap": 2,
+    "dmg":2,
+    "ability":"When making attacks with this weapon, its range may be measured from any other friendly Paphlon, God of Illusion model."
+}

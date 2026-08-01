@@ -1,0 +1,9 @@
+{
+    "name": "Crackling Fist",
+    "keywords": ["Incendiary", "Demoralizing", "Sustained Hits 1"],
+    "atk":8,
+    "skl":2,
+    "str":10,
+    "ap": 3,
+    "dmg":"d6"
+}
