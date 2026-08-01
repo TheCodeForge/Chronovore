@@ -21,6 +21,11 @@ class Unit(Base):
     def ppm(self):
         return self.ppm_computed()
 
+    @property
+    def faction_rules(self):
+        return [x['name'] for x in self.faction.rules]
+    
+
     @lazy
     def ppm_computed(self):
 
