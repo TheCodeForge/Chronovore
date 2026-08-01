@@ -14,7 +14,6 @@
         "Juggernaut"
     ],
     "core_rules": ["Deep Strike"],
-    "faction_rules": ["Vow of Eternity"],
     "unit_rules": [],
     "range_weapons": [
         "dual_heavy_slug_pistol"

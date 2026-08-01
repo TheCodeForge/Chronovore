@@ -15,7 +15,6 @@
         "Tactical"
     ],
     "core_rules": ["Leader [Tactical]"],
-    "faction_rules": ["Vow of Eternity"],
     "unit_rules": [{
             "name":"Inspire to Hate",
             "text":"While leading a unit, all models in the unit have +1 to their Objective Control."

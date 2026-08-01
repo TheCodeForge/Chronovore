@@ -20,7 +20,6 @@
         "Deep Strike",
         "Leader [Juggernaut]"
     ],
-    "faction_rules": ["Vow of Eternity"],
     "unit_rules": [{
             "name":"Psychic Hood",
             "text":"While leading a unit, models in the unit have !Feel No Pain 4+! against +Psychic+ damage."

@@ -19,7 +19,6 @@
         "Jet Pack"
     ],
     "core_rules": ["Deep Strike", "Leader [Jet Pack]"],
-    "faction_rules": ["Vow of Eternity"],
     "unit_rules": [
         {
             "name":"Rites of Battle",

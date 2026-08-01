@@ -15,7 +15,6 @@
         "Tactical"
     ],
     "core_rules": ["Secure Objectives"],
-    "faction_rules": ["Vow of Eternity"],
     "unit_rules": [],
     "range_weapons": [
         "slug_pistol",

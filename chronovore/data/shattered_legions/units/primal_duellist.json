@@ -17,7 +17,6 @@
     ],
     "secondary_faction":"The Duellist",
     "core_rules": ["Deep Strike", "Fights First"],
-    "faction_rules": ["Vow of Eternity"],
     "unit_rules": [
         {
             "name":"The Duellist",

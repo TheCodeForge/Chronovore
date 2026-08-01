@@ -13,7 +13,6 @@
         "Light"
     ],
     "core_rules": ["Infiltrators", "Stealth"],
-    "faction_rules": ["Vow of Eternity"],
     "unit_rules": [
         {
             "name":"Marked Target",

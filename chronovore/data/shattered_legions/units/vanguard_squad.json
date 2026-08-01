@@ -16,7 +16,6 @@
         "Jet Pack"
     ],
     "core_rules": ["Deep Strike"],
-    "faction_rules": ["Vow of Eternity"],
     "unit_rules": [{
             "name":"Vanguard Assault",
             "text":"Whenever this unit makes a Charge move, until the end of the Battle Round, this unit's melee weapons have +Lethal Hits+."

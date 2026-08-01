@@ -19,7 +19,6 @@
     "core_rules": [
         "Leader [Tactical]"
     ],
-    "faction_rules": ["Vow of Eternity"],
     "unit_rules": [
         {
             "name":"Rites of Battle",

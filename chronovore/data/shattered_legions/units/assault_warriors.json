@@ -15,7 +15,6 @@
         "Tactical"
     ],
     "core_rules": [],
-    "faction_rules": ["Vow of Eternity"],
     "unit_rules": [{
             "name":"Shock Assault",
             "text":"Reroll melee wound rolls of 1. If the targeted enemy is within range of an objective marker, re-roll all wound rolls instead."

@@ -15,7 +15,6 @@
         "Chaplain"
     ],
     "core_rules": ["Leader [Tactical]"],
-    "faction_rules": ["Vow of Eternity"],
     "unit_rules": [{
             "name":"Inspire to Hate",
             "text":"While leading a unit, melee attacks made by the combined unit have +1 to the Wound roll."

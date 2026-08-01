@@ -17,7 +17,6 @@
     ],
     "secondary_faction":"The Regent",
     "core_rules": [],
-    "faction_rules": ["Vow of Eternity"],
     "unit_rules": [
         {
             "name":"The Regent",

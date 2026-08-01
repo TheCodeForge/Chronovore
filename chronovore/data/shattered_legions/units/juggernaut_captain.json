@@ -18,7 +18,6 @@
         "Deep Strike",
         "Leader [Juggernaut]"
     ],
-    "faction_rules": ["Vow of Eternity"],
     "unit_rules": [{
             "name":"Rites of Battle",
             "text":"Once per Battle Round, you may target a friendly +Captain+ model (and its attached unit) with a Strategem, even if that Strategem has already been used that Battle Round. The Strategem costs 1 CP less."
