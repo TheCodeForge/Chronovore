@@ -147,6 +147,6 @@ def hide_cat(unit_listing, faction, role, detachment=None):
         return False
 
     if role=="Upgrades":
-        return not any([session.get(f"qty_{upgrade.faction.id}_{upgrade.id}") for upgrade in d.upgrades])
+        return not any([session.get(f"qty_{upgrade.faction.id}_{upgrade.id}") for upgrade in detachment.upgrades])
 
     return not any([session.get(f"qty_{unit.faction.id}_{unit.id}") for unit in unit_listing[role]])
