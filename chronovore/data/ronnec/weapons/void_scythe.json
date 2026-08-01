@@ -1,0 +1,23 @@
+{
+    "name":"Void Scythe",
+    "profiles":[
+        {
+            "name": "Strike",
+            "keywords":["Devastating Wounds"],
+            "atk":6,
+            "skl":2,
+            "str":14,
+            "ap": 4,
+            "dmg":"d6 + 2"
+        },
+        {
+            "name": "Sweep",
+            "keywords":[],
+            "atk":14,
+            "skl":2,
+            "str":8,
+            "ap": 2,
+            "dmg":2
+        }
+    ]
+}

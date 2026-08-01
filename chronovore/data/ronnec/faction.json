@@ -16,7 +16,7 @@
             "text":"At the start of the battle, select one +Ronnec+ +Infantry+ unit per 500 points of army limit. Selected units may perform a +Scouts 3\"+ movement."
         },
         {
-            "name":"Defensive Shield Matrix",
+            "name":"Projected Shield Matrix",
             "cost":20,
             "text":"Each Battle Round, the first time a friendly +Ronnec+ unit is attacked with a ranged weapon, the unit being attacked gains a 3+ Invulnerable Save trait against all attacks from that weapon."
         },

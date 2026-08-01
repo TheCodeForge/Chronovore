@@ -18,8 +18,8 @@
     "faction_rules": ["Arcane Biotek"],
     "unit_rules": [
         {
-            "name": "Matter Absorption",
-            "text": "Before this model Shoots, select one enemy +Vehicle+ unit within 12\". Roll d6. On a 2+, that enemy unit suffers d3 mortal damage, and this model regains the same amount of lost Health."
+            "name": "Drain Vitality",
+            "text": "At the end of the Battle Round, roll one d6 for each enemy unit within 6\". On a 4+, that unit suffers d3 Mortal Health. This unit restores 1 Health for each enemy damaged with this ability."
         },
         {
             "name": "Void Entity",
@@ -27,19 +27,16 @@
         }        
     ],
     "range_weapons": [
-        "spear_of_the_void_dragon_range",
-        "voltaic_storm"
+        "malevolent_gaze"
     ],
     "melee_weapons": [
-        "spear_of_the_void_dragon_melee",
-        "canoptek_tail_blades"
+        "void_scythe"
     ],
     "composition":[
-        "1 Saengswi, Deity of Light"
+        "1 Kwamtae, God of Death"
     ],
     "default_gear":[
-        "spear_of_the_void_dragon_range",
-        "voltaic_storm",
-        "canoptek_tail_blades"
+        "malevolent_gaze",
+        "void_scythe"
     ]
 }
