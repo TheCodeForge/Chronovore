@@ -39,7 +39,7 @@ app.config['BANNED_UAS']=[
 @app.before_request
 def before_request():
 
-    if any([x in request.headers["User-Agent"] for x in app.config["BANNED_UAS"]]):
+    if request.path!="/robots.txt" and any([x in request.headers["User-Agent"] for x in app.config["BANNED_UAS"]]):
         abort(418)
 
     g.time=int(time.time())
