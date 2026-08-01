@@ -15,7 +15,6 @@
         "Pagan Deity"
     ],
     "core_rules": ["Deadly Demise D6", "Feel No Pain 5+"],
-    "faction_rules": ["Arcane Biotek"],
     "unit_rules": [
         {
             "name": "Matter Absorption",

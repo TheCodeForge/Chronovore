@@ -13,7 +13,6 @@
         "Character"
     ],
     "core_rules": ["Deep Strike", "Lone Operative"],
-    "faction_rules": ["Arcane Biotek"],
     "unit_rules": [{
             "name":"Inescapable Death",
             "text":"Once per Battle Round, one unit with this ability may use the Overwatch strategem, even if that Strategem has already been used this Battle Round. It costs 1 CP less. Additionally, while using the Overwatch strategem, unmodified Hit rolls of 2+ are successful."
