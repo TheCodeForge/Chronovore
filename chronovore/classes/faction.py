@@ -122,7 +122,9 @@ class Faction(Base):
 
         root, dirs, files = next(os.walk(f"chronovore/data/{self.id}/units"))
         for filename in files:
-            if not filename.startswith('_')
+            if filename.startswith('_'):
+                continue
+                
             with open(f"chronovore/data/{self.id}/units/{filename}", "r+") as unitfile:
                 # print(f"trying {filename}")
                 try:
