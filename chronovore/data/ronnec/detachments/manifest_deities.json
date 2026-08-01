@@ -1,0 +1,33 @@
+{
+    "name": "Manifest Deities",
+    "rules": [ 
+        {
+            "name": "The pagan gods of the Ronnec",
+            "lore": "The terrifying deities of the Ronnec stride across the battlefield, unencumbered by gravity and unbothered by cannon fire. Where the go, raw destruction follows, and fear is left in their wake.",
+            "text": "Attacks made against enemy units which are within 6\" of a friendly +Ronnec+ +Monster+ unit have their Armor Break trait improved by 1."
+        }
+    ],
+    "strategems": [
+        {
+            "name": "Interdimensional Resonance Cascade",
+            "cost": 1,
+            "when": "After a +Ronnec+ +Monster+ unit from your army is destroyed",
+            "target": "The +Necrons+ +Monster+ unit that was just destroyed.",
+            "effect": "Every unit within 6\" of the destroyed unit suffers d6 Mortal Damage"
+        },
+        {
+            "name": "Atomic Erosion",
+            "cost": 1,
+            "when": "At the start of the Battle Round",
+            "target": "An enemy unit within 6\" of a friendly +Ronnec+ +Monster+ unit",
+            "effect": "The target unit must take a Battle-Shock test. Subtract 1 from the result. If the test is failed, the unit suffers D3+1 Mortal Damage."
+        },
+        {
+            "name": "Withering Fire",
+            "cost": 1,
+            "when": "At the start of the battle round",
+            "target": "An enemy unit within 6\" of a friendly +Ronnec+ +Monster+ unit",
+            "effect": "Until the end of the Battle Round, attacks made against the target unit can re-roll Hit and Wound rolls of 1."
+        }
+    ]
+}
