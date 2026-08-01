@@ -1,5 +1,5 @@
 {    
-    "name": "Flayed Ones",
+    "name": "Flaying Ones",
     "ppm": 12,
     "move":5,
     "tough": 4,
@@ -11,16 +11,16 @@
         "Infantry"
     ],
     "core_rules": ["Infiltrators", "Stealth"],
-    "faction_rules": ["Reanimation Protocols"],
+    "faction_rules": ["Arcane Biotek"],
     "unit_rules": [{
-            "name":"Flesh Hunger",
+            "name":"Flesh Fear",
             "text":"When attacking, if the target is below Half-Strength, all successfull Hit rolls are Critical Hits."
         }
     ],
     "range_weapons": [],
     "melee_weapons": ["flayer_claws"],
     "composition":[
-        "5-10 Flayed Ones"
+        "5-10 Flaying Ones"
     ],
     "models_min": 5,
     "models_max": 10,
