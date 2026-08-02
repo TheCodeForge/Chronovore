@@ -1,7 +1,7 @@
 {    
     "name": "Elder",
     "subtitle": "with Subspace Phase Shroud",
-    "ppm": 85,
+    "base": 40,
     "move":5,
     "tough": 5,
     "save": 2,

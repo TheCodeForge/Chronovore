@@ -1,6 +1,6 @@
 {    
     "name": "Immortals",
-    "ppm": 15,
+    "base": 32,
     "move":5,
     "tough": 5,
     "save": 3,
