@@ -1,7 +1,7 @@
 {
     "name": "Crackling Fist",
     "keywords": ["Incendiary"],
-    "atk":8,
+    "atk":4,
     "skl":2,
     "str":10,
     "ap": 3,
