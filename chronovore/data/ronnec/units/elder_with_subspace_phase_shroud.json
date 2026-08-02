@@ -14,7 +14,7 @@
         "Character",
         "Elder"
     ],
-    "core_rules": ["Leader [Battleline]"],
+    "core_rules": ["Leader [Frontline]"],
     "unit_rules":[],
     "range_weapons": ["tachyon_vambrace"],
     "melee_weapons": ["elders_blade"],

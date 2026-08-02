@@ -13,7 +13,7 @@
         "Character",
         "Elder"
     ],
-    "core_rules": ["Leader [Battleline]"],
+    "core_rules": ["Leader [Frontline]"],
     "unit_rules": [
         {
         "name": "Improbable Resilience",
