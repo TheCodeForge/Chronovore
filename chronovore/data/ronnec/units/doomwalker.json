@@ -10,7 +10,8 @@
     "keywords": [
         "Vehicle",
         "Walker",
-        "Towering"
+        "Towering",
+        "Arcane"
     ],
     "core_rules": ["Deadly Demise D3"],
     "unit_rules": [
