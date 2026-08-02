@@ -21,13 +21,13 @@
         }
     ],
     "range_weapons": [],
-    "melee_weapons": ["phased_scythe"],
+    "melee_weapons": ["phase_scythe"],
     "wargear": ["reassembly_orb"],
     "composition":[
         "1 Overlord"
     ],
     "default_gear":[
-        "phased_scythe",
+        "phase_scythe",
         "reassembly_orb"
     ]
 }
