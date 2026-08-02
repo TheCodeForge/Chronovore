@@ -1,5 +1,6 @@
 {    
     "name": "Kwamtae, God of Death",
+    "base": 90,
     "move":12,
     "tough": 11,
     "save": 4,

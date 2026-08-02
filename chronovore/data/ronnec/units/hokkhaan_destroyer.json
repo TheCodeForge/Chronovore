@@ -1,6 +1,6 @@
 {    
     "name": "Hokkhaan Destroyer",
-    "ppm": 70,
+    "base": 50,
     "move":7,
     "tough": 5,
     "save": 3,

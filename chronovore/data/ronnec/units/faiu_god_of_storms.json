@@ -1,5 +1,6 @@
 {    
     "name": "Faiu, God of Storms",
+    "base": 80,
     "move":12,
     "tough": 11,
     "save": 4,

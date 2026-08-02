@@ -1,6 +1,6 @@
 {    
     "name": "Flaying Ones",
-    "ppm": 12,
+    "base": 28,
     "move":5,
     "tough": 4,
     "save": 4,

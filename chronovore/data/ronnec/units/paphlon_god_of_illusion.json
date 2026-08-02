@@ -1,5 +1,6 @@
 {    
     "name": "Paphlon, God of Illusion",
+    "base": 60,
     "move":12,
     "tough": 11,
     "save": 4,
