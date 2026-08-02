@@ -4,7 +4,7 @@
     "move":12,
     "tough": 11,
     "save": 4,
-    "hp":24,
+    "hp":8,
     "lead": 6,
     "oc": 4,
     "invuln": 4,
@@ -15,7 +15,7 @@
         "Character",
         "Pagan Deity"
     ],
-    "core_rules": ["Deadly Demise D6", "Feel No Pain 5+", "Entourage"],
+    "core_rules": ["Deadly Demise D6", "Feel No Pain 5+"],
     "unit_rules": [
         {
             "name": "Void Illusions",
@@ -31,7 +31,7 @@
         }        
     ],
     "models_min": 1,
-    "models_max": 1,
+    "models_max": 3,
     "range_weapons": [
         "illusory_bolt"
     ],
