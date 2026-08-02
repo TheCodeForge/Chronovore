@@ -18,13 +18,13 @@
     "unit_rules":[],
     "range_weapons": ["tachyon_vambrace"],
     "melee_weapons": ["elders_blade"],
-    "wargear": ["translocation_shroud"],
+    "wargear": ["subspace_phase_shroud"],
     "composition":[
         "1 Overlord"
     ],
     "default_gear":[
         "tachyon_vambrace",
         "elders_blade",
-        "translocation_shroud"
+        "subspace_phase_shroud"
     ]
 }
