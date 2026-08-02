@@ -35,7 +35,7 @@
         {
             "name":"Vengeance of the Void",
             "cost":10,
-            "text":"At the start of the battle, select a friendly +Pagan Deity+ unit. When it dies, deal d3 Mortal Damage to the unit that killed it."
+            "text":"At the start of the battle, select a friendly +Pagan Deity+ unit. When it dies, the unit that killed it suffers d3 Mortal Damage."
         },
         {
             "name":"Void Infusion",
