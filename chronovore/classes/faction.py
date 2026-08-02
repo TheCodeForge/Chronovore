@@ -109,6 +109,7 @@ class Faction(Base):
         cats = [
             "Hero",
             "Character",
+            "Battleline"
             "Infantry",
             "Mounted",
             "Vehicle",
