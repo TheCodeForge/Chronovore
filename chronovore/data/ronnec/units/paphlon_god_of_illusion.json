@@ -15,7 +15,7 @@
         "Character",
         "Pagan Deity"
     ],
-    "core_rules": ["Deadly Demise D6", "Deep Strike", "Feel No Pain 5+"],
+    "core_rules": ["Deadly Demise D6", "Feel No Pain 5+"],
     "unit_rules": [
         {
             "name": "Void Illusions",
@@ -30,7 +30,7 @@
             "text": "This unit cannot be your +Warlord+."
         }        
     ],
-    "models_min": 1,
+    "models_min": 3,
     "models_max": 3,
     "range_weapons": [
         "illusory_bolt"
