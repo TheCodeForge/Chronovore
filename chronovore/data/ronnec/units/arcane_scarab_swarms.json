@@ -1,5 +1,5 @@
 {    
-    "name": "Canoptek Scarab Swarms",
+    "name": "Arcane Scarab Swarms",
     "ppm": 13,
     "move":9,
     "tough": 2,
@@ -10,10 +10,9 @@
     "keywords": [
         "Swarm",
         "Fly",
-        "Canoptek"
+        "Arcane"
     ],
     "core_rules": ["Deadly Demise 1"],
-    "faction_rules": ["Reanimation Protocols"],
     "unit_rules": [
         {
             "name":"Self-Destruct",
@@ -23,7 +22,7 @@
     "range_weapons": [],
     "melee_weapons": ["feeder_mandibles"],
     "composition":[
-        "3-6 Canoptek Scarab Swarms"
+        "3-6 Arcane Scarab Swarms"
     ],
     "models_min": 3,
     "models_max": 6,
