@@ -1,6 +1,6 @@
 {    
-    "name": "Overlord",
-    "subtitle": "with Translocation Shroud",
+    "name": "Elder",
+    "subtitle": "with Subspace Phase Shroud",
     "ppm": 85,
     "move":5,
     "tough": 5,
@@ -12,20 +12,19 @@
     "keywords": [
         "Infantry",
         "Character",
-        "Noble"
+        "Elder"
     ],
     "core_rules": ["Leader [Battleline]"],
-    "faction_rules": ["Reanimation Protocols"],
     "unit_rules":[],
-    "range_weapons": ["tachyon_arrow"],
-    "melee_weapons": ["overlords_blade"],
+    "range_weapons": ["tachyon_vambrace"],
+    "melee_weapons": ["elders_blade"],
     "wargear": ["translocation_shroud"],
     "composition":[
         "1 Overlord"
     ],
     "default_gear":[
-        "tachyon_arrow",
-        "overlords_blade",
+        "tachyon_vambrace",
+        "elders_blade",
         "translocation_shroud"
     ]
 }
