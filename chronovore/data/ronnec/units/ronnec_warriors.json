@@ -1,0 +1,38 @@
+{    
+    "name": "Ronnec Warriors",
+    "base": 32,
+    "move":5,
+    "tough": 4,
+    "save": 4,
+    "hp":1,
+    "lead": 7,
+    "oc": 2,
+    "keywords": [
+        "Infantry",
+        "Battleline"
+    ],
+    "core_rules": [],
+    "unit_rules": [{
+            "name":"They are Legion",
+            "text":"Whenever Arcane Biotechnology activates on this unit, restore d6 Health instead of d3 Health. If within range of an objective marker, restore d3+3 health instead."
+        }
+    ],
+    "range_weapons": [
+        "phased_flayer",
+        "phased_reaper"
+    ],
+    "melee_weapons": [],
+    "composition":[
+        "10-20 Ronnec Warriors"
+    ],
+    "models_min": 10,
+    "models_max": 20,
+    "default_gear":[
+        "phased_flayer"
+    ],
+    "replacement_gear":{
+        "Any model's Phased Flayer":[
+            "phased_reaper"
+        ]
+    }
+}
