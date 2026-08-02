@@ -1,6 +1,6 @@
 {    
-    "name": "Overlord",
-    "ppm": 85,
+    "name": "Elder",
+    "base": 40,
     "move":5,
     "tough": 5,
     "save": 2,
@@ -11,24 +11,23 @@
     "keywords": [
         "Infantry",
         "Character",
-        "Noble"
+        "Elder"
     ],
     "core_rules": ["Leader [Battleline]"],
-    "faction_rules": ["Reanimation Protocols"],
     "unit_rules": [
         {
-        "name": "Implacable Resilience",
+        "name": "Improbable Resilience",
         "text": "Subtract 1 from the Damage of all attacks made against this model (to a minimum of 1)."
         }
     ],
     "range_weapons": [],
-    "melee_weapons": ["voidscythe"],
-    "wargear": ["resurrection_orb"],
+    "melee_weapons": ["phased_scythe"],
+    "wargear": ["reassembly_orb"],
     "composition":[
         "1 Overlord"
     ],
     "default_gear":[
-        "voidscythe",
-        "resurrection_orb"
+        "phased_scythe",
+        "reassembly_orb"
     ]
 }
