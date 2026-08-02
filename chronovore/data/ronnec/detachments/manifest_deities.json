@@ -12,22 +12,22 @@
         {
             "name": "Interdimensional Resonance Cascade",
             "cost": 1,
-            "when": "After a +Ronnec+ +Monster+ unit from your army is destroyed",
-            "target": "The +Necrons+ +Monster+ unit that was just destroyed.",
+            "when": "After a +Pagan Deity+ unit from your army is destroyed",
+            "target": "The +Pagan Deity+ unit that was just destroyed.",
             "effect": "Every unit within 6\" of the destroyed unit suffers d6 Mortal Damage"
         },
         {
             "name": "Atomic Erosion",
             "cost": 1,
             "when": "At the start of the Battle Round",
-            "target": "An enemy unit within 6\" of a friendly +Ronnec+ +Monster+ unit",
+            "target": "An enemy unit within 6\" of a friendly +Pagan Deity+ unit",
             "effect": "The target unit must take a Battle-Shock test. Subtract 1 from the result. If the test is failed, the unit suffers D3+1 Mortal Damage."
         },
         {
             "name": "Withering Fire",
             "cost": 1,
             "when": "At the start of the battle round",
-            "target": "An enemy unit within 6\" of a friendly +Ronnec+ +Monster+ unit",
+            "target": "An enemy unit within 6\" of a friendly +Pagan Deity+ unit",
             "effect": "Until the end of the Battle Round, attacks made against the target unit can re-roll Hit and Wound rolls of 1."
         }
     ],
@@ -35,17 +35,23 @@
         {
             "name":"Vengeance of the Void",
             "cost":10,
-            "text":"At the start of the battle, select a friendly +Ronnec+ +Monster+ unit. When it dies, deal d3 Mortal Damage to the unit that killed it."
-        },
-        {
-            "name":"Blessings of the Shattered King",
-            "cost":20,
-            "text":"At the start of the battle, select a friendly +Ronnec+ +Monster+ unit. Whenever its Arcane Biotek activates, it restores an additional 1 Health"
+            "text":"At the start of the battle, select a friendly +Pagan Deity+ unit. When it dies, deal d3 Mortal Damage to the unit that killed it."
         },
         {
             "name":"Void Infusion",
-            "cost":40,
+            "cost":20,
             "text":"The range for \"Void Deities\" rule and the three detachment Strategems is increased from 6\" to 7\"."
+        },
+        {
+            "name":"Sacrifice for the Gods",
+            "cost":40,
+            "strategem":{
+                "name": "Void Sacrifice",
+                "cost": 2,
+                "when": "After a friendly +Pagan Deity+ unit is destroyed",
+                "target": "Any number of friendly +Ronnec+ +Infantry+ models with a combined Health equal to or greater than the original Health of the destroyed +Pagan Deity+ unit.",
+                "effect": "Remove the selected models from the Battlefield; they are destroyed. Place the destroyed +Pagan Deity+ into Reserves."
+            }
         }
     ]
 }
