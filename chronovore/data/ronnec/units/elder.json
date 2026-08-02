@@ -1,5 +1,6 @@
 {    
     "name": "Elder",
+    "subtitle": "with Scythe and Reassembly Orb"
     "base": 40,
     "move":5,
     "tough": 5,

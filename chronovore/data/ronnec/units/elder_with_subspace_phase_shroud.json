@@ -1,6 +1,6 @@
 {    
     "name": "Elder",
-    "subtitle": "with Subspace Phase Shroud",
+    "subtitle": "with Blade and Tachyon Vambrace",
     "base": 40,
     "move":5,
     "tough": 5,
@@ -18,7 +18,7 @@
     "unit_rules":[],
     "range_weapons": ["tachyon_vambrace"],
     "melee_weapons": ["elders_blade"],
-    "wargear": ["subspace_phase_shroud"],
+    "wargear": [],
     "composition":[
         "1 Overlord"
     ],
