@@ -18,8 +18,7 @@
         }
     ],
     "range_weapons": [
-        "phase_blaster"//,
-        //"tesla_carbine"
+        "phase_blaster"
     ],
     "melee_weapons": [],
     "composition":[
@@ -29,10 +28,5 @@
     "models_max": 10,
     "default_gear":[
         "phase_blaster"
-    ]//,
-    // "replacement_gear":{
-    //     "Any model's Gauss Blaster":[
-    //         "tesla_carbine"
-    //     ]
-    // }
+    ]
 }
