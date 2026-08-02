@@ -1,0 +1,12 @@
+{
+    "name": "Multi-melter",
+    "keywords":[
+        "Melta 2"
+    ],
+    "rng":18,
+    "atk":2,
+    "skl":3,
+    "str":9,
+    "ap": 4,
+    "dmg":"d6"
+}
