@@ -2,7 +2,7 @@
     "name": "Illusory Bolt",
     "keywords": ["Sustained Hits 1"],
     "rng":12,
-    "atk":2
+    "atk":2,
     "skl":2,
     "str":8,
     "ap": 2,
