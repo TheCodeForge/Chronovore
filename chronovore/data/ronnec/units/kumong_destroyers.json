@@ -1,0 +1,32 @@
+{    
+    "name": "Kumong Destroyers",
+    "base": 50,
+    "move":5,
+    "tough": 4,
+    "save": 4,
+    "hp":3,
+    "lead": 7,
+    "oc": 1,
+    "keywords": [
+        "Infantry",
+        "Destroyer"
+    ],
+    "core_rules": ["Deep Strike"],
+    "unit_rules": [{
+            "name":"Tunneling Horrors",
+            "text": "At the end of the Battle Round, if this unit is not within Melee Distance, it may be removed from the Battlefield and placed into reserves."
+        }
+    ],
+    "range_weapons": [],
+    "melee_weapons": ["phaseblades"],
+    "wargear":["kratucyte"],
+    "composition":[
+        "3-6 Kumong Destroyers",
+        "1 Kratucyte token per 3 Kumong Destroyers"
+    ],
+    "models_min": 3,
+    "models_max": 6,
+    "default_gear":[
+        "phaseblades"
+    ]
+}

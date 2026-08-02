@@ -23,7 +23,7 @@
         },
         {
             "name": "Illusory Teleport",
-            "text": "At the end of the Battle Round, if this unit is not within Melee Distance of an enemy, it may be placed into Reserves."
+            "text": "At the end of the Battle Round, if this unit is not within Melee Distance of an enemy, it may be removed from the Battlefield and placed into Reserves."
         },
         {
             "name": "Void Entity",
