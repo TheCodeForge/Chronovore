@@ -1,6 +1,6 @@
 {
     "name": "Illusory Bolt",
-    "keywords": ["Assault", "Sustained Hits 1"],
+    "keywords": ["Sustained Hits 1"],
     "rng":12,
     "atk":6,
     "skl":2,
