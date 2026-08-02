@@ -5,7 +5,7 @@
     "rules": [
         {
         "name": "Arcane Biotechnology",
-        "lore": "Every Ronnec, at birth, is given implants to promote rapid healing and longevity, enabling recovery from fatal wounds. Soldiers thought dead by their enemies stand up again, flesh knitting itself together.",
+        "lore": "Every Ronnec soldier is given implants to promote rapid healing and longevity, enabling recovery from fatal wounds. Warriors thought dead by their enemies stand up again, flesh knitting itself together.",
         "text": "At the start of each Battle Round, each +Ronnec+ unit from your army restores d3 Health. Each time such a unit restores a point of Health:\n* If the unit contains one or more models below their starting Health, select one of those models; that model regains one point of Health\n* If all models in that unit are at their starting Health, but the unit is below its starting strength, return one destroyed model to the unit with one point of Health remaining.\n* If all models in the unit are at their starting Health and the unit is at its starting strength, nothing happens."
         }
     ],
