@@ -15,7 +15,7 @@
         "Character",
         "Pagan Deity"
     ],
-    "core_rules": ["Deadly Demise D6", "Feel No Pain 5+"],
+    "core_rules": ["Deadly Demise D6", "Deep Strike", "Feel No Pain 5+"],
     "unit_rules": [
         {
             "name": "Void Illusions",
