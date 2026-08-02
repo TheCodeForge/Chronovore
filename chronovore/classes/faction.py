@@ -127,7 +127,7 @@ class Faction(Base):
                 continue
                 
             with open(f"chronovore/data/{self.id}/units/{filename}", "r+") as unitfile:
-                print(f"trying {filename}")
+                # print(f"trying {filename}")
                 try:
                     u=Unit(json.load(unitfile))
                     u.faction=self
