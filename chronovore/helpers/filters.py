@@ -29,9 +29,6 @@ def app_config(x):
         raise ValueError(f"Not permitted to render config key `{x}`")
     return app.config[x]
 
-
-
-
 @app.template_filter("listcomp")
 def listcomp(iterable, prop):
 
