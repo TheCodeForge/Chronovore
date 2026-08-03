@@ -1,7 +1,7 @@
 {
     "id": "hunger",
     "name": "The Hunger",
-    "lore": "The Cataclysm may have been an apocalyptic event for most races, but for one race of aggressive and omnivorous life forms, it was a blessing. Suddenly freed from the bounds of their homeworld, these creatures traversed the Void Rifts in search of other life to consume. Few bother wonder what kind of hellish world would cultivate such a creature, for the snapping jaws and piercing talons in one's face are a much greater concern.",
+    "lore": "The Cataclysm may have been an apocalyptic event for most races, but for one race of aggressive and omnivorous life forms, it was a blessing. Suddenly freed from the bounds of their homeworld, these creatures traversed the Void Rifts in search of other life to consume. Few are able to imagine what kind of hellish world would cultivate such a creature, for such thoughts are a luxury that cannot be afforded in the face of Hunger's snapping jaws and piercing talons.",
     "rules": [
         {
         "name": "Rapid Evolution",
