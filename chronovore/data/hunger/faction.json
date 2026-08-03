@@ -1,0 +1,13 @@
+{
+    "id": "hunger",
+    "name": "The Hunger",
+    "lore": "The Cataclysm may have been an apocalyptic event for most races, but for one race of aggressive and omnivorous life forms, it was a blessing. Suddenly freed from the bounds of their homeworld, these creatures traversed the Void Rifts in search of other life to consume. Few bother wonder what kind of hellish world would cultivate such a creature, for the snapping jaws and piercing talons in one's face are a much greater concern.",
+    "rules": [
+        {
+        "name": "Rapid Evolution",
+        "lore": "The Cataclysm allows the Hunger to select its best life forms from throughout the entire span of its evolutionary history, drawing on both the past and future to find the optimal forces to deal with any threat, and quickly developing new life forms that may be required.",
+        "text": "While mustering your army, follow the rules for the [Sideboard Option](/core_rules#sideboard_option). If the Sideboard Option is enabled by mutual agreement, muster an additional 500 points (total 1000 points) above the agreed army size limit.\n\nAlternatively, if additional models cannot be mustered, at the start of the battle, gain 1 CP for every 500 points worth of Sideboard models not mustered."
+        }
+    ],
+    "color":"66023C"
+}
