@@ -170,7 +170,7 @@ class Unit(Base):
 
         if self.__dict__.get('models_min'):
             return self.models_min
-        elif any([x in self.keywords for x in ["Character","Monster","Vehicle","Epic Hero"]]):
+        elif any([x in self.keywords for x in ["Character","Monster","Vehicle","Hero"]]):
             return 1
 
         else:
@@ -208,7 +208,7 @@ class Unit(Base):
         else:
             max_unit_size = 100
 
-        if "Battleline" in self.keywords_all:
+        if "Frontline" in self.keywords_all:
             return max_unit_size * 6
         elif "Hero" in self.keywords_all:
             return max_unit_size
