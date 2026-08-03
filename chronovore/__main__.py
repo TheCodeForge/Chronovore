@@ -32,7 +32,8 @@ app.config['COLOR_SECONDARY']               = environ.get("COLOR_SECONDARY", "6c
 
 #===BANNED BOTS===
 app.config['BANNED_UAS']=[
-    "anthropic"
+    "anthropic",
+    "openai.com"
 ]
 
 
