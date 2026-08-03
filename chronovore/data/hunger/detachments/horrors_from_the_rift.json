@@ -1,0 +1,57 @@
+{
+    "name": "Horrors from the Rift",
+    "rules": [ 
+        {
+            "name": "Shadow of the Void",
+            "lore": "As the Hunger travel the Void Rifts, their presence instills dread into their psychically sensitive prey. Oftentimes, this is the only warning their targets have of the impending doom.",
+            "text": "Enemy units have -1 to all Leadership and Battleshock tests."
+        }
+    ],
+    "strategems": [
+        {
+            "name": "Emergency Recovery",
+            "cost": 1,
+            "when": "Any time",
+            "target": "One +Ronnec+ +Infantry+ +Character+ model from your army that was just destroyed.",
+            "effect": "Set your model back up on the Battlefield as close as possible to where it was destroyed and out of Melee Distance of enemy models, with half its starting Health remaining.",
+            "restriction": "This strategem may not target a given model more than once per battle."
+        },
+        {
+            "name": "Portable Shield Matrix",
+            "cost": 1,
+            "when": "After an enemy Unit has resolved a Shoot action",
+            "target": "A friendly +Ronnec+ unit in your army that had one or more of its models killed as a result of the attack.",
+            "effect": "Until the end of the Battle Round, enemy units attacking the target unit have -1 to Wound Rolls."
+        },
+        {
+            "name": "Servo Stabilization",
+            "cost": 1,
+            "when": "Your unit Activation",
+            "target": "Your +Ronnec+ unit being Activated",
+            "effect": "Until the end of the Battle Round, your unit has +1 to its Hit Rolls."
+        }
+    ],
+    "upgrades":[
+        {
+            "name":"Discipline of the Tribal Lord",
+            "cost":10,
+            "text":"Your +Warlord+ has +Secure Objectives+."
+        },
+        {
+            "name":"Strength of the Tribal Lord",
+            "cost":20,
+            "text":"While your +Warlord+ is leading a unit, the unit can re-roll Hit rolls of 1."
+        },
+        {
+            "name":"Protection of the Tribal Lord",
+            "cost":40,
+            "strategem":{
+                "name": "Black Void Totem",
+                "cost": 1,
+                "when": "After the Activated enemy unit passes a Psychic Test for a Spell or Psychic Weapon",
+                "target": "Any +Ronnec+ +Character+ model within 18\" of the Activated enemy unit.",
+                "effect": "The targeted +Ronnec+ +Character+ model may attempt a Deny the Psychic roll against the Activated unit, even though it is not a +Psyker+"
+            }
+        }
+    ]
+}
