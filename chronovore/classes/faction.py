@@ -120,8 +120,12 @@ class Faction(Base):
 
         categories = {x:[] for x in cats}
 
+        try:
+            root, dirs, files = next(os.walk(f"chronovore/data/{self.id}/units"))
+        except StopIteration:
+            return categories
 
-        root, dirs, files = next(os.walk(f"chronovore/data/{self.id}/units"))
+            
         for filename in files:
             if filename.startswith('_'):
                 continue
