@@ -2,19 +2,19 @@
     "name": "Horrors from the Rift",
     "rules": [ 
         {
-            "name": "Shadow of the Void",
+            "name": "Shadow in the Void",
             "lore": "As the Hunger travel the Void Rifts, their presence instills dread into their psychically sensitive prey. Oftentimes, this is the only warning their targets have of the impending doom.",
-            "text": "Enemy units have -1 to all Leadership and Battleshock tests."
+            "text": "Enemy units have -1 to all Leadership and Battle-Shock tests. Once per battle, at the start of the Battle Round, you may declare that the Shadow in the Void is in effect. When you do, all enemy units must take a Battle-Shock test."
         }
     ],
     "strategems": [
         {
-            "name": "Emergency Recovery",
+            "name": "Endless Reinforcements",
             "cost": 1,
             "when": "Any time",
-            "target": "One +Ronnec+ +Infantry+ +Character+ model from your army that was just destroyed.",
-            "effect": "Set your model back up on the Battlefield as close as possible to where it was destroyed and out of Melee Distance of enemy models, with half its starting Health remaining.",
-            "restriction": "This strategem may not target a given model more than once per battle."
+            "target": "One +Hunger+ +Frontline+ unit from your army that was just destroyed.",
+            "effect": "Place the unit into reserves.",
+            "restriction": "This strategem may not target a given unit more than once per battle."
         },
         {
             "name": "Portable Shield Matrix",
