@@ -145,7 +145,7 @@ class Unit(Base):
                 strategic *= 1.3
             elif kwd=="Lone Operative":
                 strategic *= 1.2
-            elif kwd=="Psychic":
+            elif kwd=="Psyker":
                 strategic *= 1.3
             elif kwd.startswith("Scouts"):
                 strategic *= 1.1
