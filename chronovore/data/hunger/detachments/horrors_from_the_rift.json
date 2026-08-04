@@ -30,11 +30,11 @@
             "effect": "Until the end of the Battle Round, the target unit scores Critical Hits on unmodified Hit rolls of 5+. If the target unit is within Hive Will range, roll d6; on a 4+, regain 1 CP."
         },
         {
-            "name": "Strat 3",
-            "cost": 1,
-            "when": "",
-            "target": "",
-            "effect": ""
+            "name": "Unending Swarm",
+            "cost": 2,
+            "when": "After a friendly +Hunger+ +Frontline+ unit is destroyed.",
+            "target": "The unit that was just destroyed.",
+            "effect": "Place the unit into Reserves."
         }
     ],
     "upgrades":[
