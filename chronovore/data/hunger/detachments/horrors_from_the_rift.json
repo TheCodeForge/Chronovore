@@ -23,11 +23,11 @@
             "effect": "Until the end of the Battle Round, the selected unit has !Feel No Pain 6+!. While it is within Hive Will range, it has !Feel No Pain 5+! instead."
         },
         {
-            "name": "Strat 2",
+            "name": "Adrenal Rush",
             "cost": 1,
-            "when": "",
-            "target": "",
-            "effect": ""
+            "when": "A friendly +Hunger+ unit is about to fight.",
+            "target": "The friendly +Hunger+ unit that is about to fight.",
+            "effect": "Until the end of the Battle Round, the target unit scores Critical Hits on unmodified Hit rolls of 5+. If the target unit is within Hive Will range, roll d6; on a 4+, regain 1 CP."
         },
         {
             "name": "Strat 3",
