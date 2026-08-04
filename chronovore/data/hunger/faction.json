@@ -4,9 +4,14 @@
     "lore": "The Cataclysm may have been an apocalyptic event for most races, but for one race of aggressive and omnivorous life forms, it was a blessing. Suddenly freed from the bounds of their homeworld, these creatures traversed the Void Rifts in search of other life to consume. Few are able to imagine what kind of hellish world would cultivate such a creature, for such thoughts are a luxury that cannot be afforded in the face of Hunger's snapping jaws and piercing talons.",
     "rules": [
         {
-        "name": "Rapid Evolution",
-        "lore": "The Cataclysm allows the Hunger to select its best life forms from throughout the entire span of its evolutionary history, drawing on both the past and future to find the optimal forces to deal with any threat, and quickly developing new life forms that may be required.",
-        "text": "While mustering your army, follow the rules for the [Sideboard Option](/rules/core_rules#sideboard_option). If the Sideboard Option is already enabled by mutual agreement, muster an additional 500 points (total 1000 points) for your sideboard."
+            "name": "Rapid Evolution",
+            "lore": "The Cataclysm allows the Hunger to select its best life forms from throughout the entire span of its evolutionary history, drawing on both the past and future to find the optimal forces to deal with any threat, and quickly developing new life forms that may be required.",
+            "text": "While mustering your army, follow the rules for the [Sideboard Option](/rules/core_rules#sideboard_option). If the Sideboard Option is already enabled by mutual agreement, muster an additional 500 points (total 1000 points) for your sideboard."
+        },
+        {
+            "name": "Hive Mind Coordination",
+            "lore": "The ravenous forces of the Hunger are guided by an overseeing hive mind. Its will is dissemminated via key intermediaries, who pass its desires along to the smaller life forms.",
+            "text": "Friendly +Hunger+ units with the +Hive Will+ keyword, and friendly +Hunger+ units within 6\" of a +Hive Will+ unit, may take Leadership and Battle-Shock tests by rolling 3d6 instead of 2d6."
         }
     ],
     "color":"66023C"

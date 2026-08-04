@@ -5,11 +5,6 @@
             "name": "Shadow in the Void",
             "lore": "As the Hunger travel the Void Rifts, their presence instills dread into their psychically sensitive prey. Oftentimes, this is the only warning their targets have of the impending doom.",
             "text": "Enemy units have -1 to all Leadership and Battle-Shock tests. Once per battle, at the start of the Battle Round, you may declare that the Shadow in the Void is in effect. When you do, all enemy units must take a Battle-Shock test."
-        },
-        {
-            "name": "Hive Mind Coordination",
-            "lore": "The ravenous forces of the Hunger are guided by an overseeing hive mind. Its will is dissemminated via key intermediaries, who pass its desires along to the smaller life forms.",
-            "text": "Friendly +Hunger+ units with the +Hive Will+ keyword, and friendly +Hunger+ units within 6\" of a +Hive Will+ unit, may take Leadership and Battle-Shock tests by rolling 3d6 instead of 2d6."
         }
     ],
     "spells":[
@@ -44,19 +39,19 @@
     ],
     "upgrades":[
         {
-            "name":"Upgrade 1",
+            "name":"Perfect Adaptation",
             "cost":10,
-            "text":"Text"
+            "text":"Once per Battle Round, your +Warlord+ may reroll one Hit roll, one Wound roll, one Damage roll, one Advance roll, one Charge roll, or one Saving roll."
         },
         {
-            "name":"Upgrade 2",
+            "name":"Perfect Adaptation",
             "cost":20,
-            "text":"Text"
+            "text":""
         },
         {
-            "name":"Upgrade 3",
+            "name":"Synaptic Biology",
             "cost":40,
-            "text":"Text"
+            "text":"Increase the range of the \"Hive Mind Coordination\" rule from 6\" to 9\""
         }
     ]
 }
