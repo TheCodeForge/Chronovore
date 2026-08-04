@@ -11,7 +11,7 @@
         {
             "name": "Hive Mind Coordination",
             "lore": "The ravenous forces of the Hunger are guided by an overseeing hive mind. Its will is dissemminated via key intermediaries, who pass its desires along to the smaller life forms.",
-            "text": "Friendly +Hunger+ units with the +Hive Will+ keyword, and friendly +Hunger+ units within 6\" of a +Hive Will+ unit, may take Leadership and Battle-Shock tests by rolling 3d6 instead of 2d6."
+            "text": "Friendly +Hunger+ units with the +Hive Will+ keyword, and friendly +Hunger+ units within 6\" of a +Hive Will+ unit are known as being within \"Hive Will\" range. While a unit is within Hive Will range, it ."
         }
     ],
     "color":"66023C"
