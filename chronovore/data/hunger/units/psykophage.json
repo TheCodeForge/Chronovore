@@ -1,0 +1,34 @@
+{    
+    "name": "Psykophage",
+    "move":8,
+    "tough": 9,
+    "save": 3,
+    "hp":10,
+    "lead": 8,
+    "oc": 3,
+    "base": "120 × 92",
+    "keywords": [
+        "Monster"
+    ],
+    "core_rules": ["Deadly Demise 1", "Feel No Pain 5+"],
+    "unit_rules": [
+        {
+        "name": "Bio-Stimulus",
+        "text": "Friendly +Hunger+ units within 6\" have !Feel No Pain 6+!."
+        },
+        {
+        "name": "Feeding Frenzy",
+        "text": "Melee attacks against units below starting strength have +1 to the Hit roll. Melee attacks against units below half strength also have +1 to the Wound roll."
+        }
+    ],
+    "range_weapons": ["bio_ash_torrent"],
+    "melee_weapons": ["talons_and_maw"],
+    "wargear": [],
+    "composition":[
+        "1 Psykophage"
+    ],
+    "default_gear":[
+        "bio_ash_torrent",
+        "talons_and_maw"
+    ]
+}
