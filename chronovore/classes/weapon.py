@@ -85,10 +85,10 @@ class Weapon(Base):
 
             anti_map = {
                 6:1.05,
-                5:1.1
-                4:1.15
-                3:1.2
-                2:1.3 
+                5:1.1,
+                4:1.15,
+                3:1.2,
+                2:1.3
             }
 
             for kwd in self.keywords:
