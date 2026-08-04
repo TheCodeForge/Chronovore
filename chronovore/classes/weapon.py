@@ -83,9 +83,18 @@ class Weapon(Base):
 
             weapon_pts = (atk * (7-skl) * sigmoid(self.str) * math.sqrt(self.ap+1) * dmg * math.sqrt(rng))
 
+            anti_map = {
+                6:1.05,
+                5:1.1
+                4:1.15
+                3:1.2
+                2:1.3 
+            }
+
             for kwd in self.keywords:
                 if kwd.startswith("Anti-"):
-                    weapon_pts *= 1.1
+                    number = int(kwd.split()[1].rstrip('+'))
+                    weapon_pts *= anti_map[number]
                 elif kwd=="Assault":
                     weapon_pts *= 1.1
                 elif kwd=="Blast":
