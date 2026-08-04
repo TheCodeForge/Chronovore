@@ -1,57 +1,55 @@
 {
     "name": "Horrors from the Rift",
-    "rules": [ 
+    "rules": [
         {
             "name": "Shadow in the Void",
             "lore": "As the Hunger travel the Void Rifts, their presence instills dread into their psychically sensitive prey. Oftentimes, this is the only warning their targets have of the impending doom.",
+            "text": "Enemy units have -1 to all Leadership and Battle-Shock tests. Once per battle, at the start of the Battle Round, you may declare that the Shadow in the Void is in effect. When you do, all enemy units must take a Battle-Shock test."
+        },
+        {
+            "name": "Hive Mind Coordination",
+            "lore": "As",
             "text": "Enemy units have -1 to all Leadership and Battle-Shock tests. Once per battle, at the start of the Battle Round, you may declare that the Shadow in the Void is in effect. When you do, all enemy units must take a Battle-Shock test."
         }
     ],
     "strategems": [
         {
-            "name": "Endless Reinforcements",
+            "name": "Strat 1",
             "cost": 1,
-            "when": "Any time",
-            "target": "One +Hunger+ +Frontline+ unit from your army that was just destroyed.",
-            "effect": "Place the unit into reserves.",
-            "restriction": "This strategem may not target a given unit more than once per battle."
+            "when": "",
+            "target": "",
+            "effect": ""
         },
         {
-            "name": "Portable Shield Matrix",
+            "name": "Strat 2",
             "cost": 1,
-            "when": "After an enemy Unit has resolved a Shoot action",
-            "target": "A friendly +Ronnec+ unit in your army that had one or more of its models killed as a result of the attack.",
-            "effect": "Until the end of the Battle Round, enemy units attacking the target unit have -1 to Wound Rolls."
+            "when": "",
+            "target": "",
+            "effect": ""
         },
         {
-            "name": "Servo Stabilization",
+            "name": "Strat 3",
             "cost": 1,
-            "when": "Your unit Activation",
-            "target": "Your +Ronnec+ unit being Activated",
-            "effect": "Until the end of the Battle Round, your unit has +1 to its Hit Rolls."
+            "when": "",
+            "target": "",
+            "effect": ""
         }
     ],
     "upgrades":[
         {
-            "name":"Discipline of the Tribal Lord",
+            "name":"Upgrade 1 ",
             "cost":10,
-            "text":"Your +Warlord+ has +Secure Objectives+."
+            "text":"Text"
         },
         {
-            "name":"Strength of the Tribal Lord",
+            "name":"Upgrade 2",
             "cost":20,
-            "text":"While your +Warlord+ is leading a unit, the unit can re-roll Hit rolls of 1."
+            "text":"Text"
         },
         {
-            "name":"Protection of the Tribal Lord",
+            "name":"Upgrade 3",
             "cost":40,
-            "strategem":{
-                "name": "Black Void Totem",
-                "cost": 1,
-                "when": "After the Activated enemy unit passes a Psychic Test for a Spell or Psychic Weapon",
-                "target": "Any +Ronnec+ +Character+ model within 18\" of the Activated enemy unit.",
-                "effect": "The targeted +Ronnec+ +Character+ model may attempt a Deny the Psychic roll against the Activated unit, even though it is not a +Psyker+"
-            }
+            "text":"Text"
         }
     ]
 }
