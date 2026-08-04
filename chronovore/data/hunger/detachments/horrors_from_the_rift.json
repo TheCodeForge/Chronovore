@@ -12,6 +12,13 @@
             "text": "Friendly +Hunger+ units with the +Hive Will+ keyword, and friendly +Hunger+ units within 6\" of a +Hive Will+ unit, may take Leadership and Battle-Shock tests by rolling 3d6 instead of 2d6."
         }
     ],
+    "spells":[
+        {
+            "name": "Void Shade",
+            "difficulty":6,
+            "text": "Select an enemy unit within 18\". It takes a Battle-Shock test."
+        }
+    ],
     "strategems": [
         {
             "name": "Strat 1",
