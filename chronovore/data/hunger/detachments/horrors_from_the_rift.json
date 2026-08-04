@@ -44,9 +44,9 @@
             "text":"Once per Battle Round, your +Warlord+ may reroll one Hit roll, one Wound roll, one Damage roll, one Advance roll, one Charge roll, or one Saving roll."
         },
         {
-            "name":"Perfect Adaptation",
+            "name":"Malevolent Cunning",
             "cost":20,
-            "text":""
+            "text":"After both players have deployed their armies, select any a unit and redeploy it. It may be moved in or out of Strategic Reserves."
         },
         {
             "name":"Synaptic Biology",
