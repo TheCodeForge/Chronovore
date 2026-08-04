@@ -16,11 +16,11 @@
     ],
     "strategems": [
         {
-            "name": "Strat 1",
+            "name": "Rapid Armor Plating",
             "cost": 1,
-            "when": "",
-            "target": "",
-            "effect": ""
+            "when": "An enemy unit declares an attack",
+            "target": "The friendly +Hunger+ unit being attacked",
+            "effect": "Until the end of the Battle Round, the selected unit has !Feel No Pain 6+!. While it is within Hive Will range, it has !Feel No Pain 5+! instead."
         },
         {
             "name": "Strat 2",
