@@ -46,7 +46,7 @@
         {
             "name":"Malevolent Cunning",
             "cost":20,
-            "text":"After both players have deployed their armies, select any a unit and redeploy it. It may be moved in or out of Strategic Reserves."
+            "text":"After both players have deployed their armies, select a friendly +Hunger+ unit and redeploy it. It may be moved in or out of Strategic Reserves."
         },
         {
             "name":"Synaptic Biology",
