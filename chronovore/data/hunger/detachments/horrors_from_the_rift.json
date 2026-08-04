@@ -37,7 +37,7 @@
     ],
     "upgrades":[
         {
-            "name":"Upgrade 1 ",
+            "name":"Upgrade 1",
             "cost":10,
             "text":"Text"
         },
