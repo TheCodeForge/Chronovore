@@ -1,0 +1,13 @@
+{
+    "name":"Psychic Scream",
+    "keywords":[
+        "Psychic",
+        "Demoralizing"
+    ],
+    "rng":15,
+    "psk":7,
+    "atk":4,
+    "target":"multi",
+    "ap": 1,
+    "dmg":"d3"
+}
