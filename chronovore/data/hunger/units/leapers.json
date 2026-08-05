@@ -17,8 +17,8 @@
             "text":"The Heroic Interception strategem costs 1 CP less when targeted on this unit."
         }
     ],
-    "range_weapons": ["leaper_talons"],
-    "melee_weapons": [],
+    "range_weapons": [],
+    "melee_weapons": ["leaper_talons"],
     "wargear": [],
     "composition":[
         "3-6 Leapers"
