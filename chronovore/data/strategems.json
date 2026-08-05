@@ -47,7 +47,7 @@
             "cost": 1,
             "when": "Immediately after the Activated enemy unit declares a Charge",
             "target": "A friendly unit within 9\" of the Activated enemy unit.",
-            "effect": "The target unit makes a Charge roll and move into the Activated enemy unit."
+            "effect": "The target unit makes a Charge roll and move into the Activated enemy unit.",
             "restrictions": "This strategem does not activate charge bonuses such as +[Lance]+."
         }
     ]
