@@ -51,7 +51,7 @@
         {
             "name":"Synaptic Biology",
             "cost":40,
-            "text":"Units within 8\" of a +Hive Will+ unit are also within Hive Will range."
+            "text":"Friendly +Hunger+ units within 8\" of a +Hive Will+ unit are also within Hive Will range."
         }
     ]
 }
