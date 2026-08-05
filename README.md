@@ -2,7 +2,7 @@
 Miniature tabletop wargaming in the grim dark future. And past. And present. Time no longer has any meaning.
 
 # Minis
-AltHammer is designed to be played using your existing collection of wargaming figurines.
+Chonovore is currently designed to be played using your existing collection of wargaming figurines.
 
 # Why play Chronovore over other rule sets?
 Simple:
