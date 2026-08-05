@@ -22,88 +22,10 @@
 
   {% filter numbered_markdown %}
 
-  # {{ f.name }} Faction Rules
+  {% include "elements/detachment_rules.html" %}
 
-  {% for rule in f.rules %}
-  ## {{ rule['name'] }}
-
-  {{ rule['text'] }}
-  {% endfor %}
-  # Detachment: {{ d.name }}
-
-  {% if d.secondary_faction or d.banned_keywords %}
-
-  ## Army Muster Restrictions
-
-  <ul>
-  {% if d.secondary_faction %}
-  <li>Your units may not have a secondary faction keyword other than <span class="keyword">{{ d.secondary_faction }}</span>.</li>
-  {% endif %}
-  {% if d.banned_keywords %}
-  <li>Your units may not have the following keyword{{ 's' if (d.banned_keywords|length)>1 else '' }}: <span class="keyword">{{ ', '.join(d.banned_keywords) }}</span></li>
-  {% endif %}
-  </ul>
-
-  {% endif %}
-
-  {% for rule in d.rules %}
-  ## {{ rule['name'] }}
-
-  {% if rule.get('lore') %}
-  *{{ rule['lore'] }}*
-  {% endif %}
-  
-  {{ rule['text'] }}
-
-  {% for option in rule['options'] %}
-  ### {{ option['name'] }}
-
-  {% if option['lore'] %}*{{ option['lore'] }}*{% endif %}
-
-  {{ option['text'] }}
-
-  {% endfor %}
-
-  {% endfor %}
-
-  {% if d.restrictions %}
-
-  ## Restrictions
-
-  {% for r in d['restrictions'] %}
-  * {{ r }}{% endfor %}
-
-  {% endif %}
-
-  ## Strategems
-
-  {% for strat in d.strategems %}
-  ### {{ strat['name'] }}
-
-  {% include "elements/strategem.html" %}
-
-  {% endfor %}
-
-
-  {% if d.spells %}
-
-  ## Spells
-
-  ### Smite
-
-  {% set spell = {'name':'Smite', 'difficulty': 6, 'effect': 'Select an enemy unit within 18". It suffers d3 + 1 Mortal Damage. Until the end of the battle, increase the Difficulty of this spell for your army by 1.'} %}
-  {% include "elements/spell.html" %}
-
-  {% for spell in d.spells %}
-  ### {{ spell['name'] }}
-
-  {% include "elements/spell.html" %}
-
-  {% endfor %}
-  {% endif %}
-
+  {% filter numbered_markdown %}
   # Units
-
   {% endfilter %}
   
 </div>
