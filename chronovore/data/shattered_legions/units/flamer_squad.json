@@ -1,0 +1,37 @@
+{    
+    "name": "Flamer Squad",
+    "move":6,
+    "tough": 4,
+    "save": 3,
+    "hp":2,
+    "lead": 6,
+    "oc": 1,
+    "base":32,
+    "keywords": [
+        "Infantry",
+        "Frontline",
+        "Grenades",
+        "Tactical"
+    ],
+    "core_rules": [],
+    "unit_rules": [{
+            "name":"Purge the Foe",
+            "text":"After making a Shoot action, select a targeted enemy +Infantry+ unit. It must take a Battle-Shock test."
+        }
+    ],
+    "range_weapons": [
+        "slug_pistol",
+        "flameblaster"
+    ],
+    "melee_weapons": [],
+    "composition":[
+        "1 Flamer Sergeant",
+        "4-9 Flamer Marines"
+    ],
+    "models_min": 5,
+    "models_max": 10,
+    "default_gear":[
+        "slug_pistol",
+        "flameblaster"
+    ]
+}
