@@ -1,5 +1,6 @@
 {    
-    "name": "Juggernaut Librarian",
+    "name": "Librarian",
+    "subtitle": "in Juggernaut armor",
     "move":5,
     "tough": 5,
     "save": 2,
