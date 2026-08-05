@@ -30,7 +30,7 @@
         "text": "At the start of the Battle Round, select up to two friendly +Hunger+ units within 18\". Place a Neuraloid token with them. Until the end of the Battle Round, the selected units are always considered to be in Hive Will Range."
         }
     ],
-    "range_weapons": ["psychic_scream"],
+    "psychic_weapons": ["psychic_scream"],
     "melee_weapons": ["neural_tentacles"],
     "wargear": [],
     "composition":[
