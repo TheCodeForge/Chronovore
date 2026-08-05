@@ -41,6 +41,14 @@
             "when": "Immediately after an enemy unit declares a Shoot action",
             "target": "A friendly +Infantry+ unit that was declared as the target of that Shoot action",
             "effect": "All Models in that Unit have a 6+ Invulnerable Save and the Benefit of Cover. This lasts until the end of the Battle Round, or until the Unit performs a Move or Charge action, whichever occurs first."
+        },
+        {
+            "name": "Heroic Interception",
+            "cost": 1,
+            "when": "Immediately after the Activated enemy unit declares a Charge",
+            "target": "A friendly unit within 9\" of the Activated enemy unit.",
+            "effect": "The target unit makes a Charge roll and move into the Activated enemy unit."
+            "restrictions": "This strategem does not activate charge bonuses such as +[Lance]+."
         }
     ]
 }
