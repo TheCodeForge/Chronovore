@@ -27,7 +27,7 @@
         },
         {
         "name": "Synaptic Relay",
-        "text": "At the start of the Battle Round, select up to two friendly +Hunger+ units within 18\". Place a Neuraloid token with them. Until the end of the Battle Round, the selected units are always considered to be in Hive Will Range."
+        "text": "At the start of the Battle Round, select up to two friendly +Hunger+ units within 18\". Place a Mindlink token with them. Until the end of the Battle Round, the selected units are always considered to be in Hive Will Range."
         }
     ],
     "psychic_weapons": ["psychic_scream"],
@@ -35,7 +35,7 @@
     "wargear": [],
     "composition":[
         "1 Brainsquid",
-        "2 Neuraloid tokens"
+        "2 Mindlink tokens"
     ],
     "default_gear":[
         "psychic_scream",
