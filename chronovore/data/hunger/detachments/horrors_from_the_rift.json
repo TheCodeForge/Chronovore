@@ -32,7 +32,7 @@
         {
             "name": "Unending Swarm",
             "cost": 1,
-            "when": "After a friendly +Hunger+ +Endless Multitude+ unit is destroyed.",
+            "when": "After a friendly +Hunger+ +Endless Swarm+ unit is destroyed.",
             "target": "The unit that was just destroyed.",
             "effect": "Place the unit into Reserves."
         }
