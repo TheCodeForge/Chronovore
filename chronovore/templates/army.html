@@ -12,7 +12,8 @@
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="/">Home</a></li>
       <li class="breadcrumb-item"><a href="{{ f.permalink }}">{{ f.name }}</a></li>
-      <li class="breadcrumb-item active" aria-current="page">{{ d.name }}</li>
+      <li class="breadcrumb-item"><a href="{{ d.permalink }}">{{ d.name }}</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Army List</li>
     </ol>
   </nav>
 
@@ -22,6 +23,8 @@
 
   {% filter numbered_markdown %}
 
+
+
   {% include "elements/detachment_rules.html" %}
 
   {% for upgrade in d.upgrades if session.get('qty_'+upgrade.faction.id+'_'+upgrade.id, 0) %}
@@ -30,8 +33,6 @@
   {% endif %}
   ## {{ upgrade.name }}
   {{ upgrade.text }}
-  {% else %}
-  ## No Upgrades
   {% endfor %}
 
   {% endfilter %}
