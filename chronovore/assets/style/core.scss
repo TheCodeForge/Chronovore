@@ -201,10 +201,10 @@ span.fa-stack.fa-stack-inline {
 
 @media print and (orientation:portrait) {
     .d-wide-print {
-        display: none;
+        display: none !important;
     }
 
     .d-narrow-print {
-        display: block;
+        display: block !important;
     }
 }
