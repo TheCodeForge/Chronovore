@@ -21,8 +21,8 @@
     "melee_weapons": ["phaseblades"],
     "wargear":["kratucyte"],
     "composition":[
-        "3-6 Jomnti Destroyers",
-        "1 Kratucyte token per 3 Skorpekh Destroyers"
+        "3-6 Jomti Destroyers",
+        "1 Kratucyte token per 3 Jomti Destroyers"
     ],
     "models_min": 3,
     "models_max": 6,
