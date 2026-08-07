@@ -1,0 +1,30 @@
+{    
+    "name": "Acid Screamer",
+    "move":6,
+    "tough": 8,
+    "save": 4,
+    "hp":9,
+    "lead": 7,
+    "oc": 3,
+    "base": 90,
+    "keywords": [
+        "Monster"
+    ],
+    "core_rules": ["Deadly Demise 1"],
+    "unit_rules": [
+        {
+        "name": "Death Scream",
+        "text": "After this model performs a Shoot action, select a unit hit by those attacks. The selected unit must take a Battle-Shock test, with -1 to that test."
+        }
+    ],
+    "range_weapons": ["acid_scream"],
+    "melee_weapons": ["screamer_talons"],
+    "wargear": [],
+    "composition":[
+        "1 Acid Screamer"
+    ],
+    "default_gear":[
+        "acid_scream",
+        "screamer_talons"
+    ]
+}
