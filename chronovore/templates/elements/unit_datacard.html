@@ -1,8 +1,3 @@
-{% block title %}
-<title>{{ u.display_name }}</title>
-<link id="mainstyle" href="/assets/style/faction/{{ color }}.css" rel="stylesheet">
-{% endblock %}
-
 {% macro backside() %}
   <div class="backside">
     {% if u.core_rules %}
@@ -234,20 +229,8 @@
 {% endif %}
 {% endmacro %}
 
-{% block pagecontent %}
-
 <div class="row g-0">
   <div class="col px-2">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">Home</a></li>
-        <li class="breadcrumb-item"><a href="{{ u.faction.permalink }}">{{ u.faction.name }}</a></li>
-        {% if d %}
-        <li class="breadcrumb-item"><a href="{{ d.permalink }}">{{ d.name }}</a></li>
-        {% endif %}
-        <li class="breadcrumb-item active" aria-current="page">{{ u.name }}</li>
-      </ol>
-    </nav>
     <h1 class="small-caps">{{ u.name }}</h1>
     {% if u.subtitle %}
     <h2 class="h5 small-caps"><i>{{ u.subtitle }}</i></h2>
@@ -386,5 +369,3 @@
     {{ backside() }}
   </div>
 </div>
-
-{% endblock %}
