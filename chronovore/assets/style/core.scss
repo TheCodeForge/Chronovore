@@ -188,3 +188,23 @@ span.fa-stack.fa-stack-inline {
         width:100% !important;
     }   
 }
+
+@media print and (width>=768px) {
+    .d-wide-print {
+        display: block;
+    }
+
+    .d-narrow-print {
+        display: none;
+    }
+}
+
+@media print and (width<768px) {
+    .d-wide-print {
+        display: none;
+    }
+
+    .d-narrow-print {
+        display: block;
+    }
+}
