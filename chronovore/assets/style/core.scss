@@ -182,3 +182,9 @@ span.fa-stack.fa-stack-inline {
     break-inside: avoid;
     page-break-inside: avoid;  /*legacy support*/
 }
+
+@media print {
+    .d-print-w-100 {
+        width:100% !important;
+    }   
+}
