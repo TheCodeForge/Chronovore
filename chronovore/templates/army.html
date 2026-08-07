@@ -24,10 +24,11 @@
   {% filter numbered_markdown %}
 
   # Table of Contents
+  <ul>
   {% for u in units %}
-  * [{{ u.name }}{{ ' ('+u.subtitle+')' if u.subtitle else '' }}](#{{ u.id }})
+  <li>[{{ u.name }}{{ ' ('+u.subtitle+')' if u.subtitle else '' }}](#{{ u.id }})</li>
   {% endfor %}
-
+  </ul>
 
   {% include "elements/detachment_rules.html" %}
 
