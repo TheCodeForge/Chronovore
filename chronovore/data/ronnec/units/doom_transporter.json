@@ -14,7 +14,7 @@
         "Transport"
     ],
     "core_rules": ["Deadly Demise D3"],
-    "unit_rules": [],
+    "unit_rules": ["Transport [1 Infantry]"],
     "range_weapons": [
         "twin_tesla_railgun"
     ],
