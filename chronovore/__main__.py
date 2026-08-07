@@ -3,6 +3,7 @@ import secrets
 import time
 from flask import *
 from flask_caching import Cache
+from werkzeug.middleware.proxy_fix import ProxyFix
 
 app = Flask(
     __name__,
@@ -31,6 +32,7 @@ app.config['COLOR_PRIMARY']                 = environ.get("COLOR_PRIMARY", "0d6e
 app.config['COLOR_SECONDARY']               = environ.get("COLOR_SECONDARY", "6c757d").lstrip().rstrip()
 
 #===BANNED BOTS===
+app.config["PROXYFIX_X_FOR"]=int(environ.get("PROXYFIX", "1").lstrip().rstrip())
 app.config['BANNED_UAS']=[
     "anthropic",
     "openai.com"
