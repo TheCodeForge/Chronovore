@@ -16,13 +16,13 @@
     "core_rules": ["Deadly Demise D3"],
     "unit_rules": [],
     "range_weapons": [
-        "twin_tesla_destructor"
+        "twin_tesla_railgun"
     ],
     "melee_weapons": ["armored_bulk"],
     "composition":[
         "1 Doom Transporter"
     ],
     "default_gear":[
-        "twin_tesla_destructor", "armored_bulk"
+        "twin_tesla_railgun", "armored_bulk"
     ]
 }
