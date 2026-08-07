@@ -1,0 +1,28 @@
+{    
+    "name": "Doom Transporter",
+    "base":"120x92",
+    "move":"20+",
+    "tough": 9,
+    "save": 3,
+    "hp":12,
+    "lead": 7,
+    "oc": 0,
+    "keywords": [
+        "Vehicle",
+        "Fly",
+        "Aircraft",
+        "Transport"
+    ],
+    "core_rules": ["Deadly Demise D3"],
+    "unit_rules": [],
+    "range_weapons": [
+        "twin_tesla_destructor"
+    ],
+    "melee_weapons": ["armored_bulk"],
+    "composition":[
+        "1 Doom Transporter"
+    ],
+    "default_gear":[
+        "twin_tesla_destructor", "armored_bulk"
+    ]
+}
