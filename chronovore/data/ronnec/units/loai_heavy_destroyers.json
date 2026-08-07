@@ -18,14 +18,17 @@
         "exterminator_multicannon",
         "heavy_gauss_railgun"
     ],
-    "melee_weapons": [],
+    "melee_weapons": [
+        "armored_bulk"
+    ],
     "composition":[
         "1-3 Lokhust Heavy Destroyers"
     ],
     "models_min": 1,
     "models_max": 3,
     "default_gear":[
-        "exterminator_multicannon"
+        "exterminator_multicannon",
+        "armored_bulk"
     ],
     "replacement_gear":{
         "Any model's Enmitic Exterminator":[
