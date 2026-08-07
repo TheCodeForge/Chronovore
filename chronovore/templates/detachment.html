@@ -24,13 +24,6 @@
 
   {% include "elements/detachment_rules.html" %}
 
-  {% for upgrade in d.upgrades %}
-  {% if session.get('qty_'+upgrade.faction.id+'_'+upgrade.id, 0) %}
-  ## {{ upgrade.name }}
-  {{ upgrade.text }}
-  {% endif %}
-  {% endfor %}
-
   # Units
   {% endfilter %}
   
