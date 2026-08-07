@@ -1,5 +1,5 @@
 {    
-    "name": "Doom Transporter",
+    "name": "Doomflier Transport",
     "base":"120x92",
     "move":"20+",
     "tough": 9,
@@ -13,8 +13,8 @@
         "Aircraft",
         "Transport"
     ],
-    "core_rules": ["Deadly Demise D3"],
-    "unit_rules": ["Transport [1 Infantry]"],
+    "core_rules": ["Deadly Demise D3", "Transport [1 Infantry]"],
+    "unit_rules": [],
     "range_weapons": [
         "twin_tesla_railgun"
     ],
