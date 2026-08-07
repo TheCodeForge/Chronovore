@@ -20,9 +20,9 @@
     ],
     "melee_weapons": ["armored_bulk"],
     "composition":[
-        "1 Doom Scythe"
+        "1 Doom Gunship"
     ],
     "default_gear":[
-        "heavy_death_ray", "twin_tesla_destructor", "armored_bulk"
+        "heavy_death_ray", "twin_tesla_railgun", "armored_bulk"
     ]
 }
