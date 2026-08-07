@@ -60,6 +60,8 @@ def faction_faction_detachment_detachment_armylist(faction, detachment):
             if session.get(f'qty_{f.id}_{unit.id}', 0):
                 units.append(unit)
 
+    sort(units, lambda x:x.name)
+
     return render_template(
         "army.html",
         f=f,
