@@ -26,7 +26,7 @@
   # Table of Contents
   <ul>
   {% for u in units %}
-  <li>[{{ u.name }}{{ ' ('+u.subtitle+')' if u.subtitle else '' }}](#{{ u.id }})</li>
+  <li><a href="#{{ u.id }}">{{ u.name }}{{ ' ('+u.subtitle+')' if u.subtitle else '' }}]</a></li>
   {% endfor %}
   </ul>
 
