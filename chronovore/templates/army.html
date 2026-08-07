@@ -25,7 +25,7 @@
 
   # Table of Contents
   {% for u in units %}
-  * [{{ u.name }}](#{{ u.id }})
+  * [{{ u.name }}{{ ' ('+u.subtitle+')' if u.subtitle else '' }}](#{{ u.id }})
   {% endfor %}
 
 
