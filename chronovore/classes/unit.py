@@ -153,6 +153,8 @@ class Unit(Base):
                 strategic *= 1.1
             elif kwd=="Secured Objectives":
                 strategic *= 2
+            elif kwd.startswith("Transport"):
+                strategic *= 1.3
 
         for kwd in self.keywords_all:
             if kwd=="Fly":
