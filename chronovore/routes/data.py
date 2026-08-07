@@ -55,6 +55,8 @@ def faction_faction_detachment_detachment_armylist(faction, detachment):
 
     units = []
 
+    print(f.unit_listing)
+
     for role in f.unit_listing:
         for unit in role:
             if session.get(f'qty_{f.id}_{unit.id}', 0):
