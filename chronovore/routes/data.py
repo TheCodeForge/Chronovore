@@ -44,3 +44,26 @@ def faction_faction_unit_unit(faction, unit, detachment=None):
         u=u, 
         d=d, 
         color=color)
+
+@app.get("/faction/<faction>/detachment/<detachment>/armylist")
+def faction_faction_detachment_detachment_armylist(faction, detachment):
+
+    f=get_faction(faction)
+    color=f.color
+
+    d=f.detachment(detachment)
+
+    units = []
+
+    for role in f.unit_listing:
+        for unit in role:
+            if session.get('qty_'+unit.faction.id+'_'+unit.id, 0):
+                units.append(unit)
+
+    return render_template(
+        "army.html",
+        f=f,
+        d=d,
+        color=color,
+        units=units
+        )

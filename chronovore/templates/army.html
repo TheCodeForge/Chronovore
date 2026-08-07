@@ -1,0 +1,35 @@
+{% extends "_core_centered.html" %}
+
+{% block title %}
+<title>{{ d.name }}</title>
+<link id="mainstyle" href="/assets/style/faction/{{ d.color }}.css" rel="stylesheet">
+{% endblock %}
+
+{% block pagecontent %}
+<div class="px-2 px-sm-0">
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item"><a href="{{ f.permalink }}">{{ f.name }}</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{ d.name }}</li>
+    </ol>
+  </nav>
+
+
+  <h1 class="small-caps">{{ f.name }}</h1>
+  <h2 class="small-caps">{{ d.name }}</h2>
+
+  {% filter numbered_markdown %}
+
+  {% include "elements/detachment_rules.html" %}
+
+  {% endfilter %}
+  
+</div>
+
+{% for u in units %}
+{% include "elements/unit_datacard.html" %}
+{% endfor %}
+
+{% endblock %}
