@@ -1,5 +1,5 @@
 {    
-    "name": "Psykophage",
+    "name": "Psychofurnace",
     "move":8,
     "tough": 9,
     "save": 3,
@@ -25,7 +25,7 @@
     "melee_weapons": ["talons_and_maw"],
     "wargear": [],
     "composition":[
-        "1 Psykophage"
+        "1 Psychofurnace"
     ],
     "default_gear":[
         "bio_ash_torrent",
