@@ -23,6 +23,10 @@
 
   {% filter numbered_markdown %}
 
+  # Table of Contents
+  {% for u in units %}
+  * [{{ u.name }}](#{{ u.id }})
+  {% endfor %}
 
 
   {% include "elements/detachment_rules.html" %}
