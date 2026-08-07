@@ -1,6 +1,6 @@
 {    
-    "name": "Doom Scythe",
-    "ppm": 230,
+    "name": "Doom Gunship",
+    "base":"120x92",
     "move":"20+",
     "tough": 9,
     "save": 3,
@@ -12,9 +12,7 @@
         "Fly",
         "Aircraft"
     ],
-    "core_rules": ["Deadly Demise D3"
-    ],
-    "faction_rules": ["Reanimation Protocols"],
+    "core_rules": ["Deadly Demise D3"],
     "unit_rules": [],
     "range_weapons": [
         "heavy_death_ray",
