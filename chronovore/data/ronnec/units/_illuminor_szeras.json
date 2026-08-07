@@ -1,6 +1,6 @@
 {    
-    "name": "Illuminor Szeras",
-    "ppm": 175,
+    "name": "Engineer Xeras",
+    "base":80,
     "move":7,
     "tough": 8,
     "save": 3,
@@ -11,11 +11,10 @@
     "keywords": [
         "Infantry",
         "Character",
-        "Epic Hero",
-        "Cryptek"
+        "Hero",
+        "Arcanotek"
     ],
     "core_rules": ["Feel No Pain 4+"],
-    "faction_rules": ["Reanimation Protocols"],
     "unit_rules": [
         {
             "name":"Illuminor",
@@ -23,7 +22,7 @@
         },
         {
             "name":"Mechanical Augmentation",
-            "text":"Friendly +Necrons Battleline+ units within 6\" have the Armor Break of their attacks improved by 1. Attacks made against them have their Armor Break worsened by 1 (no worse than 0)."
+            "text":"Friendly +Ronnec Frontline+ units within 6\" have the Armor Break of their attacks improved by 1. Attacks made against them have their Armor Break worsened by 1 (no worse than 0)."
         },
         {
             "name": "Atomic Energy Manipulator",
@@ -33,7 +32,7 @@
     "range_weapons": ["eldritch_lance_ranged"],
     "melee_weapons": ["eldritch_lance_melee", "impaling_legs"],
     "composition":[
-        "1 Illuminor Szeras"
+        "1 Engineer Xeras"
     ],
     "default_gear":[
         "eldritch_lance_melee",
