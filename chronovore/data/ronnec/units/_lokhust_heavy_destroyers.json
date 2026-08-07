@@ -1,6 +1,6 @@
 {    
-    "name": "Lokhust Heavy Destroyers",
-    "ppm": 30,
+    "name": "Loai Heavy Destroyers",
+    "base": 60,
     "move":7,
     "tough": 6,
     "save": 3,
@@ -13,7 +13,6 @@
         "Destroyer"
     ],
     "core_rules": [],
-    "faction_rules": ["Reanimation Protocols"],
     "unit_rules": [],
     "range_weapons": [
         "enmitic_exterminator",
