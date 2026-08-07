@@ -15,8 +15,8 @@
     "core_rules": [],
     "unit_rules": [],
     "range_weapons": [
-        "enmitic_exterminator",
-        "gauss_destructor"
+        "extermination_multicannon",
+        "heavy_gauss_railgun"
     ],
     "melee_weapons": [],
     "composition":[
@@ -25,11 +25,11 @@
     "models_min": 1,
     "models_max": 3,
     "default_gear":[
-        "enmitic_exterminator"
+        "extermination_multicannon"
     ],
     "replacement_gear":{
         "Any model's Enmitic Exterminator":[
-            "gauss_destructor"
+            "heavy_gauss_railgun"
         ]
     }
 }
