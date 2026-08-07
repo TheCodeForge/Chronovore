@@ -41,6 +41,8 @@
         "Sustained Hits X": "Critical Hits trigger an extra X number of attacks. Do not make a Hit Roll for these additional attacks. Instead, treat the additional attacks as if the Hit roll already succeeded.",
         
         "Torrent": "Do not make a Hit Roll for this weapon. Instead, treat the attack as if the Hit roll succeeded.",
+
+        "Transport [X Keyword]": "Up to X units with the specified +Keyword+ may be embarked within this unit. Units may embark or disembark while Activated. Embarking and disembarking must take place within 3\" of the +Transport+.",
         
         "Twin-Linked": "Failed Wound rolls may be re-rolled."
     },
