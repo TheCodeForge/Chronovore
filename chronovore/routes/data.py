@@ -57,7 +57,7 @@ def faction_faction_detachment_detachment_armylist(faction, detachment):
 
     for role in f.unit_listing:
         for unit in role:
-            if session.get('qty_'+unit.faction.id+'_'+unit.id, 0):
+            if session.get(f'qty_{f.id}_{unit.id}', 0):
                 units.append(unit)
 
     return render_template(
