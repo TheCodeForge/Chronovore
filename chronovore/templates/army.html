@@ -24,9 +24,10 @@
 
   {% include "elements/detachment_rules.html" %}
 
-  #Upgrades
-
-  {% for upgrade in d.upgrades if session.get('qty_'+upgrade.faction.id+'_'+upgrade.id, 0)%}
+  {% for upgrade in d.upgrades if session.get('qty_'+upgrade.faction.id+'_'+upgrade.id, 0) %}
+  {% if loop.first %}
+  # Upgrades
+  {% endif %}
   ## {{ upgrade.name }}
   {{ upgrade.text }}
   {% else %}
