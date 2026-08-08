@@ -9,7 +9,7 @@ $faction: #{faction};
 #page-center a,
 .h-block .fas
 .text-faction {
-  color: $faction;
+  color: $faction !important;
 }
 
 table.table-faction > thead,

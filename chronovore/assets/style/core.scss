@@ -174,7 +174,8 @@ span.fa-stack.fa-stack-inline {
 
 /*Walls of Text*/
 
-h1, h2, h3:not(.popover-header), h4, h5,  {color: $primary}
+.h-block .fas, h1, h2, h3:not(.popover-header), h4, h5  {color: $primary}
+
 
 /*Keep unit datacards together on print*/
 .keep-together {
