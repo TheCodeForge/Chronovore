@@ -47,7 +47,7 @@
         {
             "name":"Deepening Fear",
             "difficulty":8,
-            "effect":"Select one enemy unit within 24\". Until the end of the Battle Round, the selected unit:\n\n* Has its =flag= Leadership worsened by 1\n\n* Has an =arrows-to-circle= trait of 0\n\n* Cannot use +Secure Objectives+, "
+            "effect":"Select one enemy unit within 24\". Until the end of the Battle Round, the selected unit:\n\n* Has its =flag= Leadership worsened by 1\n* Has an =arrows-to-circle= Objective Control trait of 0\n* Cannot use +Secure Objectives+, "
         }
     ],
     "upgrades":[
