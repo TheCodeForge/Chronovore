@@ -15,7 +15,7 @@
         "Supreme Commander",
         "Primal"
     ],
-    "secondary_faction":"The Duellist",
+    "secondary_faction":"Legion of The Duellist",
     "core_rules": ["Deep Strike", "Fights First"],
     "unit_rules": [
         {
