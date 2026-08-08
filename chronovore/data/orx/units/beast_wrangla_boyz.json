@@ -30,7 +30,7 @@
             "base":32,
             "default_gear": [
                 "slugga",
-                "choppa",
+                "choppa"
             ],
             "range_weapons":[],
             "melee_weapons":["slugga","choppa"],
