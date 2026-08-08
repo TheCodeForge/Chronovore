@@ -79,7 +79,7 @@ class HBlock(BlockToken):
 class CustomRenderer(HTMLRenderer):
 
     def __init__(self, *args, **kwargs):
-        super().__init__(Keyword, KeywordAlt, Sub, Sup, *args, **kwargs)
+        super().__init__(Keyword, KeywordAlt, Sub, Sup, Icon, *args, **kwargs)
 
         for i in kwargs:
             self.__dict__[i] = kwargs[i]
