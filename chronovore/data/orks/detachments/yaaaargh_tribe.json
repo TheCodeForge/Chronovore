@@ -1,0 +1,68 @@
+{
+    "id": "yaaaargh_tribe",
+    "name": "YAAAARGH Tribe",
+    "rules": [
+        {
+            "name": "Get Stuck In",
+            "lore": "Once an Orx gets stuck into close-quarters combat, they quickly overwhelm their enemies through sheer ferocity.",
+            "text": "Melee weapons equipped by your +Orx+ units have +[Sustained Hits 1]+"
+        }
+    ],
+    "spells": [
+        {
+            "name": "Roar of Horx",
+            "difficulty": 7,
+            "effect": "Enemy units within 15\" must take a Battle-Shock test, with -1 to the Battle-Shock test roll."
+        },
+        {
+            "name": "Spirit of Borx",
+            "difficulty": 7,
+            "effect": "Select a friendly +Orx+ +Infantry+ unit within 12\". Until the end of the Battle Round, its equipped melee weapons have +[Devastating Wounds]+"
+        },
+        {
+            "name": "Da Jump",
+            "difficulty": 6,
+            "effect": "Move this model's unit to anywhere on the battlefield that is at least 9\" away from all enemy models."
+        }
+    ],
+    "strategems":[
+        {
+            "name": "Ere We Go",
+            "cost": 1,
+            "when": "Your unit's Activation",
+            "target": "Your +Orx Infantry+ unit being Activated",
+            "effect": "Until the end of the Activation, the target unit has +2 to Advance and Charge rolls."
+        },
+        {
+            "name": "Careen!",
+            "cost": 1,
+            "when": "When an +Orx Vehicle+ unit from your army with the +Deadly Demise X+ ability is destroyed, after rolling for its +Deadly Demise X+ ability.",
+            "target": "The destroyed +Orx+ +Vehicle+ unit.",
+            "effect": "The target +Vehicle+ can make a Normal or Fall Back movement before its +Deadly Demise X+ ability is resolved, and before any embarked units perform an Emergency Disembarkation. When making this movement, the target +Vehicle+ may move through enemy units (excluding +Monsters+ and +Vehicles+) as if they were not there."
+        },
+        {
+            "name": "Unbridled Carnage",
+            "cost": 1,
+            "when": "Your unit's Activation",
+            "target": "Your +Orx+ unit being Activated",
+            "effect": "Until the end of the Activation, unmodified Hit rolls of 5+ score a Critical Hit."
+        }
+    ],
+    "upgrades":[
+        {
+            "name":"Kunnin But Brutal",
+            "cost":10,
+            "text":"While your +Warlord+ is leading a unit, that unit may Shoot and Charge after making a Fall Back movement."
+        },
+        {
+            "name":"Follow Me Ladz",
+            "cost":20,
+            "text":"+Leader+ models and their attached +Bodyguard+ models have +1\" to their Movement trait."
+        },
+        {
+            "name":"Supa-CybOrx",
+            "cost":40,
+            "text":"Your +Warlord+ model gains !Feel No Pain 4+!."
+        }
+    ]
+}
