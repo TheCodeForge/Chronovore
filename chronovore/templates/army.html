@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block leftsidebar %}
+{% filter markdown %}
 # Table of Contents
 <ul>
 <li><a href="#{{ f.name | snake }}_faction_rules">Faction Rules</a></li>
