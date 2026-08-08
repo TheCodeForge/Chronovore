@@ -25,6 +25,13 @@ class KeywordAlt(SpanToken):
     def __init__(self, match_obj):
         self.target = match_obj.group(1)
 
+class Icon(SpanToken):
+    pattern = re.compile(r"=(.{3,25}?)=")
+    parse_inner=False
+    
+    def __init__(self, match_obj):
+        self.target = match_obj.group(1)
+
 class Sub(SpanToken):
 
     pattern = re.compile(r"\_\((.+)\)")
@@ -84,6 +91,10 @@ class CustomRenderer(HTMLRenderer):
     def render_sub(self, token):
 
         return f"<sub>{self.render_inner(token)}</sub>"
+
+    def render_icon(self, token):
+
+        return f'<i class="fas fa-fw fa-{token}"></i>'
 
     def render_keyword(self, token):
 
