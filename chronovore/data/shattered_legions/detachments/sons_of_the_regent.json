@@ -50,8 +50,8 @@
     "spells": [
         {
             "name":"Precognition",
-            "difficulty":8,
-            "text":"Until the end of the Battle Round, attacks made against the casting unit have their Strength and Armor Break traits worsened by 1."
+            "difficulty":6,
+            "text":"Until the end of the Battle Round, the casting unit has an Invulnerable save of 5+."
         }
     ],
     "upgrades":[
