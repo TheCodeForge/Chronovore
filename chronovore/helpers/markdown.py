@@ -94,7 +94,7 @@ class CustomRenderer(HTMLRenderer):
 
     def render_icon(self, token):
 
-        return f'<i class="fas fa-fw fa-{token}"></i>'
+        return f'<i class="fas fa-fw fa-{token.target}"></i>'
 
     def render_keyword(self, token):
 
