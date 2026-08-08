@@ -57,7 +57,7 @@ def faction_faction_detachment_detachment_armylist(faction, detachment):
 
     for role in f.unit_listing:
         for unit in f.unit_listing[role]:
-            if session.get(f'qty_{f.id}_{unit.id}', 0):
+            if session.get(f'qty_{f.id}_{unit.id}', 0) and d.is_legal(unit):
                 units.append(unit)
 
     units.sort(key=lambda x:x.name)
