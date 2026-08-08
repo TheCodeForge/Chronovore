@@ -150,3 +150,8 @@ def hide_cat(unit_listing, faction, role, detachment=None):
         return not any([session.get(f"qty_{upgrade.faction.id}_{upgrade.id}") for upgrade in detachment.upgrades])
 
     return not any([session.get(f"qty_{unit.faction.id}_{unit.id}") for unit in unit_listing[role]])
+
+@app.template_filter("snake")
+def snake(x):
+
+    return "_".join(x.lower().split())
