@@ -33,6 +33,23 @@
             "effect": "The selected unit can shoot as if it was Activated, but it must target the enemy unit that is currently Activated, and it may only do so if that enemy unit is an eligible target."
         }
     ],
+    "spells": [
+        {
+            "name":"Mind Worm",
+            "difficulty":7,
+            "effect":"Select one enemy unit within 18\". It suffers 1 Mortal Damage and must take a Battle-Shock test."
+        },
+        {
+            "name":"Righteous Motivation",
+            "difficulty":8,
+            "effect":"Select one friendly +Legion of the Duellist+ unit within 12\". Until the end of the Battle-Round, the selected unit can re-roll the Hit roll and the Wound Roll for its melee attacks."
+        },
+        {
+            "name":"Deepening Fear",
+            "difficulty":8,
+            "effect":"Select one enemy unit within 24\". Until the end of the Battle Round, the selected unit:\n\n* Has its =flag= Leadership worsened by 1\n\n* Has an =arrows-to-circle= trait of 0\n\n* Cannot use +Secure Objectives+, "
+        }
+    ],
     "upgrades":[
         {
             "name":"Scion of the Duellist",
