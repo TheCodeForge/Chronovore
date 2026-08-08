@@ -1,5 +1,6 @@
 {
     "name": "Tribal Fury",
+    "lore": "Though primative in their organization, the tribes of the Ronnec are nevertheless wage fierce war. Blessed with futuristic technology, the warriors of the Ronnec tribes follow their elders without question.",
     "rules": [ 
         {
             "name": "Leadership Discipline",
