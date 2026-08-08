@@ -1,0 +1,30 @@
+{
+    "name": "Absolution Pistol",
+    "profiles":[
+        {
+            "name": "Steady Shot",
+            "keywords":[
+                "Pistol"
+            ],
+            "rng":18,
+            "atk":1,
+            "skl":3,
+            "str":5,
+            "ap": 1,
+            "dmg":2
+        },
+        {
+            "name": "Quick Shot",
+            "keywords":[
+                "Pistol"
+            ],
+            "rng":3,
+            "atk":1,
+            "skl":3,
+            "str":5,
+            "ap": 4,
+            "dmg":2
+        }
+    ]
+    
+}

@@ -1,0 +1,41 @@
+{    
+    "name": "Apothecary",
+    "base": 40,
+    "move":6,
+    "tough": 4,
+    "save": 3,
+    "hp":4,
+    "lead": 6,
+    "oc": 1,
+    "base": 40,
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Grenades",
+        "Apothecary",
+        "Tactical"
+    ],
+    "core_rules": [
+        "Support [Tactical]"
+    ],
+    "unit_rules": [
+        {
+            "name":"Field Medic",
+            "text":"While this model is attached, at the start of the Battle Round, return one destroyed +Bodyguard+ model to this model's attached unit."
+        },
+        {
+            "name":"Genetic Recovery",
+            "text":"When this model's +Bodyguard+ unit is destroyed, roll d6. On a 2+, gain 1 CP."
+        }
+    ],
+    "range_weapons": [
+        "absolution_pistol"
+    ],
+    "melee_weapons": [],
+    "composition":[
+        "1 Apothecary"
+    ],
+    "default_gear":[
+        "absolution_pistol"
+    ]
+}
