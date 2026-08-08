@@ -16,7 +16,7 @@
         "Primal"
     ],
     "secondary_faction":"Legion of The Regent",
-    "core_rules": [],
+    "core_rules": ["Leader [Infantry]"],
     "unit_rules": [
         {
             "name":"The Regent",
@@ -24,7 +24,7 @@
         },
         {
             "name":"Bodyguards of the Regent",
-            "text":"While within 3\" of a friendly +Shattered Legions+ +Infantry+ unit, this model has +Lone Operative+."
+            "text":"While within 3\" of a friendly +Shattered Legions+ +Infantry+ unit and not a +Leader+, this model has +Lone Operative+."
         }
     ],
     "range_weapons": [
