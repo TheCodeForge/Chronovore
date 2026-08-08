@@ -5,9 +5,9 @@
         "Demoralizing"
     ],
     "rng":4,
-    "psk":6,
-    "atk":4,
+    "psk":8,
+    "atk":2,
     "target":"aoe",
     "ap": 1,
-    "dmg":"d3"
+    "dmg":1
 }

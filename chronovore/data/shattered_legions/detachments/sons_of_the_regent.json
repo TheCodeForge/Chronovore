@@ -51,7 +51,17 @@
         {
             "name":"Precognition",
             "difficulty":6,
-            "effect":"Until the end of the Battle Round, the casting unit has an =shield-plus= Invulnerable Save of 5+."
+            "effect":"Until the end of the Battle Round, this +Psyker+ has an =shield-plus= Invulnerable Save of 5+."
+        },
+        {
+            "name":"Scrying Gaze",
+            "difficulty":8,
+            "effect":"Gain 1 CP. Until the end of the Battle Round, one friendly +Legion of the Regent+ unit within 18\" of this +Psyker+ can reroll one Hit roll, Wound roll, or Save roll."
+        },
+        {
+            "name":"Storm of Wrath",
+            "difficulty":7,
+            "effect":"Select the nearest enemy unit within 18\". Roll one d6 for each model in that unit; for each unmodified result of 6, that unit suffers 1 Mortal Damage."
         }
     ],
     "upgrades":[
