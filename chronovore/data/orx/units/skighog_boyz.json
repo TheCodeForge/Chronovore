@@ -65,6 +65,6 @@
         "3-6 Skighog Boyz",
         "1 Bomb Skig token per 3 models"
     ],
-    "models_min":3,
+    "models_min":4,
     "models_max":8
 }
