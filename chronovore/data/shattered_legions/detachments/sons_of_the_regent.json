@@ -51,7 +51,7 @@
         {
             "name":"Precognition",
             "difficulty":6,
-            "text":"Until the end of the Battle Round, the casting unit has an =shield-plus= Invulnerable Save of 5+."
+            "effect":"Until the end of the Battle Round, the casting unit has an =shield-plus= Invulnerable Save of 5+."
         }
     ],
     "upgrades":[
