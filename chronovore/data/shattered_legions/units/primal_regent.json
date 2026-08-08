@@ -16,7 +16,7 @@
         "Primal"
     ],
     "secondary_faction":"Legion of The Regent",
-    "core_rules": ["Leader [Infantry]"],
+    "core_rules": ["Leader [Infantry]", "Support [Infantry]"],
     "unit_rules": [
         {
             "name":"The Regent",
