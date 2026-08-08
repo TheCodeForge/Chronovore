@@ -5,6 +5,27 @@
 <link id="mainstyle" href="/assets/style/faction/{{ d.color }}.css" rel="stylesheet">
 {% endblock %}
 
+{% block leftsidebar %}
+# Table of Contents
+<ul>
+<li><a href="#{{ f.name | snake }}_faction_rules">Faction Rules</a></li>
+<li><a href="#{{ 'detachment:_'+d.name | snake }}">Detachment Rules</a></li>
+<li><a href="#strategems">Strategems</a></li>
+{% if d.spells %}
+<li><a href="#spells">Spells</a></li>
+{% endif %}
+{% for upgrade in d.upgrades if session.get('qty_'+upgrade.faction.id+'_'+upgrade.id, 0) %}
+{% if loop.first %}
+<li><a href="#upgrades">Upgrades</a></li>
+{% endif %}
+{% endfor %}
+{% for u in units %}
+<li><a href="#{{ u.id }}">{{ u.name }}{{ ' ('+u.subtitle+')' if u.subtitle else '' }}</a></li>
+{% endfor %}
+</ul>
+{% endfilter %}
+{% endblock %}
+
 {% block pagecontent %}
 <div class="px-2 px-sm-0">
 
@@ -22,24 +43,6 @@
   <h2 class="small-caps">{{ d.name }}</h2>
 
   {% filter numbered_markdown %}
-
-  # Table of Contents
-<ul>
-<li><a href="#{{ f.name | snake }}_faction_rules">Faction Rules</a></li>
-<li><a href="#{{ 'detachment:_'+d.name | snake }}">Detachment Rules</a></li>
-<li><a href="#strategems">Strategems</a></li>
-{% if d.spells %}
-<li><a href="#spells">Spells</a></li>
-{% endif %}
-{% for upgrade in d.upgrades if session.get('qty_'+upgrade.faction.id+'_'+upgrade.id, 0) %}
-{% if loop.first %}
-<li><a href="#upgrades">Upgrades</a></li>
-{% endif %}
-{% endfor %}
-{% for u in units %}
-<li><a href="#{{ u.id }}">{{ u.name }}{{ ' ('+u.subtitle+')' if u.subtitle else '' }}</a></li>
-{% endfor %}
-</ul>
 
   {% include "elements/detachment_rules.html" %}
 
