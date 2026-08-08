@@ -44,7 +44,7 @@
             "cost": 1,
             "when": "After an Activated enemy unit declares an attack",
             "target": "The +Shattered Legions+ unit being attacked",
-            "effect": "Until the end of the Battle Round, attacks made against the target unit have their Armor Break worsened by 1 (to a minimum of 0)."
+            "effect": "Until the end of the Battle Round, attacks made against the target unit have their =shield-minus= Armor Break worsened by 1 (to a minimum of 0)."
         }
     ],
     "spells": [
