@@ -57,10 +57,10 @@
         {
             "name":"Follow Me Ladz",
             "cost":20,
-            "text":"+Leader+ models and their attached +Bodyguard+ models have +1\" to their Movement trait."
+            "text":"+Leader+ models and their attached +Bodyguard+ models have +1\" to their =person-running= Movement trait."
         },
         {
-            "name":"Supa-CybOrx",
+            "name":"Supa-Cyborx",
             "cost":40,
             "text":"Your +Warlord+ model gains !Feel No Pain 4+!."
         }
