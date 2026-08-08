@@ -64,7 +64,7 @@
         {
             "name":"Grim Execution",
             "cost":40,
-            "text":"Your +Shattered Legions+ +Infantry+ units have +1\" to their Movement traits while they are Battle-Shocked."
+            "text":"Your +Shattered Legions+ +Infantry+ units have +1\" to their =person-running= Movement traits while they are Battle-Shocked."
         }
     ]
 }
