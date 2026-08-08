@@ -47,6 +47,13 @@
             "effect": "Until the end of the Battle Round, attacks made against the target unit have their Armor Break worsened by 1 (to a minimum of 0)."
         }
     ],
+    "spells": [
+        {
+            "name":"Precognition",
+            "difficulty":8,
+            "text":"Until the end of the Battle Round, attacks made against the casting unit have their Strength and Armor Break traits worsened by 1."
+        }
+    ],
     "upgrades":[
         {
             "name":"Scion of the Regent",
