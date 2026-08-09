@@ -5,7 +5,7 @@ from chronovore.helpers.sigmoid import sigmoid
 
 from .base import Base
 
-from chronovore.__main__ import cache
+from chronovore.__main__ import cache, app
 
 class Weapon(Base):
 
