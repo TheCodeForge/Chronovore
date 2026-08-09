@@ -1,0 +1,45 @@
+{    
+    "name": "Warboss",
+    "move":6,
+    "tough": 5,
+    "save": 4,
+    "hp":6,
+    "lead": 6,
+    "oc": 1,
+    "invuln":5,
+    "base":40,
+    "default_gear":[
+        "komby_shoota",
+        "twin_slugga",
+        "big_choppa"
+    ],
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Grenades",
+        "Warboss"
+    ],
+    "core_rules": ["Leader [Infantry]"],
+    "unit_rules": [
+        {
+            "name":"Da Biggist and da Bestist",
+            "text":"While the YAAAARGH! is active, this model's melee weapons have +4 =swords= Attacks"
+        },
+        {
+            "name":"Da Boss",
+            "text":"While this model is leading a unit, melee weaposn in that unit have +1 to the Hit roll."
+        }
+    ],
+    "range_weapons": [
+        "shoota"
+    ],
+    "melee_weapons": [
+        "beast_wrangla_klaw",
+        "beastchoppa"
+    ],
+    "composition":[
+        "1 Beastboss"
+    ],
+    "models_min":1,
+    "models_max":1
+}

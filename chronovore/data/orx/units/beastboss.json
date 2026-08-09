@@ -1,6 +1,5 @@
 {    
     "name": "Beastboss",
-    "ppm": 80,
     "move":6,
     "tough": 5,
     "save": 4,

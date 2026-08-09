@@ -12,11 +12,11 @@
             "base":  "90x52",
             "default_gear":[
                 "slugga",
-                "big_choppa",
+                "yuge_choppa",
                 "skighog_teef"
             ],
             "range_weapons":["slugga"],
-            "melee_weapons":["big_choppa", "skighog_teef"],
+            "melee_weapons":["yuge_choppa", "skighog_teef"],
             "qty":1
         },
         {
@@ -56,7 +56,7 @@
         "slugga"
     ],
     "melee_weapons": [
-        "big_choppa",
+        "yuge_choppa",
         "stikka_melee",
         "skighog_teef"
     ],
