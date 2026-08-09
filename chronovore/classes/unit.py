@@ -36,7 +36,8 @@ class Unit(Base):
 
         if self.profiles:
 
-            print([x.ppm_computed()*x.__dict__.get("qty",1) for x in self.profiles])
+            if debug:
+                print(f"Profiles: {[x.ppm_computed()*x.__dict__.get('qty',1) for x in self.profiles]}")
 
             ppm = sum([x.ppm_computed()*x.__dict__.get("qty",1) for x in self.profiles])
 
