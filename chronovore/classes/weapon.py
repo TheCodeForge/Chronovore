@@ -26,6 +26,8 @@ class Weapon(Base):
     @lazy
     def weapon_points_raw(self):
 
+        debug = app.config.get("DEBUG_POINTS", False)
+
         if self.profiles:
             return max([x.weapon_points_raw for x in self.profiles])
 
@@ -132,5 +134,7 @@ class Weapon(Base):
                 elif kwd=="Twin-Linked":
                     weapon_pts *= 1.25
 
-        # print(f"    {self.name}: {weapon_pts}")
+        if debug:
+            print(f"    {self.name}: {weapon_pts}")
+
         return int(weapon_pts)
