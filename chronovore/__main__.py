@@ -38,8 +38,12 @@ app.config['BANNED_UAS']=[
 ]
 
 #===PROXYFIX===
-app.config["PROXYFIX_X_FOR"]=int(environ.get("PROXYFIX", "2").lstrip().rstrip())
-app.wsgi_app = ProxyFix(app.wsgi_app, x_for=app.config["PROXYFIX_X_FOR"])
+app.config["PROXYFIX_X_FOR"]                =int(environ.get("PROXYFIX", "2").lstrip().rstrip())
+app.wsgi_app                                = ProxyFix(app.wsgi_app, x_for=app.config["PROXYFIX_X_FOR"])
+
+
+#===DEBUGGING===
+app.config["DEBUG_POITNS"]                  =bool(int(environ.get("DEBUG_POINTS", 1)))
 
 @app.before_request
 def before_request():

@@ -5,7 +5,7 @@ from chronovore.helpers.sigmoid import sigmoid
 
 from .base import Base
 
-from chronovore.__main__ import cache
+from chronovore.__main__ import cache, app
 
 class Unit(Base):
 
@@ -29,7 +29,10 @@ class Unit(Base):
     @lazy
     def ppm_computed(self):
 
-        # print(self.name)
+        debug = app.config.get("DEBUG_POINTS", False)
+
+        if debug:
+            print(self.name)
 
         if self.profiles:
 
@@ -96,7 +99,8 @@ class Unit(Base):
         if "Stealth" in self.keywords:
             defensive *= 1.2
         
-        # print(f"Defensive: {defensive}")
+        if debug:
+            print(f"Defensive: {defensive}")
 
         psychic_offensive = 0
         ranged_offensive = 0
@@ -116,14 +120,16 @@ class Unit(Base):
         else:
             ranged_offensive = max([x.weapon_points_raw for x in self.ranged_weapons if x.id in self.default_gear] or [0])
 
-        # print(f"Ranged offense: {ranged_offensive}")
+        if debug:
+            print(f"Ranged offense: {ranged_offensive}")
 
         #count highest melee, then add extra attacks
         melee_offensive = max([x.weapon_points_raw for x in self.melee_weapons if x.id in self.default_gear and "Extra Attacks" not in x.keywords] or [0])
         melee_offensive += sum([x.weapon_points_raw for x in self.melee_weapons if x.id in self.default_gear and "Extra Attacks" in x.keywords] or [0])
 
 
-        # print(f"Melee offense: {melee_offensive}")
+        if debug:
+            print(f"Melee offense: {melee_offensive}")
 
         offensive = melee_offensive + ranged_offensive + psychic_offensive
 
@@ -164,9 +170,13 @@ class Unit(Base):
             if kwd=="Fly":
                 strategic *= 1.1
             
-        # print(f"Strategic: {strategic}")
+        if debug:
+            print(f"Strategic: {strategic}")
+        
         ppm = int((defensive * offensive * strategic)**(1/3) * 0.55)
-        # print(ppm)
+        
+        if debug:
+            print(f"Total: {ppm}")
 
         return ppm
 
