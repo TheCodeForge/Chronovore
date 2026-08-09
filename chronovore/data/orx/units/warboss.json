@@ -10,8 +10,9 @@
     "base":40,
     "default_gear":[
         "komby_shoota",
-        "twin_slugga",
-        "big_choppa"
+        "power_snappa",
+        "big_choppa",
+        "chompy_skig"
     ],
     "keywords": [
         "Infantry",
@@ -31,11 +32,12 @@
         }
     ],
     "range_weapons": [
-        "shoota"
+        "komby_shoota"
     ],
     "melee_weapons": [
-        "beast_wrangla_klaw",
-        "beastchoppa"
+        "power_snappa",
+        "big_choppa",
+        "chompy_skig"
     ],
     "composition":[
         "1 Beastboss"
