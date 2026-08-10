@@ -107,26 +107,26 @@ class Unit(Base):
         ranged_offensive = 0
         melee_offensive = 0
 
-        psychic_offensive = max([x.weapon_points_raw for x in self.psychic_weapons if x.id in self.default_gear] or [0])
+        psychic_offensive = max([x.weapon_points_raw for x in self.psychic_weapons if x in self.default_weapons] or [0])
 
         if self.__dict__.get('psyker') and psychic_offensive:
-            psychic_difficulty = min([x.psk for x in self.psychic_weapons if x.id in self.default_gear] or [0])
+            psychic_difficulty = min([x.psk for x in self.psychic_weapons if x in self.default_weapons] or [0])
             true_difficulty = max(psychic_difficulty-self.psyker, 2)
             psychic_offensive *= dice_map[true_difficulty]/dice_map[psychic_difficulty] 
 
         #monsters and vehicles can fire all guns; infantry cannot
 
         if any([x in self.keywords for x in ["Vehicle", "Monster"]]):
-            ranged_offensive = sum([x.weapon_points_raw for x in self.ranged_weapons if x.id in self.default_gear] or [0])
+            ranged_offensive = sum([x.weapon_points_raw for x in self.ranged_weapons if x in self.default_weapons] or [0])
         else:
-            ranged_offensive = max([x.weapon_points_raw for x in self.ranged_weapons if x.id in self.default_gear] or [0])
+            ranged_offensive = max([x.weapon_points_raw for x in self.ranged_weapons if x in self.default_weapons] or [0])
 
         if debug:
             print(f"Ranged offense: {ranged_offensive}")
 
         #count highest melee, then add extra attacks
-        melee_offensive = max([x.weapon_points_raw for x in self.melee_weapons if x.id in self.default_gear and "Extra Attacks" not in x.keywords] or [0])
-        melee_offensive += sum([x.weapon_points_raw for x in self.melee_weapons if x.id in self.default_gear and "Extra Attacks" in x.keywords] or [0])
+        melee_offensive = max([x.weapon_points_raw for x in self.melee_weapons if x in self.default_weapons and "Extra Attacks" not in x.keywords] or [0])
+        melee_offensive += sum([x.weapon_points_raw for x in self.melee_weapons if x in self.default_weapons and "Extra Attacks" in x.keywords] or [0])
 
 
         if debug:
