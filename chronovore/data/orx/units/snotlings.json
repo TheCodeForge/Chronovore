@@ -8,7 +8,8 @@
     "oc": 2,
     "base":25,
     "default_gear":[
-        "snot_blasta"
+        "snot_blasta",
+        "snotling_fists"
     ],
     "keywords": [
         "Infantry"
@@ -23,7 +24,7 @@
     "range_weapons": [
         "snot_blasta"
     ],
-    "melee_weapons": [],
+    "melee_weapons": ["snotling_fists"],
     "composition":[
         "10-20 Snotlings"
     ],
