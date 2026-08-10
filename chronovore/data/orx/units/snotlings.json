@@ -1,5 +1,5 @@
 {    
-    "name": "Snotling",
+    "name": "Snotlings",
     "move":6,
     "tough": 2,
     "save": 7,
@@ -21,15 +21,12 @@
         }
     ],
     "range_weapons": [
-        "shoota"
+        "snot_blasta"
     ],
-    "melee_weapons": [
-        "beast_wrangla_klaw",
-        "beastchoppa"
-    ],
+    "melee_weapons": [],
     "composition":[
-        "1 Beastboss"
+        "10-20 Snotlings"
     ],
-    "models_min":1,
-    "models_max":1
+    "models_min":10,
+    "models_max":20
 }
