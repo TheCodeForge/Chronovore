@@ -1,0 +1,35 @@
+{    
+    "name": "Snotling",
+    "move":6,
+    "tough": 2,
+    "save": 7,
+    "hp":1,
+    "lead": 8,
+    "oc": 2,
+    "base":25,
+    "default_gear":[
+        "snot_blasta"
+    ],
+    "keywords": [
+        "Infantry"
+    ],
+    "core_rules": [],
+    "unit_rules": [
+        {
+            "name":"Thieving Scroungers",
+            "text":"At the start of the Battle Round, if this unit controls an Objective and is not Battle-Shocked, roll d6. On a result of 4+, gain 1 CP."
+        }
+    ],
+    "range_weapons": [
+        "shoota"
+    ],
+    "melee_weapons": [
+        "beast_wrangla_klaw",
+        "beastchoppa"
+    ],
+    "composition":[
+        "1 Beastboss"
+    ],
+    "models_min":1,
+    "models_max":1
+}
