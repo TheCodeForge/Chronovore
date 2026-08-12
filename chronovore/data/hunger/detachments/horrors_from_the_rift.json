@@ -1,6 +1,11 @@
 {
     "name": "Horrors from the Rift",
     "rules": [
+        {
+            "name": "Deepened Fear",
+            "difficulty":6,
+            "effect": "Enemy units have -1 to the Battle-Shock tests taken due to the Shadow in the Void."
+        }
     ],
     "spells":[
         {
