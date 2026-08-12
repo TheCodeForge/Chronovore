@@ -3,6 +3,7 @@
     "rules": [
         {
             "name": "Deepened Fear",
+            "lore":"As the Hunger pour forth from the Void Rifts, their feral psychic presence overwhelms the minds of their opponents.",
             "difficulty":6,
             "effect": "Enemy units have -1 to the Battle-Shock tests taken due to the Shadow in the Void."
         }
