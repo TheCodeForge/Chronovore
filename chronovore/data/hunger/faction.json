@@ -16,7 +16,7 @@
         {
             "name": "Shadow in the Void",
             "lore": "As the Hunger travel the Void Rifts, their presence instills dread into their psychically sensitive prey. Oftentimes, this is the only warning their targets have of the impending doom.",
-            "text": "Enemy units have -1 to all Leadership and Battle-Shock tests. Once per battle, at the start of the Battle Round, you may declare that the Shadow in the Void is in effect. When you do, all enemy units must take a Battle-Shock test."
+            "text": "Once per battle, at the start of the Battle Round, you may declare that the Shadow in the Void is in effect. When you do, all enemy units must take a Battle-Shock test."
         }
     ],
     "color":"66023C"
