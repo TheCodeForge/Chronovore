@@ -1,0 +1,13 @@
+{
+    "name": "Psychocollar",
+    "keywords":[
+        "Precision",
+        "Psychic"
+    ],
+    "psk":8,
+    "atk":2,
+    "target":"aoe",
+    "rng": 6,
+    "ap": 1,
+    "dmg":1
+}
