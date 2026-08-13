@@ -1,0 +1,32 @@
+{
+    "name": "Hork's Roar",
+    "profiles":[
+        {
+            "name": "Aimed",
+            "keywords":[
+                "Lethal Hits",
+                "Rapid Fire 4"
+            ],
+            "rng":36,
+            "atk":12,
+            "skl":5,
+            "str":6,
+            "ap": 1,
+            "dmg":1
+        },
+        {
+            "name": "Point Blank",
+            "keywords":[
+                "Pistol",
+                "Torrent"
+            ],
+            "rng":9,
+            "atk":"2d6+2",
+            "skl":null,
+            "str":6,
+            "ap": 1,
+            "dmg":1
+        }
+    ]
+    
+}
