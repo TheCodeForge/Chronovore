@@ -99,8 +99,11 @@ class Weapon(Base):
                     weapon_pts *= anti_map[number]
                 elif kwd=="Assault":
                     weapon_pts *= 1.1
-                elif kwd=="Blast":
+                elif kwd=="Blast" or kwd=="Cleave":
                     weapon_pts *= 1.1
+                elif kwd.startswith("Blast ") or kwd.startswith("Cleave "):
+                    number = int(kwd.split()[1])
+                    weapon_pts *= 1.1**number
                 elif kwd=="Demoralizing":
                     weapon_pts *= 1.1
                 elif kwd=="Devastating Wounds":
