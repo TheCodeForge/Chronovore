@@ -5,6 +5,12 @@
         "Assault": "This weapon may be used to make a Shoot action after having made an Advance movement, with -1 to Hit.",
 
         "Blast": "For every five Models in the target unit (rounded down) increase the number of attacks by 1",
+        
+        "Blast X": "For every five Models in the target unit (rounded down) increase the number of attacks by X",
+
+        "Cleave": "For every five Models in the target unit (rounded down) increase the number of attacks by 1",
+        
+        "Cleave X": "For every five Models in the target unit (rounded down) increase the number of attacks by X",
 
         "Demoralizing": "Enemy units damaged by this weapon must immediately take a Battle-Shock test.",
         
