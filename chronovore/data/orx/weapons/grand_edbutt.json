@@ -1,0 +1,13 @@
+{
+    "name": "Grand 'Edbutt",
+    "keywords":[
+        "Extra Attacks",
+        "Devastating Wounds",
+        "Precise"
+    ],
+    "atk":1,
+    "skl":2,
+    "str":14,
+    "ap": 2,
+    "dmg":"d3+3"
+}
