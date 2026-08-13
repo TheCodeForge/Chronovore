@@ -1,0 +1,46 @@
+{    
+    "name": "Thrazgull_Gakka",
+    "move":8,
+    "tough": 10,
+    "save": 2,
+    "hp":16,
+    "lead": 6,
+    "oc": 4,
+    "invuln":4,
+    "base":50,
+    "default_gear":[
+        "horks_roar",
+        "borks_klaw",
+        "grand_edbutt"
+    ],
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Supreme Commander",
+        "Grenades"
+    ],
+    "core_rules": [],
+    "faction_rules": ["WAAAAGH!"],
+    "unit_rules": [
+        {
+            "name":"Da Warlord's Boiz",
+            "text":"While within 3\" of a friendly +Orx+ +Infantry+ unit, this model has +Lone Operative+."
+        },
+        {
+            "name":"Holy Prophet of da Yaaargh",
+            "text":"Friendly +Orx+ units within 6\" have +1 to their Hit rolls and +1 to their Wound rolls."
+        }
+    ],
+    "range_weapons": [
+        "horks_roar"
+    ],
+    "melee_weapons": [
+        "borks_klaw",
+        "grand_edbutt"
+    ],
+    "composition":[
+        "1 Thrazgull Gakka"
+    ],
+    "models_min":1,
+    "models_max":1
+}
