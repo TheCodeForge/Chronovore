@@ -1,0 +1,12 @@
+{
+    "name": "Bork's Klaw",
+    "keywords":[
+        "Blast 2",
+        "Devastating Wounds"
+    ],
+    "atk":7,
+    "skl":2,
+    "str":14,
+    "ap": 3,
+    "dmg":4
+}
