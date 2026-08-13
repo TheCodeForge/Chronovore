@@ -25,7 +25,7 @@
 {% for rule in d.rules %}
 ## {{ rule['name'] }}
 
-{% if rule.get('lore') %}
+{% if rule.get('lore') and not request.path.endswith('/armylist') %}
 *{{ rule['lore'] }}*
 {% endif %}
 
