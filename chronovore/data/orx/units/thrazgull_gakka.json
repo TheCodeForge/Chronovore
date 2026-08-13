@@ -17,7 +17,8 @@
         "Infantry",
         "Character",
         "Supreme Commander",
-        "Grenades"
+        "Grenades",
+        "Hero"
     ],
     "core_rules": [],
     "faction_rules": ["WAAAAGH!"],
