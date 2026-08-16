@@ -2,8 +2,8 @@
 
 {% block title %}
 <title>Army: {{ f.name }} / {{ d.name }}</title>
-<link id="lightstyle" href="/assets/style/faction/{{ f.color }}.css" rel="{% if not session.get('darkmode')%}stylesheet{% endif %}">
-<link id="darkstyle" href="/assets/style/faction/{{ f.color_dark }}.css" rel="{% if session.get('darkmode')%}stylesheet{% endif %}">
+<link id="lightstyle" href="/assets/style/faction/{{ d.color }}.css" rel="stylesheet" {% if not session.get('darkmode')%}disabled{% endif %}>
+<link id="darkstyle" href="/assets/style/faction/{{ d.color_dark }}.css" rel="stylesheet" {% if session.get('darkmode')%}disabled{% endif %}>
 {% endblock %}
 
 {% block pagecontent %}
