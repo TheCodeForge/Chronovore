@@ -1,0 +1,43 @@
+{    
+    "name": "Weirdboi",
+    "move":6,
+    "tough": 5,
+    "save": 5,
+    "hp":4,
+    "lead": 7,
+    "oc": 1,
+    "base":40,
+    "default_gear":[
+        "weirdboi_staff",
+        "psychocollar"
+    ],
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Grenades"
+    ],
+    "core_rules": ["Leader [Infantry]"],
+    "unit_rules": [
+        {
+            "name":"Yaaaargh Energy",
+            "text":"While this model is a [Leader], add 1 to the =fist= Strength and =droplet= Damage traits of this model's weaposn for every 5 models in the unit (rounding down). While this model's unit has 10 or more models, the weapon gains +[Hazardous]+"
+        },
+        {
+            "name":"Da Jump",
+            "text":"After this model's unit finishes its Movement, you may use this ability. Roll d6; on a 1, this unit suffers d6 Mortal Damage. On a 2+, remove this model's unit from the Battlefield and replace it anywhere that is at least 9\" horizontally from all enemy models."
+        }
+    ],
+    "psychic_weapons":[
+      "psychocollar"  
+    ],
+    "range_weapons": [
+    ],
+    "melee_weapons": [
+        "weirdboi_staff",
+    ],
+    "composition":[
+        "1 Beastboss"
+    ],
+    "models_min":1,
+    "models_max":1
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Weirdboi Staff",
+    "keywords":["Psychic"],
+    "atk":3,
+    "skl":3,
+    "str":8,
+    "ap": 1,
+    "dmg":"d3"
+}
