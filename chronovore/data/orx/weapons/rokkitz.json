@@ -1,0 +1,11 @@
+{
+    "name": "Rokkitz",
+    "keywords":[],
+    "rng":24,
+    "atk":"d3+3",
+    "skl":5,
+    "str":10,
+    "ap": 2,
+    "dmg":3,
+    "ability":"Enemy units hit by this weapon have -1 to Hit rolls during their next Activation."
+}
