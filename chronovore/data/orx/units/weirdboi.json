@@ -7,10 +7,6 @@
     "lead": 7,
     "oc": 1,
     "base":40,
-    "default_gear":[
-        "weirdboi_staff",
-        "psychocollar"
-    ],
     "keywords": [
         "Infantry",
         "Character",
@@ -20,7 +16,7 @@
     "unit_rules": [
         {
             "name":"Yaaaargh Energy",
-            "text":"While this model is a [Leader], add 1 to the =fist= Strength and =droplet= Damage traits of this model's weaposn for every 5 models in the unit (rounding down). While this model's unit has 10 or more models, the weapon gains +[Hazardous]+"
+            "text":"While this model is a +Leader+, add 1 to the =fist= Strength and =droplet= Damage traits of this model's weaposn for every 5 models in the unit (rounding down). While this model's unit has 10 or more models, the weapon gains +[Hazardous]+"
         },
         {
             "name":"Da Jump",
@@ -34,6 +30,10 @@
     ],
     "melee_weapons": [
         "weirdboi_staff"
+    ],
+    "default_gear":[
+        "weirdboi_staff",
+        "psychocollar"
     ],
     "composition":[
         "1 Weirdboi"
