@@ -175,12 +175,18 @@ $('.toast-form-submit').click(function(){
 $("#dark-mode-toggle").click(function(){
   post('/toggle_darkmode',
     callback=function(){
-      var s = $('#mainstyle')
+      var s = $('#mainstyle');
+      var l = $('lightstyle');
+      var d = $('darkstyle');
       if( s.prop('href').endsWith('light.css?v=0.0.1')){
-        s.prop('href','/assets/style/dark.css?v=0.0.1')
+        s.prop('href','/assets/style/dark.css?v=0.0.1');
+        l.prop('rel','');
+        d.prop('rel','stylesheet')
       }
       else{
-        s.prop('href','/assets/style/light.css?v=0.0.1')
+        s.prop('href','/assets/style/light.css?v=0.0.1');
+        l.prop('rel','stylesheet');
+        d.prop('rel','')
       }
     })
 })
