@@ -48,7 +48,7 @@ class Detachment(Base):
 
     @property
     def color_dark(self):
-        return self.__dict__.get("color_dark", self.color)
+        return self.__dict__.get("color_dark", self.faction.color_dark)
 
     @property
     @cache.memoize()
