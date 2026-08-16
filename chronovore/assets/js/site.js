@@ -175,16 +175,19 @@ $('.toast-form-submit').click(function(){
 $("#dark-mode-toggle").click(function(){
   post('/toggle_darkmode',
     callback=function(){
-      var s = $('#mainstyle');
+      var ml = $('#mainlight');
+      var md = $('#maindark')
       var l = $('#lightstyle');
       var d = $('#darkstyle');
-      if( s.prop('href').endsWith('light.css?v=0.0.1')){
-        s.prop('href','/assets/style/dark.css?v=0.0.1');
+      if( ml.prop('disabled')==false){
+        ml.prop('disabled',true);
+        md.prop('disabled', false)
         l.prop('disabled',true);
         d.prop('disabled', false)
       }
       else{
-        s.prop('href','/assets/style/light.css?v=0.0.1');
+        ml.prop('disabled', false);
+        md.prop('disabled',true)
         l.prop('disabled', false);
         d.prop('disabled',true)
       }

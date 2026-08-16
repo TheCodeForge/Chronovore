@@ -1,9 +1,7 @@
 <head>
   <link href="/assets/images/favicon.png" rel="icon">
-  {% if session.get('darkmode') %}
-    <link id="mainstyle" href="/assets/style/dark.css?v=0.0.1" rel="stylesheet">
-  {% else %}
-    <link id="mainstyle" href="/assets/style/light.css?v=0.0.1" rel="stylesheet">
+  <link id="mainlight" href="/assets/style/light.css?v=0.0.1" rel="stylesheet" {% if session.get('darkmode')%}disabled{% endif %}>
+  <link id="maindark"  href="/assets/style/dark.css?v=0.0.1"  rel="stylesheet" {% if not session.get('darkmode')%}disabled{% endif %}>
   {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--FontAwesome-->
