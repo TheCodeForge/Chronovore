@@ -27,10 +27,7 @@ def faction_faction_unit_unit(faction, unit, detachment=None):
 
     f=get_faction(faction)
 
-    if session.get('darkmode') and f.__dict__.get('color_dark'):
-        color=f.color_dark
-    else:
-        color=f.color
+    color=f.color
 
     u = f.unit(unit)
 
@@ -38,10 +35,7 @@ def faction_faction_unit_unit(faction, unit, detachment=None):
         d=f.detachment(detachment)
         if not d.is_legal(u):
             abort(404)
-        if session.get('darkmode') and d.__dict__.get('color_dark'):
-            color=d.color_dark
-        else:
-            color=d.color
+        color=d.color
     else:
         d=None
 
