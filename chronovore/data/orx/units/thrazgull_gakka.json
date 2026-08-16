@@ -21,7 +21,6 @@
         "Hero"
     ],
     "core_rules": [],
-    "faction_rules": ["WAAAAGH!"],
     "unit_rules": [
         {
             "name":"Da Warlord's Boiz",

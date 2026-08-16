@@ -1,0 +1,38 @@
+{    
+    "name": "Painboi",
+    "move":6,
+    "tough": 5,
+    "save": 5,
+    "hp":3,
+    "lead": 7,
+    "oc": 1,
+    "base":32,
+    "default_gear":[
+        "snappy_klaw",
+        "urty_needle"
+    ],
+    "keywords": [
+        "Infantry",
+        "Character",
+        "Painboi"
+    ],
+    "core_rules": ["Leader [Infantry]"],
+    "unit_rules": [
+    ],
+    "range_weapons": [
+        "shoota"
+    ],
+    "melee_weapons": [
+        "snappy_klaw",
+        "urty_needle"
+    ],
+    "wargear":[
+        "snotling_elper"
+    ],
+    "composition":[
+        "1 Painboi",
+        "1 Snotling 'Elper token"
+    ],
+    "models_min":1,
+    "models_max":1
+}

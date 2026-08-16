@@ -44,7 +44,6 @@
         "Beast Snagga"
     ],
     "core_rules": ["Feel No Pain 5+"],
-    "faction_rules": ["WAAAAGH!"],
     "unit_rules": [{
             "name":"Wild Ride",
             "text":"This unit may ignore any or all modifiers to its Move trait and to its Advance and Charge rolls."

@@ -21,7 +21,6 @@
         "Warboss"
     ],
     "core_rules": ["Feel No Pain 6+", "Leader [Beast Wrangla]"],
-    "faction_rules": ["WAAAAGH!"],
     "unit_rules": [
         {
             "name":"Beastboss",
