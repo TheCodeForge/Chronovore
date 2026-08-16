@@ -1,6 +1,7 @@
 {
     "name": "Manifest Deities",
     "color": "015971",
+    "color_dark": "347a8d",
     "lore": "Given enough time and energy, the Void manifests all beliefs into reality. None have benefited from this phenomenon so well as the Ronnec, whose ancient pagan gods stepped forth from the Rifts, ready for battle.",
     "rules": [ 
         {
