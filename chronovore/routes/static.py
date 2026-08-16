@@ -33,7 +33,11 @@ def lore_x(x):
 def light_css(stylefile, color=None):
     with open(safe_join("chronovore/assets/style/", stylefile)+'.scss') as stylesheet:
         scss=stylesheet.read()
-        scss=scss.replace('{primary}', app.config['COLOR_PRIMARY'])
+        if stylefile=="light":
+            scss=scss.replace('{primary}', app.config['COLOR_PRIMARY'])
+        else:
+
+            scss=scss.replace('{primary}', app.config['COLOR_PRIMARY_DARK'])
         scss=scss.replace('{secondary}', app.config['COLOR_SECONDARY'])
         scss=scss.replace('{faction}', str(color) if color else '')
 
