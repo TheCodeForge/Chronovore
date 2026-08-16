@@ -33,10 +33,10 @@
     "range_weapons": [
     ],
     "melee_weapons": [
-        "weirdboi_staff",
+        "weirdboi_staff"
     ],
     "composition":[
-        "1 Beastboss"
+        "1 Weirdboi"
     ],
     "models_min":1,
     "models_max":1
