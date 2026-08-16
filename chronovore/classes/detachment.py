@@ -44,7 +44,7 @@ class Detachment(Base):
 
     @property
     def color(self):
-        return self.__dict__.get("color", "000000")
+        return self.__dict__.get("color", self.faction.color)
 
     @property
     def color_dark(self):
