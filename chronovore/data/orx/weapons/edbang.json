@@ -5,7 +5,7 @@
         "Psychic"
     ],
     "psk":9,
-    "atk":2,
+    "atk":1,
     "target":"single",
     "rng": 24,
     "ap": 3,
