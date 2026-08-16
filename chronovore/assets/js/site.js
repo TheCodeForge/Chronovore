@@ -180,13 +180,13 @@ $("#dark-mode-toggle").click(function(){
       var d = $('#darkstyle');
       if( s.prop('href').endsWith('light.css?v=0.0.1')){
         s.prop('href','/assets/style/dark.css?v=0.0.1');
-        l.prop('rel','');
-        d.prop('rel','stylesheet')
+        l.prop('disabled',true);
+        d.removeProp('disabled')
       }
       else{
         s.prop('href','/assets/style/light.css?v=0.0.1');
-        l.prop('rel','stylesheet');
-        d.prop('rel','')
+        l.removeProp('disabled');
+        d.prop('disabled',true)
       }
     })
 })
