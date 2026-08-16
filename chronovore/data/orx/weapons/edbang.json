@@ -1,0 +1,13 @@
+{
+    "name": "'Edbang",
+    "keywords":[
+        "Precise",
+        "Psychic"
+    ],
+    "psk":9,
+    "atk":2,
+    "target":"single",
+    "rng": 24,
+    "ap": 3,
+    "dmg":1
+}

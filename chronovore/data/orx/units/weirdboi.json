@@ -25,7 +25,8 @@
         }
     ],
     "psychic_weapons":[
-      "psychocollar"  
+      "psychocollar",
+      "edbang"
     ],
     "range_weapons": [
     ],
@@ -34,7 +35,8 @@
     ],
     "default_gear":[
         "weirdboi_staff",
-        "psychocollar"
+        "psychocollar",
+        "edbang"
     ],
     "composition":[
         "1 Weirdboi"
