@@ -100,7 +100,7 @@
     </form>
     {% endif %}
   </td>
-  <td class="align-middle" colspan="2">{{ weapon.name }} - {{ profile.name }}{% if profile.keywords %}<br><span class="keyword-group">[{{ ", ".join(profile.keywords | sort | keyword) | safe }}]</span>{% endif %}{% if profile.ability %}<br><span class="text-small">{{ profile.ability }}</span>{% endif %}</td>
+  <td class="align-middle" colspan="2">{{ weapon.name }} - {{ profile.name }}{% if profile.keywords %}<br><span class="keyword-group">[{{ ", ".join(profile.keywords | sort | keyword) | safe }}]</span>{% endif %}{% if profile.ability %}<br><span class="text-small">{{ profile.ability | markdown | safe }}</span>{% endif %}</td>
   <td class="text-center align-middle text-nowrap">{{ profile.atk }}</td>
   <td class="text-center align-middle">{{ (profile.skl|str)+'+' if profile.skl else '-' }}</td>
   <td class="text-center align-middle">{{ profile.str }}</td>
@@ -119,7 +119,7 @@
       <input id="qty_{{ u.id }}_{{ weapon.id }}" type="number" class="form-control wep-qty mx-auto" min="0" max="{{ u.max_models }}" data-form="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" value="{{ session.get('qty_'+u.faction.id+'_'+u.id+'_'+weapon.id,'') }}" name="qty">
     </form>
   </td>
-  <td class="align-middle" colspan="2">{{ weapon.name }}{% if weapon.keywords %}<br><span class="keyword-group">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}{% if weapon.ability %}<br><span class="text-small">{{ weapon.ability }}</span>{% endif %}</td>
+  <td class="align-middle" colspan="2">{{ weapon.name }}{% if weapon.keywords %}<br><span class="keyword-group">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}{% if weapon.ability %}<br><span class="text-small">{{ weapon.ability | markdown | safe }}</span>{% endif %}</td>
   <td class="text-center align-middle text-nowrap">{{ weapon.atk }}</td>
   <td class="text-center align-middle">{{ (weapon.skl|str)+'+' if weapon.skl else '-' }}</td>
   <td class="text-center align-middle">{{ weapon.str }}</td>
@@ -146,7 +146,7 @@
     </form>
     {% endif %}
   </td>
-  <td class="align-middle">{{ weapon.name }} - {{ profile.name }}{% if profile.keywords %}<br><span class="keyword-group">[{{ ", ".join(profile.keywords | sort | keyword) | safe }}]</span>{% endif %}{% if profile.ability %}<br><span class="text-small">{{ profile.ability }}</span>{% endif %}</td>
+  <td class="align-middle">{{ weapon.name }} - {{ profile.name }}{% if profile.keywords %}<br><span class="keyword-group">[{{ ", ".join(profile.keywords | sort | keyword) | safe }}]</span>{% endif %}{% if profile.ability %}<br><span class="text-small">{{ profile.ability | markdown | safe }}</span>{% endif %}</td>
   <td class="text-center align-middle">{% if profile.rng %}{{ profile.rng }}"{% endif %}</td>
   <td class="text-center align-middle text-nowrap">{{ profile.atk }}</td>
   <td class="text-center align-middle">{{ (profile.skl|str)+'+' if profile.skl else '-' }}</td>
@@ -166,7 +166,7 @@
       <input id="qty_{{ u.id }}_{{ weapon.id }}" type="number" class="form-control wep-qty mx-auto" min="0" max="{{ u.max_models }}" data-form="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" value="{{ session.get('qty_'+u.faction.id+'_'+u.id+'_'+weapon.id,'') }}" name="qty">
     </form>
   </td>
-  <td class="align-middle">{{ weapon.name }}{% if weapon.keywords %}<br><span class="keyword-group">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}{% if weapon.ability %}<br><span class="text-small">{{ weapon.ability }}</span>{% endif %}</td>
+  <td class="align-middle">{{ weapon.name }}{% if weapon.keywords %}<br><span class="keyword-group">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}{% if weapon.ability %}<br><span class="text-small">{{ weapon.ability | markdown | safe }}</span>{% endif %}</td>
   <td class="text-center align-middle">{% if weapon.rng %}{{ weapon.rng }}"{% endif %}</td>
   <td class="text-center align-middle text-nowrap">{{ weapon.atk }}</td>
   <td class="text-center align-middle">{{ (weapon.skl|str)+'+' if weapon.skl else '-' }}</td>
@@ -198,7 +198,7 @@
     </form>
     {% endif %}
   </td>
-  <td class="align-middle">{{ weapon.name }} - {{ profile.name }}{% if profile.keywords %}<br><span class="keyword-group">[{{ ", ".join(profile.keywords | sort | keyword) | safe }}]</span>{% endif %}{% if profile.ability %}<br><span class="text-small">{{ profile.ability }}</span>{% endif %}</td>
+  <td class="align-middle">{{ weapon.name }} - {{ profile.name }}{% if profile.keywords %}<br><span class="keyword-group">[{{ ", ".join(profile.keywords | sort | keyword) | safe }}]</span>{% endif %}{% if profile.ability %}<br><span class="text-small">{{ profile.ability | markdown | safe }}</span>{% endif %}</td>
   <td class="text-center align-middle">{% if profile.rng %}{{ profile.rng }}"{% endif %}</td>
   <td class="text-center align-middle">{{ profile.atk }}</td>
   <td class="text-center align-middle"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="{{ target_descriptions.get(profile.target) or 'unknown' }}"><i class="fas fa-{{ target_icons.get(profile.target) or 'question' }}"></i></span></td>
@@ -218,7 +218,7 @@
       <input id="qty_{{ u.id }}_{{ weapon.id }}" type="number" class="form-control wep-qty mx-auto" min="0" max="{{ u.max_models }}" data-form="form_qty_{{ u.faction.id }}_{{ u.id }}_{{ weapon.id }}" value="{{ session.get('qty_'+u.faction.id+'_'+u.id+'_'+weapon.id,'') }}" name="qty">
     </form>
   </td>
-  <td class="align-middle">{{ weapon.name }}{% if weapon.keywords %}<br><span class="keyword-group">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}{% if weapon.ability %}<br><span class="text-small">{{ weapon.ability }}</span>{% endif %}</td>
+  <td class="align-middle">{{ weapon.name }}{% if weapon.keywords %}<br><span class="keyword-group">[{{ ", ".join(weapon.keywords | sort | keyword) | safe }}]</span>{% endif %}{% if weapon.ability %}<br><span class="text-small">{{ weapon.ability | markdown | safe }}</span>{% endif %}</td>
   <td class="text-center align-middle">{% if weapon.rng %}{{ weapon.rng }}"{% endif %}</td>
   <td class="text-center align-middle">{{ weapon.atk }}</td>
   <td class="text-center align-middle"><span type="button" class="text-nowrap" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="click hover focus" data-bs-content="{{ target_descriptions.get(weapon.target) or 'unknown' }}"><i class="fas fa-{{ target_icons.get(weapon.target) or 'question' }}"></i></span></td>
