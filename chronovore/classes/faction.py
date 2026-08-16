@@ -176,9 +176,10 @@ class Faction(Base):
 
 
     @property
-    # @cache.memoize()
     def color(self):
-        if session.get("darkmode")==True and self.__dict__.get("color_dark"):
-            return self.color_dark
-        else:
-            return self.__dict__.get("color", "000000")
+        return self.__dict__.get("color", "000000")
+
+    @property
+    def color_dark(self):
+        return self.__dict__.get("color_dark", self.color)
+

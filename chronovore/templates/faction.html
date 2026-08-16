@@ -2,7 +2,8 @@
 
 {% block title %}
 <title>{{ f.name }} </title>
-<link id="mainstyle" href="/assets/style/faction/{{ f.color }}.css" rel="stylesheet">
+<link id="lightstyle" href="/assets/style/faction/{{ f.color }}.css" rel="{% if not session.get('darkmode')%}stylesheet{% endif %}">
+<link id="darkstyle" href="/assets/style/faction/{{ f.color_dark }}.css" rel="{% if session.get('darkmode')%}stylesheet{% endif %}">
 {% endblock %}
 
 {% block pagecontent %}
