@@ -30,6 +30,7 @@ app.config['SESSION_COOKIE_SECURE']         = True
 #===STYLE===
 app.config['COLOR_PRIMARY']                 = environ.get("COLOR_PRIMARY", "0d6efd").lstrip().rstrip()
 app.config['COLOR_SECONDARY']               = environ.get("COLOR_SECONDARY", "6c757d").lstrip().rstrip()
+app.config['COLOR_PRIMARY_DARK']            = environ.get("COLOR_PRIMARY_DARK", "6d4149").lstrip().rstrip()
 
 #===BANNED BOTS===
 app.config['BANNED_UAS']=[
