@@ -50,7 +50,6 @@ def faction_faction_unit_unit(faction, unit, detachment=None):
 def faction_faction_detachment_detachment_armylist(faction, detachment):
 
     f=get_faction(faction)
-    color=f.color
 
     d=f.detachment(detachment)
 
@@ -67,6 +66,6 @@ def faction_faction_detachment_detachment_armylist(faction, detachment):
         "army.html",
         f=f,
         d=d,
-        color=color,
+        color=d.color,
         units=units
         )
