@@ -19,5 +19,6 @@
             "text": "Once per battle, at the start of the Battle Round, you may declare that the Shadow in the Void is in effect. When you do, all enemy units must take a Battle-Shock test."
         }
     ],
-    "color":"66023C"
+    "color":"66023C",
+    "color_dark": "853563"
 }
