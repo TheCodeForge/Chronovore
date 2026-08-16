@@ -181,11 +181,11 @@ $("#dark-mode-toggle").click(function(){
       if( s.prop('href').endsWith('light.css?v=0.0.1')){
         s.prop('href','/assets/style/dark.css?v=0.0.1');
         l.prop('disabled',true);
-        d.removeProp('disabled')
+        d.prop('disabled', false)
       }
       else{
         s.prop('href','/assets/style/light.css?v=0.0.1');
-        l.removeProp('disabled');
+        l.prop('disabled', false);
         d.prop('disabled',true)
       }
     })
