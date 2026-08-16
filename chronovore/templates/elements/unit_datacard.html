@@ -17,7 +17,7 @@
     </ul>
     {% endif %}
 
-    {% if (u.weapons | listcomp("ability") | any) and not (u.weapons | listcomp("dmg") | any) %}
+    {% if (u.weapons | listcomp("ability") | any) and not (u.weapons | listcomp("dmg") | all) %}
     <p><span class="fw-bold text-faction">WARGEAR ABILITIES</span></p>
     <ul>
     {% for weapon in u.weapons if weapon.ability  and not weapon.dmg %}
