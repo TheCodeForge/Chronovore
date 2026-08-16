@@ -176,8 +176,8 @@ $("#dark-mode-toggle").click(function(){
   post('/toggle_darkmode',
     callback=function(){
       var s = $('#mainstyle');
-      var l = $('lightstyle');
-      var d = $('darkstyle');
+      var l = $('#lightstyle');
+      var d = $('#darkstyle');
       if( s.prop('href').endsWith('light.css?v=0.0.1')){
         s.prop('href','/assets/style/dark.css?v=0.0.1');
         l.prop('rel','');
