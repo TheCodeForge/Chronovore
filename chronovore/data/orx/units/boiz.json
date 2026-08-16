@@ -50,7 +50,7 @@
     ],
     "range_weapons": [
         "slugga",
-        "rokkitz"
+        "rokkit"
     ],
     "melee_weapons": [
         "choppa",
@@ -65,7 +65,7 @@
     "models_max":20,
     "replacement_gear":{
         "Every 10th Boi's Slugga and Choppa":[
-            "rokkitz"
+            "rokkit"
         ]
     }
 }
