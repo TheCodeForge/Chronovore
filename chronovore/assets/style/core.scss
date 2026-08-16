@@ -26,8 +26,8 @@ $small-font-size: 12px;
     font-size: $small-font-size!important;
 }
 
-.card-body {
-    z-index:10;
+.card-body 
+{    z-index:10;
 }
 
 /*Input overlay icon label for donate page*/
@@ -207,4 +207,9 @@ span.fa-stack.fa-stack-inline {
     .d-narrow-print {
         display: block !important;
     }
+}
+
+/* Faction table */
+table.table-faction > thead > tr > th {
+  color: $white;
 }
