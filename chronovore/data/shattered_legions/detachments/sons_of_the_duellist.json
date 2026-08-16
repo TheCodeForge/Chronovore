@@ -1,6 +1,7 @@
 {
     "name": "Sons of the Duellist",
     "color": "00401f",
+    "color_dark": "33664c",
     "secondary_faction":"Legion of The Duellist",
     "banned_keywords": [],
     "lore": "The Primal Duellist is perhaps the second-greatest swordsman to ever exist, after only the Shattered King himself. His clashes with enemies have become tales of legend, holding off larger and stronger foes through sheer wit and skill. His Legion likewise excels at handling the worst enemies to be found in the realms, using superior weapons, specialized equipment, and cunning tactics to achieve victory",
