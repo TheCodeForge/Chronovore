@@ -1,6 +1,7 @@
 import json
 import os
 from werkzeug.utils import safe_join
+from flask import session
 
 from chronovore.helpers.lazy import lazy
 
