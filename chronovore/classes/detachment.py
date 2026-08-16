@@ -44,7 +44,10 @@ class Detachment(Base):
     @property
     @cache.memoize()
     def color(self):
-        return self.__dict__.get('color', self.faction.color)
+        if session.get("darkmode") and self.__dict__.get("color_dark"):
+            return self.color_dark
+        else:
+            return self.__dict__.get("color", "000000")
 
     @property
     @cache.memoize()
