@@ -17,7 +17,7 @@
     "unit_rules": [
         {
             "name":"Yaaaargh Energy",
-            "text":"While this model is a +Leader+, add 1 to the =hand-fist= Strength and =droplet= Damage traits of this model's Psychocollar for every 5 models in the unit (rounding down). While this model's unit has 10 or more models, the weapon gains +[Hazardous]+"
+            "text":"While this model is a +Leader+, add 1 to the =hand-fist= Strength and =droplet= Damage traits of this model's Psychocollar for every 5 models in the unit (rounding down). While this model's unit has 10 or more models, the Psychocollar gains +[Hazardous]+"
         },
         {
             "name":"Da Jump",
