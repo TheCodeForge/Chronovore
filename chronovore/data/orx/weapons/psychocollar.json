@@ -8,5 +8,6 @@
     "target":"aoe",
     "rng": 6,
     "ap": 1,
-    "dmg":1
+    "dmg":1,
+    "ability":"Has +1 to the =hand-fist= Strength and =droplet= Damage traits of this model's Psychocollar for every 5 models in the bearer's unit (rounding down). Has +[Hazardous]+ while the bearer's unit has 10 or more models."
 }

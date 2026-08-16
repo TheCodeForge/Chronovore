@@ -16,10 +16,6 @@
     "core_rules": ["Leader [Infantry]"],
     "unit_rules": [
         {
-            "name":"Yaaaargh Energy",
-            "text":"While this model is a +Leader+, add 1 to the =hand-fist= Strength and =droplet= Damage traits of this model's Psychocollar for every 5 models in the unit (rounding down). While this model's unit has 10 or more models, the Psychocollar gains +[Hazardous]+"
-        },
-        {
             "name":"Da Jump",
             "text":"After this model's unit finishes its Movement, you may use this ability. Roll d6; on a 1, this unit suffers d6 Mortal Damage. On a 2+, remove this model's unit from the Battlefield and replace it anywhere that is at least 9\" horizontally from all enemy models."
         }
