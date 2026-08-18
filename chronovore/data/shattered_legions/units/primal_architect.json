@@ -28,7 +28,7 @@
         }
     ],
     "range_weapons": [
-        "illumination"
+        "devastation"
     ],
     "melee_weapons": [
         "primal_claw"
@@ -39,7 +39,7 @@
     "models_min":1,
     "models_max":1,
     "default_gear":[
-        "illumination",
+        "devastation",
         "primal_claw"
     ]
 }
