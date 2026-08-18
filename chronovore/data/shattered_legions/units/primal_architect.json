@@ -15,7 +15,7 @@
         "Supreme Commander",
         "Primal"
     ],
-    "secondary_faction":"Legion of The Architect",
+    "secondary_faction":"Legion of the Architect",
     "core_rules": ["Leader [Heavy]"],
     "unit_rules": [
         {
