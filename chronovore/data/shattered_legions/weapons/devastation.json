@@ -1,12 +1,14 @@
 {
     "name":"Devastation",
     "keywords":[
-        "Anti-Vehicle 2+"
+        "Anti-Vehicle 2+",
+        "Assault",
+        "Heavy"
     ],
     "rng":18,
     "atk":"2",
     "skl":2,
-    "str":5,
-    "ap": 1,
+    "str":9,
+    "ap": 2,
     "dmg":2
 }
