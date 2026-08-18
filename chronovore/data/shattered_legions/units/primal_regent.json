@@ -20,7 +20,7 @@
     "unit_rules": [
         {
             "name":"The Regent",
-            "text":"At the start of the Battle Round, do one of the following:\n* Add 1 to the OC of friendly units within 6\"\n* Target an enemy unit within 24\" with the \"Second Vow\" stretegem for 0CP.\n* Target a friendly unit within 12\" with a Strategem for 0 CP\n"
+            "text":"At the start of the Battle Round, do one of the following:\n* Add 1 to the OC of friendly units within 6\" until the end of the Battle Round\n* Target an enemy unit within 24\" with the \"Second Vow\" strategem for 0 CP.\n* Target a friendly unit within 12\" with a Strategem for 0 CP"
         },
         {
             "name":"Bodyguards of the Regent",
