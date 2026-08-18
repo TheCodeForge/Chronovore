@@ -15,7 +15,7 @@
         "Supreme Commander",
         "Primal"
     ],
-    "secondary_faction":"Legion of The Regent",
+    "secondary_faction":"Legion of the Regent",
     "core_rules": ["Leader [Infantry]", "Support [Infantry]"],
     "unit_rules": [
         {
