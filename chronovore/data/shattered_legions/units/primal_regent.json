@@ -28,11 +28,11 @@
         }
     ],
     "range_weapons": [
-        "hand_of_authority_ranged"
+        "authority_ranged"
     ],
     "melee_weapons": [
         "primal_sword",
-        "hand_of_authority_melee"
+        "authority_melee"
     ],
     "composition":[
         "1 Primal Regent"
@@ -40,7 +40,7 @@
     "models_min":1,
     "models_max":1,
     "default_gear":[
-        "hand_of_authority_ranged",
+        "authority_ranged",
         "primal_sword"
     ]
 }
