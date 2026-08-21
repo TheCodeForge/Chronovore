@@ -1,0 +1,32 @@
+{    
+    "name": "Boomgakka Snozzwaggin",
+    "move":12,
+    "tough": 6,
+    "save": 5,
+    "hp":7,
+    "lead": 7,
+    "oc": 3,
+    "base":"75x42",
+    "default_gear":[
+        "big_shoota",
+        "snot_blasta",
+        "spiky_weelz",
+        "meka_speshul"
+    ],
+    "keywords": [
+        "Mounted"
+    ],
+    "core_rules": [],
+    "unit_rules": [],
+    "range_weapons": [
+        "big_shoota",
+        "snot_blasta",
+        "meka_speshul"
+    ],
+    "melee_weapons": ["spiky_weelz"],
+    "composition":[
+        "1 Boomgakka Snozzwaggin"
+    ],
+    "models_min":1,
+    "models_max":1
+}

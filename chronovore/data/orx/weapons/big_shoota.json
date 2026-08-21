@@ -1,0 +1,12 @@
+{
+    "name": "BigShoota",
+    "keywords":[
+        "Rapid Fire 2"
+    ],
+    "rng":36,
+    "atk":3,
+    "skl":5,
+    "str":5,
+    "ap": 0,
+    "dmg":1
+}
