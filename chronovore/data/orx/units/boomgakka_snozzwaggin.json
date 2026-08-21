@@ -16,8 +16,15 @@
     "keywords": [
         "Mounted"
     ],
-    "core_rules": [],
-    "unit_rules": [],
+    "core_rules": [
+        "Deadly Demise 1"
+    ],
+    "unit_rules": [
+        {
+            "name": "Dust Trails",
+            "text": "Friendly +Infantry+ units within 6\" may use this model (including its base) as \"Walls, Windowed\", for the purpose of determining an enemy unit's visibility to the friendly unit."
+        }
+    ],
     "range_weapons": [
         "big_shoota",
         "snot_blasta",
