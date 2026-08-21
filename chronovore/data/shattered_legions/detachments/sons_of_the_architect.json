@@ -1,15 +1,15 @@
 {
-    "name": "Sons of the Duellist",
-    "color": "00401f",
-    "color_dark": "33664c",
-    "secondary_faction":"Legion of the Duellist",
+    "name": "Sons of the Architect",
+    "color": "e6a000",
+    "color_dark": "ebb333",
+    "secondary_faction":"Legion of the Architect",
     "banned_keywords": [],
-    "lore": "The Primal Duellist is perhaps the second-greatest swordsman to ever exist, after only the Shattered King himself. His clashes with enemies have become tales of legend, holding off larger and stronger foes through sheer wit and skill. His Legion likewise excels at handling the worst enemies to be found in the realms, using superior weapons, specialized equipment, and cunning tactics to achieve victory.",
+    "lore": "The Primal Architect is renowned for his talent at civil engineering. With the might of his legion, he can raise walls, build infrastructure, and establish defenses to protect and provide for a whole city in a matter of days, maintaining unbroken vigilance even as the Rifts erode his work away.",
     "rules": [ 
         {
-            "name": "Resilience of the Duellist",
-            "lore": "The Primal Duellist and his sons are known for their unshakable resolve, maintaining the strictest of discipline in battle even while enduring the harshest of conditions and the unrelenting assaults of the enemy. Indeed, enemy attacks seem only to strengthen them.",
-            "text": "While a +Shattered Legions+ unit in your army is battleshocked, its Objective Control is 1, instead of 0."
+            "name": "Wrath of the Architect",
+            "lore": "The Primal Architect leads his legion to where the fighting is thickest, there to ruin the enemies of mankind.",
+            "text": "Reroll Wound rolls of 1 for Attacks made against your army's Vow of Eternity target."
         }
     ],
     "strategems": [
@@ -54,19 +54,19 @@
     ],
     "upgrades":[
         {
-            "name":"Scion of the Duellist",
+            "name":"Disciple of Strategy",
             "cost":10,
-            "text":"At the start of the battle, gain 1 CP."
+            "text":"Your +Warlord+ and models in its attached unit (if any) have +1 to their =arrows-to-circle= Objective Control trait."
         },
         {
-            "name":"Silent Command",
+            "name":"Indomitable Warrior",
             "cost":20,
-            "text":"Your +Warlord+ has !Feel No Pain 5+! while it is Battle-Shocked."
+            "text":"The first time a friendly +Juggernaut+ +Character+ unit is destroyed, roll d6. On a 2+, the unit remains on the Battlefield with 3 =Heart= Health remaining."
         },
         {
-            "name":"Grim Execution",
+            "name":"Champions of the Battle",
             "cost":40,
-            "text":"Your +Shattered Legions+ +Infantry+ units have +1\" to their =person-running= Movement traits while they are Battle-Shocked."
+            "text":"Melee weapons equipped by your +Warlord+ (and by models in its attached unit, if any) have +1 to their =swords= Attacks trait."
         }
     ]
 }

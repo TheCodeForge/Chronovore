@@ -1,0 +1,10 @@
+{
+    "name":"Primal Claw",
+    "keywords":[],
+    "atk":5,
+    "skl":2,
+    "str":12,
+    "ap": 2,
+    "dmg":2,
+    "ability":"Has +2 =hand-fist= Strength, -2 =shield-minus= Armor Break, and +2 =droplet= Damage against +Monsters+, +Vehicles+, and +Fortificatons+"
+}
